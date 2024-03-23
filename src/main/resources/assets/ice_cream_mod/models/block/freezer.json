@@ -3,7 +3,7 @@
   "textures": {
     "down": "ice_cream_mod:block/freezer",
     "up": "ice_cream_mod:block/freezer",
-    "north": "ice_cream_mod:block/freezer_top",
+    "north": "ice_cream_mod:block/freezer_front",
     "east": "ice_cream_mod:block/freezer",
     "south": "ice_cream_mod:block/freezer",
     "west": "ice_cream_mod:block/freezer",

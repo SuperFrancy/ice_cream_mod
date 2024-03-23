@@ -18,7 +18,7 @@
         "value": "Items.SNOWBALL"
       },
       {
-        "value": "Blocks.RED_FLOWER#8"
+        "value": "CUSTOM:VanillaFlowers"
       }
     ]
   }

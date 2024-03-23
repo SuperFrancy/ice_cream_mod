@@ -10,6 +10,7 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.icecreammod.world.inventory.IceCreamMachineGMenu;
+import net.mcreator.icecreammod.procedures.ArrowButtonProcedure;
 import net.mcreator.icecreammod.network.IceCreamMachineGButtonMessage;
 import net.mcreator.icecreammod.IceCreamModMod;
 
@@ -80,12 +81,18 @@ public class IceCreamMachineGScreen extends AbstractContainerScreen<IceCreamMach
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_trasferimentoremovebgpreview = new ImageButton(this.leftPos + 85, this.topPos + 32, 41, 31, 0, 0, 31, new ResourceLocation("ice_cream_mod:textures/screens/atlas/imagebutton_trasferimentoremovebgpreview.png"), 41, 62, e -> {
-			if (true) {
+		imagebutton_trasferimentoremovebgpreview = new ImageButton(this.leftPos + 88, this.topPos + 36, 38, 23, 0, 0, 23, new ResourceLocation("ice_cream_mod:textures/screens/atlas/imagebutton_trasferimentoremovebgpreview.png"), 38, 46, e -> {
+			if (ArrowButtonProcedure.execute(world, x, y, z)) {
 				IceCreamModMod.PACKET_HANDLER.sendToServer(new IceCreamMachineGButtonMessage(0, x, y, z));
 				IceCreamMachineGButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		});
+		}) {
+			@Override
+			public void render(GuiGraphics guiGraphics, int gx, int gy, float ticks) {
+				if (ArrowButtonProcedure.execute(world, x, y, z))
+					super.render(guiGraphics, gx, gy, ticks);
+			}
+		};
 		guistate.put("button:imagebutton_trasferimentoremovebgpreview", imagebutton_trasferimentoremovebgpreview);
 		this.addRenderableWidget(imagebutton_trasferimentoremovebgpreview);
 	}

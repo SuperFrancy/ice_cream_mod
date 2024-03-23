@@ -114,12 +114,15 @@
         "data": {
           "name": "imagebutton_trasferimentoremovebgpreview",
           "image": "trasferimento-removebg-preview.png",
-          "hoveredImage": "",
+          "hoveredImage": "button.png",
           "onClick": {
             "name": "IceCreamMachineP"
           },
-          "x": 210,
-          "y": 64
+          "displayCondition": {
+            "name": "ArrowButton"
+          },
+          "x": 213,
+          "y": 68
         }
       }
     ],

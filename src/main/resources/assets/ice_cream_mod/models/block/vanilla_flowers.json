@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "ice_cream_mod:block/ice_cream_machine",
+    "particle": "ice_cream_mod:block/ice_cream_machine"
+  },
+  "render_type": "cutout"
+}

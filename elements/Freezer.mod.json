@@ -5,7 +5,7 @@
     "texture": "freezer",
     "textureTop": "freezer",
     "textureLeft": "freezer",
-    "textureFront": "freezer_top",
+    "textureFront": "freezer_front",
     "textureRight": "freezer",
     "textureBack": "freezer",
     "renderType": 10,

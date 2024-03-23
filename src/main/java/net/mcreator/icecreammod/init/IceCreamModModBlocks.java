@@ -10,6 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.icecreammod.block.VanillaFlowersBlock;
 import net.mcreator.icecreammod.block.IceCreamMachineBlock;
 import net.mcreator.icecreammod.block.FreezerBlock;
 import net.mcreator.icecreammod.IceCreamModMod;
@@ -18,4 +19,5 @@ public class IceCreamModModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, IceCreamModMod.MODID);
 	public static final RegistryObject<Block> FREEZER = REGISTRY.register("freezer", () -> new FreezerBlock());
 	public static final RegistryObject<Block> ICE_CREAM_MACHINE = REGISTRY.register("ice_cream_machine", () -> new IceCreamMachineBlock());
+	public static final RegistryObject<Block> VANILLA_FLOWERS = REGISTRY.register("vanilla_flowers", () -> new VanillaFlowersBlock());
 }
