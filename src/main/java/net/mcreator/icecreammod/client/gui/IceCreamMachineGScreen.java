@@ -6,7 +6,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.icecreammod.world.inventory.IceCreamMachineGMenu;
@@ -22,7 +22,7 @@ public class IceCreamMachineGScreen extends AbstractContainerScreen<IceCreamMach
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	Button button_make;
+	ImageButton imagebutton_trasferimentoremovebgpreview;
 
 	public IceCreamMachineGScreen(IceCreamMachineGMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -80,13 +80,13 @@ public class IceCreamMachineGScreen extends AbstractContainerScreen<IceCreamMach
 	@Override
 	public void init() {
 		super.init();
-		button_make = Button.builder(Component.translatable("gui.ice_cream_mod.ice_cream_machine_g.button_make"), e -> {
+		imagebutton_trasferimentoremovebgpreview = new ImageButton(this.leftPos + 85, this.topPos + 32, 41, 31, 0, 0, 31, new ResourceLocation("ice_cream_mod:textures/screens/atlas/imagebutton_trasferimentoremovebgpreview.png"), 41, 62, e -> {
 			if (true) {
 				IceCreamModMod.PACKET_HANDLER.sendToServer(new IceCreamMachineGButtonMessage(0, x, y, z));
 				IceCreamMachineGButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 83, this.topPos + 37, 46, 20).build();
-		guistate.put("button:button_make", button_make);
-		this.addRenderableWidget(button_make);
+		});
+		guistate.put("button:imagebutton_trasferimentoremovebgpreview", imagebutton_trasferimentoremovebgpreview);
+		this.addRenderableWidget(imagebutton_trasferimentoremovebgpreview);
 	}
 }

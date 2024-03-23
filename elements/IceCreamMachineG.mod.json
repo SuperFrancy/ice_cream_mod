@@ -110,18 +110,16 @@
         }
       },
       {
-        "type": "button",
+        "type": "imagebutton",
         "data": {
-          "name": "button_make",
-          "text": "Make",
-          "isUndecorated": false,
+          "name": "imagebutton_trasferimentoremovebgpreview",
+          "image": "trasferimento-removebg-preview.png",
+          "hoveredImage": "",
           "onClick": {
             "name": "IceCreamMachineP"
           },
-          "width": 46,
-          "height": 20,
-          "x": 208,
-          "y": 69
+          "x": 210,
+          "y": 64
         }
       }
     ],
