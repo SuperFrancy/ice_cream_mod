@@ -12,7 +12,7 @@
       "value": "CUSTOM:IceCreamMachine"
     },
     "enableCraftingtable": true,
-    "title": "Ice Cream Machine T",
+    "title": "Ice Cream Machine",
     "slotList": [
       {
         "type": "INPUT",

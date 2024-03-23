@@ -34,7 +34,7 @@ public class IceCreamMachineTRecipeCategory implements IRecipeCategory<IceCreamM
 
 	@Override
 	public Component getTitle() {
-		return Component.literal("Ice Cream Machine T");
+		return Component.literal("Ice Cream Machine");
 	}
 
 	@Override
