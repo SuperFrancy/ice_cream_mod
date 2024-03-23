@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    "c "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:milk_bucket"
+    },
+    "b": {
+      "item": "minecraft:beetroot"
+    },
+    "c": {
+      "item": "minecraft:snowball"
+    }
+  },
+  "result": {
+    "item": "ice_cream_mod:beetroot_ice_cream_ball",
+    "count": 16
+  }
+}

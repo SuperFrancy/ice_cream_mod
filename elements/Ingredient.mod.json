@@ -1,0 +1,43 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Items.DYE#3"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#8"
+      },
+      {
+        "value": "CUSTOM:AppleIceCreamBall"
+      },
+      {
+        "value": "Items.MELON"
+      },
+      {
+        "value": "Items.BEETROOT"
+      },
+      {
+        "value": "Items.CARROT"
+      },
+      {
+        "value": "Items.SWEET_BERRIES"
+      },
+      {
+        "value": "Items.APPLE"
+      },
+      {
+        "value": "Items.CHORUS_FRUIT"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "ingredient",
+    "namespace": "mod"
+  }
+}

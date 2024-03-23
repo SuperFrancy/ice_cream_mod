@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:oxeye_daisy"
+    },
+    "b": {
+      "item": "minecraft:ice"
+    },
+    "c": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "ice_cream_mod:vanilla_popsicle",
+    "count": 1
+  }
+}

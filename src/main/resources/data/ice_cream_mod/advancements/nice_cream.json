@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "ice_cream_mod:textures/screens/cone.png",
+    "icon": {
+      "item": "ice_cream_mod:vanilla_ice_cream"
+    },
+    "title": {
+      "translate": "advancements.nice_cream.title"
+    },
+    "description": {
+      "translate": "advancements.nice_cream.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "nice_cream": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

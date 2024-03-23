@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": "CUSTOM:Cone"
+      },
+      {
+        "value": "Items.BOWL"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "ice_cream_base",
+    "namespace": "mod"
+  }
+}

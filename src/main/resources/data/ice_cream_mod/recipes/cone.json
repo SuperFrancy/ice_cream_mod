@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "a a",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "ice_cream_mod:waffle"
+    }
+  },
+  "result": {
+    "item": "ice_cream_mod:cone",
+    "count": 1
+  }
+}

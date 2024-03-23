@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "ice_cream_mod:melon_ice_cream_ball"
+    },
+    "b": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "result": {
+    "item": "ice_cream_mod:melon_ice_cream_cup",
+    "count": 1
+  }
+}

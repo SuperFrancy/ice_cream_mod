@@ -1,0 +1,43 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:VanillaIceCreamBall"
+      },
+      {
+        "value": "CUSTOM:ChocolateIceCreamBall"
+      },
+      {
+        "value": "CUSTOM:AppleIceCreamBall"
+      },
+      {
+        "value": "CUSTOM:CarrotIceCreamBall"
+      },
+      {
+        "value": "CUSTOM:BeetrootIceCreamBall"
+      },
+      {
+        "value": "CUSTOM:MelonIceCreamBall"
+      },
+      {
+        "value": "CUSTOM:SweetBerryIceCreamBall"
+      },
+      {
+        "value": "CUSTOM:GlowBerryIceCreamBall"
+      },
+      {
+        "value": "CUSTOM:ChorusIceCreamBall"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "ball",
+    "namespace": "mod"
+  }
+}

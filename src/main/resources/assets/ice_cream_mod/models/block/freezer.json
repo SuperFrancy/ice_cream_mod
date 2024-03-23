@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ice_cream_mod:block/freezer",
+    "up": "ice_cream_mod:block/freezer",
+    "north": "ice_cream_mod:block/freezer_top",
+    "east": "ice_cream_mod:block/freezer",
+    "south": "ice_cream_mod:block/freezer",
+    "west": "ice_cream_mod:block/freezer",
+    "particle": "ice_cream_mod:block/freezer"
+  },
+  "render_type": "solid"
+}

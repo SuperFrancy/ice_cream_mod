@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "ice_cream_mod:chocolate_ice_cream"
+    },
+    "title": {
+      "translate": "advancements.every_flavour.title"
+    },
+    "description": {
+      "translate": "advancements.every_flavour.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "every_flavour": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "ice_cream_mod:nice_cream"
+}

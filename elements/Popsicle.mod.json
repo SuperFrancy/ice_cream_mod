@@ -1,0 +1,43 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:VanillaPopsicle"
+      },
+      {
+        "value": "CUSTOM:ApplePopsicle"
+      },
+      {
+        "value": "CUSTOM:ChocolatePopsicle"
+      },
+      {
+        "value": "CUSTOM:CarrotPopsicle"
+      },
+      {
+        "value": "CUSTOM:BeetrootPopsicle"
+      },
+      {
+        "value": "CUSTOM:MelonPopsicle"
+      },
+      {
+        "value": "CUSTOM:SweetBerryPopsicle"
+      },
+      {
+        "value": "CUSTOM:GlowBerryPopsicle"
+      },
+      {
+        "value": "CUSTOM:ChorusPopsicle"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "popsicle",
+    "namespace": "mod"
+  }
+}
