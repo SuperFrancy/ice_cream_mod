@@ -1581,26 +1581,6 @@
       "path": "~/Recipe"
     },
     {
-      "name": "VanillaFlowers",
-      "type": "plant",
-      "sortid": 104,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "vanilla_flowers",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/icecreammod/block/VanillaFlowersBlock.java",
-          "src/main/resources/data/ice_cream_mod/worldgen/configured_feature/vanilla_flowers.json",
-          "src/main/resources/assets/ice_cream_mod/models/block/vanilla_flowers.json",
-          "src/main/resources/data/ice_cream_mod/forge/biome_modifier/vanilla_flowers_biome_modifier.json",
-          "src/main/resources/assets/ice_cream_mod/models/item/vanilla_flowers.json",
-          "src/main/resources/data/ice_cream_mod/worldgen/placed_feature/vanilla_flowers.json",
-          "src/main/resources/assets/ice_cream_mod/blockstates/vanilla_flowers.json"
-        ]
-      },
-      "path": "~/Block"
-    },
-    {
       "name": "ArrowButton",
       "type": "procedure",
       "sortid": 105,
@@ -1632,6 +1612,26 @@
         ]
       },
       "path": "~/Procedure"
+    },
+    {
+      "name": "VanillaFlower",
+      "type": "plant",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vanilla_flower",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/worldgen/configured_feature/vanilla_flower.json",
+          "src/main/resources/assets/ice_cream_mod/models/item/vanilla_flower.json",
+          "src/main/resources/data/ice_cream_mod/worldgen/placed_feature/vanilla_flower.json",
+          "src/main/resources/assets/ice_cream_mod/blockstates/vanilla_flower.json",
+          "src/main/resources/assets/ice_cream_mod/models/block/vanilla_flower.json",
+          "src/main/resources/data/ice_cream_mod/forge/biome_modifier/vanilla_flower_biome_modifier.json",
+          "src/main/java/net/mcreator/icecreammod/block/VanillaFlowerBlock.java"
+        ]
+      },
+      "path": "~/Block"
     }
   ],
   "variable_elements": [],
@@ -1657,9 +1657,9 @@
       "item.ice_cream_mod.beetroot_ice_cream_cup": "Coppetta alla Barbaietola",
       "block.ice_cream_mod.freezer": "Frigorifero",
       "item.ice_cream_mod.apple_ice_cream_cup": "Coppetta alla Mela",
-      "block.ice_cream_mod.vanilla_flower": "Fiore di Vanilla",
-      "item.ice_cream_mod.glow_berry_popsicle": "Ghiacciolo alla Bacca Luminosa",
+      "block.ice_cream_mod.vanilla_flower": "Fiore di Vaniglia",
       "item.ice_cream_mod.chocolate_popsicle": "Ghiacciolo al Cioccolato",
+      "item.ice_cream_mod.glow_berry_popsicle": "Ghiacciolo alla Bacca Luminosa",
       "item.ice_cream_mod.apple_ice_cream": "Cono alla Mela",
       "item.ice_cream_mod.sweet_berry_ice_cream": "Cono alla Bacca Dolce",
       "item.ice_cream_mod.chocolate_ice_cream_ball": "Gelato alla Cioccolato",
@@ -1670,7 +1670,6 @@
       "item.ice_cream_mod.vanilla_ice_cream": "Cono alla Vaniglia",
       "gui.ice_cream_mod.ice_cream_machine_g.button_make": "Crea",
       "advancements.nice_cream.title": "Gelieto",
-      "block.ice_cream_mod.vanilla_flowers": "Vanilla Flower",
       "item.ice_cream_mod.sweet_berry_popsicle": "Ghiacciolo alla Bacca Dolce",
       "item.ice_cream_mod.chorus_popsicle": "Ghiacciolo al Chorus",
       "advancements.nice_cream.descr": "Crea un gelato",
@@ -1724,7 +1723,6 @@
       "item.ice_cream_mod.vanilla_ice_cream": "Vanilla Ice Cream",
       "gui.ice_cream_mod.ice_cream_machine_g.button_make": "Make",
       "advancements.nice_cream.title": "Nice Cream",
-      "block.ice_cream_mod.vanilla_flowers": "Vanilla Flower",
       "item.ice_cream_mod.sweet_berry_popsicle": "Sweet Berry Popsicle",
       "item.ice_cream_mod.chorus_popsicle": "Chorus Popsicle",
       "advancements.nice_cream.descr": "Eat a Ice cream",

@@ -60,7 +60,7 @@ public class IceCreamModModTabs {
 				tabData.accept(IceCreamModModItems.CHORUS_ICE_CREAM.get());
 				tabData.accept(IceCreamModModItems.CHORUS_ICE_CREAM_CUP.get());
 				tabData.accept(IceCreamModModItems.CHORUS_POPSICLE.get());
-				tabData.accept(IceCreamModModBlocks.VANILLA_FLOWERS.get().asItem());
+				tabData.accept(IceCreamModModBlocks.VANILLA_FLOWER.get().asItem());
 			})
 
 					.build());

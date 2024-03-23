@@ -9,7 +9,7 @@
           "to_place": {
             "type": "minecraft:simple_state_provider",
             "state": {
-              "Name": "ice_cream_mod:vanilla_flowers"
+              "Name": "ice_cream_mod:vanilla_flower"
             }
           }
         }

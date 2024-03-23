@@ -58,7 +58,7 @@ public class IceCreamMachinePProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == IceCreamModModBlocks.VANILLA_FLOWERS.get().asItem() && (new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == IceCreamModModBlocks.VANILLA_FLOWER.get().asItem() && (new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);

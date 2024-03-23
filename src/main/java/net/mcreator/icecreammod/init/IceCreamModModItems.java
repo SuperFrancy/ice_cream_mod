@@ -98,7 +98,7 @@ public class IceCreamModModItems {
 	public static final RegistryObject<Item> CHORUS_ICE_CREAM = REGISTRY.register("chorus_ice_cream", () -> new ChorusIceCreamItem());
 	public static final RegistryObject<Item> CHORUS_ICE_CREAM_CUP = REGISTRY.register("chorus_ice_cream_cup", () -> new ChorusIceCreamCupItem());
 	public static final RegistryObject<Item> CHORUS_POPSICLE = REGISTRY.register("chorus_popsicle", () -> new ChorusPopsicleItem());
-	public static final RegistryObject<Item> VANILLA_FLOWERS = block(IceCreamModModBlocks.VANILLA_FLOWERS);
+	public static final RegistryObject<Item> VANILLA_FLOWER = block(IceCreamModModBlocks.VANILLA_FLOWER);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
