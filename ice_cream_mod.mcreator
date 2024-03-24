@@ -1,21 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "VanillaIceCreamBall",
-      "type": "item",
-      "sortid": 7,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "vanilla_ice_cream_ball",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/icecreammod/item/VanillaIceCreamBallItem.java",
-          "src/main/resources/assets/ice_cream_mod/models/item/vanilla_ice_cream_ball.json"
-        ]
-      },
-      "path": "~/Ice Cream/Vanilla"
-    },
-    {
       "name": "Cone",
       "type": "item",
       "sortid": 5,
@@ -75,48 +60,6 @@
       "path": "~/Ice Cream/Vanilla"
     },
     {
-      "name": "VanillaIceCreamCupR",
-      "type": "recipe",
-      "sortid": 44,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "vanilla_ice_cream_cup_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/vanilla_ice_cream_cup.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
-      "name": "VanillaIceCreamBallR",
-      "type": "recipe",
-      "sortid": 45,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "vanilla_ice_cream_ball_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/vanilla_ice_cream_ball.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
-      "name": "VanillaIceCreamR",
-      "type": "recipe",
-      "sortid": 46,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "vanilla_ice_cream_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/vanilla_ice_cream.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
       "name": "NiceCream",
       "type": "achievement",
       "sortid": 47,
@@ -129,21 +72,6 @@
         ]
       },
       "path": "~/Advancments"
-    },
-    {
-      "name": "ChocolateIceCreamBall",
-      "type": "item",
-      "sortid": 11,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chocolate_ice_cream_ball",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/icecreammod/item/ChocolateIceCreamBallItem.java",
-          "src/main/resources/assets/ice_cream_mod/models/item/chocolate_ice_cream_ball.json"
-        ]
-      },
-      "path": "~/Ice Cream/Chocolate"
     },
     {
       "name": "ChocolateIceCream",
@@ -196,21 +124,6 @@
       "path": "~/Procedure"
     },
     {
-      "name": "AppleIceCreamBall",
-      "type": "item",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "apple_ice_cream_ball",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/ice_cream_mod/models/item/apple_ice_cream_ball.json",
-          "src/main/java/net/mcreator/icecreammod/item/AppleIceCreamBallItem.java"
-        ]
-      },
-      "path": "~/Ice Cream/Apple"
-    },
-    {
       "name": "AppleIceCream",
       "type": "item",
       "sortid": 16,
@@ -239,105 +152,6 @@
         ]
       },
       "path": "~/Ice Cream/Apple"
-    },
-    {
-      "name": "ChicolateIceCreamR",
-      "type": "recipe",
-      "sortid": 49,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chicolate_ice_cream_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/chicolate_ice_cream.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
-      "name": "ChocolateIceCreamBallR",
-      "type": "recipe",
-      "sortid": 50,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chocolate_ice_cream_ball_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/chocolate_ice_cream_ball.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
-      "name": "ChocolateIceCreamCupR",
-      "type": "recipe",
-      "sortid": 51,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chocolate_ice_cream_cup_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/chocolate_ice_cream_cup.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
-      "name": "AppleIceCreamR",
-      "type": "recipe",
-      "sortid": 52,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "apple_ice_cream_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/apple_ice_cream.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
-      "name": "AppleIceCreamBallR",
-      "type": "recipe",
-      "sortid": 53,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "apple_ice_cream_ball_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/apple_ice_cream_ball.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
-      "name": "AppleIceCreamCupR",
-      "type": "recipe",
-      "sortid": 54,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "apple_ice_cream_cup_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/apple_ice_cream_cup.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
-      "name": "CarrotIceCreamBall",
-      "type": "item",
-      "sortid": 19,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "carrot_ice_cream_ball",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/ice_cream_mod/models/item/carrot_ice_cream_ball.json",
-          "src/main/java/net/mcreator/icecreammod/item/CarrotIceCreamBallItem.java"
-        ]
-      },
-      "path": "~/Ice Cream/Carrot"
     },
     {
       "name": "IceCream",
@@ -382,48 +196,6 @@
       "path": "~/Ice Cream/Carrot"
     },
     {
-      "name": "CarrotIceCreamR",
-      "type": "recipe",
-      "sortid": 56,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "carrot_ice_cream_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/carrot_ice_cream.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
-      "name": "CarrotIceCreamBallR",
-      "type": "recipe",
-      "sortid": 57,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "carrot_ice_cream_ball_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/carrot_ice_cream_ball.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
-      "name": "CarrotIceCreamCupR",
-      "type": "recipe",
-      "sortid": 58,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "carrot_ice_cream_cup_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/carrot_ice_cream_cup.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
       "name": "BeetrootIceCream",
       "type": "item",
       "sortid": 24,
@@ -434,21 +206,6 @@
         "files": [
           "src/main/resources/assets/ice_cream_mod/models/item/beetroot_ice_cream.json",
           "src/main/java/net/mcreator/icecreammod/item/BeetrootIceCreamItem.java"
-        ]
-      },
-      "path": "~/Ice Cream/Beetroot"
-    },
-    {
-      "name": "BeetrootIceCreamBall",
-      "type": "item",
-      "sortid": 23,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "beetroot_ice_cream_ball",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/ice_cream_mod/models/item/beetroot_ice_cream_ball.json",
-          "src/main/java/net/mcreator/icecreammod/item/BeetrootIceCreamBallItem.java"
         ]
       },
       "path": "~/Ice Cream/Beetroot"
@@ -467,63 +224,6 @@
         ]
       },
       "path": "~/Ice Cream/Beetroot"
-    },
-    {
-      "name": "BeetrootIceCreamR",
-      "type": "recipe",
-      "sortid": 59,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "beetroot_ice_cream_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/beetroot_ice_cream.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
-      "name": "BeetrootIceCreamBallR",
-      "type": "recipe",
-      "sortid": 60,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "beetroot_ice_cream_ball_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/beetroot_ice_cream_ball.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
-      "name": "BeetrootIceCreamCupR",
-      "type": "recipe",
-      "sortid": 61,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "beetroot_ice_cream_cup_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/beetroot_ice_cream_cup.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
-      "name": "MelonIceCreamBall",
-      "type": "item",
-      "sortid": 27,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "melon_ice_cream_ball",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/icecreammod/item/MelonIceCreamBallItem.java",
-          "src/main/resources/assets/ice_cream_mod/models/item/melon_ice_cream_ball.json"
-        ]
-      },
-      "path": "~/Ice Cream/Melon"
     },
     {
       "name": "MelonIceCream",
@@ -554,48 +254,6 @@
         ]
       },
       "path": "~/Ice Cream/Melon"
-    },
-    {
-      "name": "MelonIceCreamR",
-      "type": "recipe",
-      "sortid": 62,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "melon_ice_cream_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/melon_ice_cream.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
-      "name": "MelonIceCreamBallR",
-      "type": "recipe",
-      "sortid": 63,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "melon_ice_cream_ball_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/melon_ice_cream_ball_r.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
-      "name": "MelonIceCreamCupR",
-      "type": "recipe",
-      "sortid": 64,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "melon_ice_cream_cup_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/melon_ice_cream_cup.json"
-        ]
-      },
-      "path": "~/Recipe"
     },
     {
       "name": "Waffle",
@@ -671,21 +329,6 @@
       "path": "~/Ice Cream/SweetBerry"
     },
     {
-      "name": "SweetBerryIceCreamBall",
-      "type": "item",
-      "sortid": 31,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sweet_berry_ice_cream_ball",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/icecreammod/item/SweetBerryIceCreamBallItem.java",
-          "src/main/resources/assets/ice_cream_mod/models/item/sweet_berry_ice_cream_ball.json"
-        ]
-      },
-      "path": "~/Ice Cream/SweetBerry"
-    },
-    {
       "name": "SweetBerryIceCreamCup",
       "type": "item",
       "sortid": 33,
@@ -699,48 +342,6 @@
         ]
       },
       "path": "~/Ice Cream/SweetBerry"
-    },
-    {
-      "name": "SweetBerryIceCreamR",
-      "type": "recipe",
-      "sortid": 67,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sweet_berry_ice_cream_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/sweet_berry_ice_cream.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
-      "name": "SweetBerryIceCreamBallR",
-      "type": "recipe",
-      "sortid": 68,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sweet_berry_ice_cream_ball_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/sweet_berry_ice_cream_ball.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
-      "name": "SweetBerryIceCreamCupR",
-      "type": "recipe",
-      "sortid": 69,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sweet_berry_ice_cream_cup_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/sweet_berry_ice_cream_cup.json"
-        ]
-      },
-      "path": "~/Recipe"
     },
     {
       "name": "VanillaPopsicle",
@@ -1037,35 +638,6 @@
       "path": "~/Procedure"
     },
     {
-      "name": "GlowBerryIceCreamBall",
-      "type": "item",
-      "sortid": 35,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "glow_berry_ice_cream_ball",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/icecreammod/item/GlowBerryIceCreamBallItem.java",
-          "src/main/resources/assets/ice_cream_mod/models/item/glow_berry_ice_cream_ball.json"
-        ]
-      },
-      "path": "~/Ice Cream/GlowBerry"
-    },
-    {
-      "name": "GlowBerryIceCreamBallR",
-      "type": "recipe",
-      "sortid": 81,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "glow_berry_ice_cream_ball_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/glow_berry_ice_cream_ball.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
       "name": "GlowBerryIceCream",
       "type": "item",
       "sortid": 36,
@@ -1131,34 +703,6 @@
       "path": "~/Ice Cream/GlowBerry"
     },
     {
-      "name": "GlowBerryIceCreamR",
-      "type": "recipe",
-      "sortid": 83,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "glow_berry_ice_cream_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/glow_berry_ice_cream.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
-      "name": "GlowBerryIceCreamCupR",
-      "type": "recipe",
-      "sortid": 84,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "glow_berry_ice_cream_cup_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/glow_berry_ice_cream_cup_r.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
       "name": "GlowBerryPopsicleR",
       "type": "recipe",
       "sortid": 85,
@@ -1171,21 +715,6 @@
         ]
       },
       "path": "~/Recipe"
-    },
-    {
-      "name": "ChorusIceCreamBall",
-      "type": "item",
-      "sortid": 39,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chorus_ice_cream_ball",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/icecreammod/item/ChorusIceCreamBallItem.java",
-          "src/main/resources/assets/ice_cream_mod/models/item/chorus_ice_cream_ball.json"
-        ]
-      },
-      "path": "~/Ice Cream/Chorus"
     },
     {
       "name": "ChorusIceCream",
@@ -1233,48 +762,6 @@
       "path": "~/Ice Cream/Chorus"
     },
     {
-      "name": "ChorusIceCreamBallR",
-      "type": "recipe",
-      "sortid": 86,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chorus_ice_cream_ball_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/chorus_ice_cream_ball_r.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
-      "name": "ChorusIceCreamR",
-      "type": "recipe",
-      "sortid": 87,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chorus_ice_cream_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/chorus_ice_cream.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
-      "name": "ChorusIceCreamCupR",
-      "type": "recipe",
-      "sortid": 88,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chorus_ice_cream_cup_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/chorus_ice_cream_cup_r.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
       "name": "ChorusPopsicleR",
       "type": "recipe",
       "sortid": 89,
@@ -1298,20 +785,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/ice_cream_mod/tags/items/freezer_item.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "Ball",
-      "type": "tag",
-      "sortid": 91,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ball",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/tags/items/ball.json"
         ]
       },
       "path": "~/Tags"
@@ -1567,20 +1040,6 @@
       "path": "~/Recipe"
     },
     {
-      "name": "VanillaIceCreamRJei",
-      "type": "jeirecipe",
-      "sortid": 103,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "vanilla_ice_cream_r_jei",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/vanilla_ice_cream_r_jei.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
       "name": "ArrowButton",
       "type": "procedure",
       "sortid": 105,
@@ -1632,62 +1091,80 @@
         ]
       },
       "path": "~/Block"
+    },
+    {
+      "name": "Gui",
+      "type": "procedure",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/icecreammod/procedures/GuiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedure"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "time",
+      "type": "number",
+      "scope": "global",
+      "value": "100.0"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "it_it": {
       "advancements.every_flavour.descr": "Crea tutti i Gelati",
-      "gui.ice_cream_mod.freezer_g.label_freezer": "Frigorifero",
-      "item.ice_cream_mod.dough": "Impasto",
-      "item.ice_cream_mod.chocolate_ice_cream": "Cono alla Cioccolato",
-      "item.ice_cream_mod.sweet_berry_ice_cream_ball": "Gelato alla Bacca Dolce",
-      "gui.ice_cream_mod.ice_cream_machine_g.label_ice_cream_machine": "Macchina per Gelati",
-      "item.ice_cream_mod.melon_ice_cream": "Cono all\u0027Anguria",
-      "item.ice_cream_mod.glow_berry_ice_cream_cup": "Coppetta alla Bacca Luminosa",
-      "item.ice_cream_mod.chorus_ice_cream": "Cono al Chorus",
-      "item_group.ice_cream_mod.ice_cream": "Gelato",
-      "item.ice_cream_mod.vanilla_popsicle": "Ghiacciolo alla Vaniglia",
-      "item.ice_cream_mod.chorus_ice_cream_ball": "Gelato al Chorus",
-      "item.ice_cream_mod.carrot_popsicle": "Ghiacciolo alla Carota",
-      "item.ice_cream_mod.carrot_ice_cream_cup": "Coppetta alla Carota",
-      "item.ice_cream_mod.carrot_ice_cream_ball": "Gelato alla Carota",
-      "item.ice_cream_mod.glow_berry_ice_cream": "Cono alla Bacca Luminosa",
-      "item.ice_cream_mod.beetroot_ice_cream_cup": "Coppetta alla Barbaietola",
-      "block.ice_cream_mod.freezer": "Frigorifero",
-      "item.ice_cream_mod.apple_ice_cream_cup": "Coppetta alla Mela",
-      "block.ice_cream_mod.vanilla_flower": "Fiore di Vaniglia",
-      "item.ice_cream_mod.chocolate_popsicle": "Ghiacciolo al Cioccolato",
-      "item.ice_cream_mod.glow_berry_popsicle": "Ghiacciolo alla Bacca Luminosa",
-      "item.ice_cream_mod.apple_ice_cream": "Cono alla Mela",
-      "item.ice_cream_mod.sweet_berry_ice_cream": "Cono alla Bacca Dolce",
-      "item.ice_cream_mod.chocolate_ice_cream_ball": "Gelato alla Cioccolato",
-      "advancements.every_flavour.title": "Tuttigusti+1",
-      "item.ice_cream_mod.glow_berry_ice_cream_ball": "Gelato alla Bacca Luminosa",
-      "item.ice_cream_mod.consumed_cone": "Cono Mangiato",
-      "item.ice_cream_mod.apple_ice_cream_ball": "Gelato alla Mela",
       "item.ice_cream_mod.vanilla_ice_cream": "Cono alla Vaniglia",
       "gui.ice_cream_mod.ice_cream_machine_g.button_make": "Crea",
+      "item.ice_cream_mod.dough": "Impasto",
+      "gui.ice_cream_mod.freezer_g.label_freezer": "Frigorifero",
       "advancements.nice_cream.title": "Gelieto",
+      "item.ice_cream_mod.chocolate_ice_cream": "Cono alla Cioccolato",
       "item.ice_cream_mod.sweet_berry_popsicle": "Ghiacciolo alla Bacca Dolce",
       "item.ice_cream_mod.chorus_popsicle": "Ghiacciolo al Chorus",
       "advancements.nice_cream.descr": "Crea un gelato",
+      "gui.ice_cream_mod.ice_cream_machine_g.label_ice_cream_machine": "Macchina per Gelati",
       "item.ice_cream_mod.beetroot_ice_cream": "Cono alla Barbabietola",
+      "item.ice_cream_mod.melon_ice_cream": "Cono all\u0027Anguria",
       "item.ice_cream_mod.chocolate_ice_cream_cup": "Coppetta alla Cioccolato",
       "item.ice_cream_mod.melon_ice_cream_cup": "Coppetta all\u0027Anguria",
+      "item.ice_cream_mod.glow_berry_ice_cream_cup": "Coppetta alla Bacca Luminosa",
+      "item.ice_cream_mod.chorus_ice_cream": "Cono al Chorus",
       "item.ice_cream_mod.carrot_ice_cream": "Cono alla Carota",
-      "item.ice_cream_mod.melon_ice_cream_ball": "Gelato all\u0027Anguria",
+      "item_group.ice_cream_mod.ice_cream": "Gelato",
+      "item.ice_cream_mod.vanilla_popsicle": "Ghiacciolo alla Vaniglia",
+      "item.ice_cream_mod.carrot_popsicle": "Ghiacciolo alla Carota",
       "item.ice_cream_mod.beetroot_popsicle": "Ghiacciolo alla Barbabietola",
+      "item.ice_cream_mod.carrot_ice_cream_cup": "Coppetta alla Carota",
       "item.ice_cream_mod.sweet_berry_ice_cream_cup": "Coppetta alla Bacca Dolce",
       "item.ice_cream_mod.apple_popsicle": "Ghiacciolo alla Mela",
+      "item.ice_cream_mod.glow_berry_ice_cream": "Cono alla Bacca Luminosa",
+      "item.ice_cream_mod.beetroot_ice_cream_cup": "Coppetta alla Barbaietola",
       "item.ice_cream_mod.vanilla_ice_cream_cup": "Coppetta alla Vaniglia",
+      "block.ice_cream_mod.freezer": "Frigorifero",
       "item.ice_cream_mod.melon_popsicle": "Ghiacciolo all\u0027Anguria",
+      "item.ice_cream_mod.apple_ice_cream_cup": "Coppetta alla Mela",
+      "block.ice_cream_mod.vanilla_flower": "Fiore di Vaniglia",
+      "item.ice_cream_mod.glow_berry_popsicle": "Ghiacciolo alla Bacca Luminosa",
+      "item.ice_cream_mod.chocolate_popsicle": "Ghiacciolo al Cioccolato",
       "item.ice_cream_mod.chorus_ice_cream_cup": "Coppetta al Chorus",
-      "item.ice_cream_mod.beetroot_ice_cream_ball": "Gelato alla Barbabietola",
-      "item.ice_cream_mod.vanilla_ice_cream_ball": "Gelato alla Vaniglia",
+      "item.ice_cream_mod.apple_ice_cream": "Cono alla Mela",
+      "item.ice_cream_mod.sweet_berry_ice_cream": "Cono alla Bacca Dolce",
       "block.ice_cream_mod.ice_cream_machine": "Macchina per Gelati",
       "item.ice_cream_mod.waffle": "Cialda",
+      "advancements.every_flavour.title": "Tuttigusti+1",
+      "item.ice_cream_mod.consumed_cone": "Cono Mangiato",
       "item.ice_cream_mod.cone": "Cono"
     },
     "en_us": {
@@ -1695,31 +1172,25 @@
       "gui.ice_cream_mod.freezer_g.label_freezer": "Freezer",
       "item.ice_cream_mod.dough": "Dough",
       "item.ice_cream_mod.chocolate_ice_cream": "Chocolate Ice Cream",
-      "item.ice_cream_mod.sweet_berry_ice_cream_ball": "Sweet Berry Ice Cream Ball",
       "gui.ice_cream_mod.ice_cream_machine_g.label_ice_cream_machine": "Ice Cream Machine",
       "item.ice_cream_mod.melon_ice_cream": "Melon Ice Cream",
       "item.ice_cream_mod.glow_berry_ice_cream_cup": "Glow Berry Ice Cream Cup",
       "item.ice_cream_mod.chorus_ice_cream": "Chorus Ice Cream",
       "item_group.ice_cream_mod.ice_cream": "Ice Cream",
       "item.ice_cream_mod.vanilla_popsicle": "Vanilla Popsicle",
-      "item.ice_cream_mod.chorus_ice_cream_ball": "Chorus Ice Cream Ball",
       "item.ice_cream_mod.carrot_popsicle": "Carrot Popsicle",
       "item.ice_cream_mod.carrot_ice_cream_cup": "Carrot Ice Cream Cup",
-      "item.ice_cream_mod.carrot_ice_cream_ball": "Carrot Ice Cream Ball",
       "item.ice_cream_mod.glow_berry_ice_cream": "Glow Berry Ice Cream",
       "item.ice_cream_mod.beetroot_ice_cream_cup": "Beetroot Ice Cream Cup",
       "block.ice_cream_mod.freezer": "Freezer",
       "item.ice_cream_mod.apple_ice_cream_cup": "Apple Ice Cream Cup",
       "block.ice_cream_mod.vanilla_flower": "Vanilla Flower",
-      "item.ice_cream_mod.glow_berry_popsicle": "Glow Berry Popsicle",
       "item.ice_cream_mod.chocolate_popsicle": "Chocolate Popsicle",
+      "item.ice_cream_mod.glow_berry_popsicle": "Glow Berry Popsicle",
       "item.ice_cream_mod.apple_ice_cream": "Apple Ice Cream",
       "item.ice_cream_mod.sweet_berry_ice_cream": "Sweet Berry Ice Cream",
-      "item.ice_cream_mod.chocolate_ice_cream_ball": "Chocolate Ice Cream Ball",
       "advancements.every_flavour.title": "Every Flavour",
-      "item.ice_cream_mod.glow_berry_ice_cream_ball": "Glow Berry Ice Cream Ball",
       "item.ice_cream_mod.consumed_cone": "Consumed Cone",
-      "item.ice_cream_mod.apple_ice_cream_ball": "Apple Ice Cream Ball",
       "item.ice_cream_mod.vanilla_ice_cream": "Vanilla Ice Cream",
       "gui.ice_cream_mod.ice_cream_machine_g.button_make": "Make",
       "advancements.nice_cream.title": "Nice Cream",
@@ -1729,7 +1200,6 @@
       "item.ice_cream_mod.beetroot_ice_cream": "Beetroot Ice Cream",
       "item.ice_cream_mod.chocolate_ice_cream_cup": "Chocolate Ice Cream Cup",
       "item.ice_cream_mod.melon_ice_cream_cup": "Melon Ice Cream Cup",
-      "item.ice_cream_mod.melon_ice_cream_ball": "Melon Ice Cream Ball",
       "item.ice_cream_mod.carrot_ice_cream": "Carrot Ice Cream",
       "item.ice_cream_mod.beetroot_popsicle": "Beetroot Popsicle",
       "item.ice_cream_mod.sweet_berry_ice_cream_cup": "Sweet Berry Ice Cream Cup",
@@ -1737,8 +1207,6 @@
       "item.ice_cream_mod.vanilla_ice_cream_cup": "Vanilla Ice Cream Cup",
       "item.ice_cream_mod.melon_popsicle": "Melon Popsicle",
       "item.ice_cream_mod.chorus_ice_cream_cup": "Chorus Ice Cream Cup",
-      "item.ice_cream_mod.beetroot_ice_cream_ball": "Beetroot Ice Cream Ball",
-      "item.ice_cream_mod.vanilla_ice_cream_ball": "Vanilla Ice Cream Ball",
       "block.ice_cream_mod.ice_cream_machine": "Ice Cream Machine",
       "item.ice_cream_mod.waffle": "Waffle",
       "item.ice_cream_mod.cone": "Cone"

@@ -8,9 +8,6 @@
         "value": "Items.DYE#3"
       },
       {
-        "value": "CUSTOM:AppleIceCreamBall"
-      },
-      {
         "value": "Items.MELON"
       },
       {
@@ -30,6 +27,9 @@
       },
       {
         "value": "CUSTOM:VanillaFlower"
+      },
+      {
+        "value": "Items.GLOW_BERRIES"
       }
     ],
     "blocks": [],

@@ -2,13 +2,13 @@
   "replace": false,
   "values": [
     "minecraft:cocoa_beans",
-    "ice_cream_mod:apple_ice_cream_ball",
     "minecraft:melon_slice",
     "minecraft:beetroot",
     "minecraft:carrot",
     "minecraft:sweet_berries",
     "minecraft:apple",
     "minecraft:chorus_fruit",
-    "ice_cream_mod:vanilla_flower"
+    "ice_cream_mod:vanilla_flower",
+    "minecraft:glow_berries"
   ]
 }

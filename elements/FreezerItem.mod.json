@@ -5,9 +5,6 @@
     "type": "Items",
     "items": [
       {
-        "value": "CUSTOM:VanillaIceCreamBall"
-      },
-      {
         "value": "CUSTOM:VanillaIceCream"
       },
       {
@@ -15,9 +12,6 @@
       },
       {
         "value": "CUSTOM:VanillaPopsicle"
-      },
-      {
-        "value": "CUSTOM:ChocolateIceCreamBall"
       },
       {
         "value": "CUSTOM:ChocolateIceCream"
@@ -29,9 +23,6 @@
         "value": "CUSTOM:ChocolatePopsicle"
       },
       {
-        "value": "CUSTOM:AppleIceCreamBall"
-      },
-      {
         "value": "CUSTOM:AppleIceCream"
       },
       {
@@ -39,9 +30,6 @@
       },
       {
         "value": "CUSTOM:ApplePopsicle"
-      },
-      {
-        "value": "CUSTOM:CarrotIceCreamBall"
       },
       {
         "value": "CUSTOM:CarrotIceCream"
@@ -56,16 +44,10 @@
         "value": "CUSTOM:BeetrootIceCream"
       },
       {
-        "value": "CUSTOM:BeetrootIceCreamBall"
-      },
-      {
         "value": "CUSTOM:BeetrootIceCreamCup"
       },
       {
         "value": "CUSTOM:BeetrootPopsicle"
-      },
-      {
-        "value": "CUSTOM:MelonIceCreamBall"
       },
       {
         "value": "CUSTOM:MelonIceCream"
@@ -80,16 +62,10 @@
         "value": "CUSTOM:SweetBerryIceCream"
       },
       {
-        "value": "CUSTOM:SweetBerryIceCreamBall"
-      },
-      {
         "value": "CUSTOM:SweetBerryIceCreamCup"
       },
       {
         "value": "CUSTOM:SweetBerryPopsicle"
-      },
-      {
-        "value": "CUSTOM:GlowBerryIceCreamBall"
       },
       {
         "value": "CUSTOM:GlowBerryIceCream"
@@ -99,9 +75,6 @@
       },
       {
         "value": "CUSTOM:GlowBerryPopsicle"
-      },
-      {
-        "value": "CUSTOM:ChorusIceCreamBall"
       },
       {
         "value": "CUSTOM:ChorusIceCream"
