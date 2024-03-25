@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "ice_cream_machine_t",
+    "result": {
+      "value": "CUSTOM:ChocolateIceCream"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:Cone"
+      },
+      {
+        "value": "Items.MILK_BUCKET"
+      },
+      {
+        "value": "Items.SNOWBALL"
+      },
+      {
+        "value": "Items.DYE#3"
+      }
+    ]
+  }
+}

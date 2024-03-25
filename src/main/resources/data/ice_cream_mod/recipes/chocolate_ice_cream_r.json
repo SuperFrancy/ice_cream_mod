@@ -1,0 +1,21 @@
+{
+  "type": "ice_cream_mod:ice_cream_machine_t",
+  "ingredients": [
+    {
+      "item": "ice_cream_mod:cone"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    },
+    {
+      "item": "minecraft:snowball"
+    },
+    {
+      "item": "minecraft:cocoa_beans"
+    }
+  ],
+  "output": {
+    "item": "ice_cream_mod:chocolate_ice_cream",
+    "count": 1
+  }
+}

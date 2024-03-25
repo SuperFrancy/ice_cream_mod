@@ -3,7 +3,7 @@
     {
       "name": "Cone",
       "type": "item",
-      "sortid": 5,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cone",
@@ -16,23 +16,9 @@
       "path": "~/Item"
     },
     {
-      "name": "Coner",
-      "type": "recipe",
-      "sortid": 43,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "coner",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/cone.json"
-        ]
-      },
-      "path": "~/Recipe"
-    },
-    {
       "name": "VanillaIceCream",
       "type": "item",
-      "sortid": 8,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vanilla_ice_cream",
@@ -47,7 +33,7 @@
     {
       "name": "VanillaIceCreamCup",
       "type": "item",
-      "sortid": 9,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vanilla_ice_cream_cup",
@@ -62,7 +48,7 @@
     {
       "name": "NiceCream",
       "type": "achievement",
-      "sortid": 47,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "registry_name": "nice_cream",
@@ -76,7 +62,7 @@
     {
       "name": "ChocolateIceCream",
       "type": "item",
-      "sortid": 12,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chocolate_ice_cream",
@@ -91,7 +77,7 @@
     {
       "name": "ChocolateIceCreamCup",
       "type": "item",
-      "sortid": 13,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chocolate_ice_cream_cup",
@@ -106,7 +92,7 @@
     {
       "name": "NiceCreamP",
       "type": "procedure",
-      "sortid": 48,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "registry_name": "nice_cream_p",
@@ -126,7 +112,7 @@
     {
       "name": "AppleIceCream",
       "type": "item",
-      "sortid": 16,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apple_ice_cream",
@@ -141,7 +127,7 @@
     {
       "name": "AppleIceCreamCup",
       "type": "item",
-      "sortid": 17,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apple_ice_cream_cup",
@@ -156,7 +142,7 @@
     {
       "name": "IceCream",
       "type": "tab",
-      "sortid": 55,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ice_cream",
@@ -168,7 +154,7 @@
     {
       "name": "CarrotIceCream",
       "type": "item",
-      "sortid": 20,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carrot_ice_cream",
@@ -183,7 +169,7 @@
     {
       "name": "CarrotIceCreamCup",
       "type": "item",
-      "sortid": 21,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carrot_ice_cream_cup",
@@ -198,7 +184,7 @@
     {
       "name": "BeetrootIceCream",
       "type": "item",
-      "sortid": 24,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "registry_name": "beetroot_ice_cream",
@@ -213,7 +199,7 @@
     {
       "name": "BeetrootIceCreamCup",
       "type": "item",
-      "sortid": 25,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "beetroot_ice_cream_cup",
@@ -228,7 +214,7 @@
     {
       "name": "MelonIceCream",
       "type": "item",
-      "sortid": 28,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "melon_ice_cream",
@@ -243,7 +229,7 @@
     {
       "name": "MelonIceCreamCup",
       "type": "item",
-      "sortid": 29,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "melon_ice_cream_cup",
@@ -258,7 +244,7 @@
     {
       "name": "Waffle",
       "type": "item",
-      "sortid": 4,
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "waffle",
@@ -273,7 +259,7 @@
     {
       "name": "Dough",
       "type": "item",
-      "sortid": 3,
+      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dough",
@@ -288,7 +274,7 @@
     {
       "name": "DoughR",
       "type": "recipe",
-      "sortid": 65,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dough_r",
@@ -297,12 +283,12 @@
           "src/main/resources/data/ice_cream_mod/recipes/dough.json"
         ]
       },
-      "path": "~/Recipe"
+      "path": "~/Recipe/Cone Recipe"
     },
     {
       "name": "WaffleR",
       "type": "recipe",
-      "sortid": 66,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "registry_name": "waffle_r",
@@ -311,12 +297,12 @@
           "src/main/resources/data/ice_cream_mod/recipes/waffle.json"
         ]
       },
-      "path": "~/Recipe"
+      "path": "~/Recipe/Cone Recipe"
     },
     {
       "name": "SweetBerryIceCream",
       "type": "item",
-      "sortid": 32,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sweet_berry_ice_cream",
@@ -331,7 +317,7 @@
     {
       "name": "SweetBerryIceCreamCup",
       "type": "item",
-      "sortid": 33,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sweet_berry_ice_cream_cup",
@@ -346,7 +332,7 @@
     {
       "name": "VanillaPopsicle",
       "type": "item",
-      "sortid": 10,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vanilla_popsicle",
@@ -361,7 +347,7 @@
     {
       "name": "ApplePopsicle",
       "type": "item",
-      "sortid": 18,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apple_popsicle",
@@ -376,7 +362,7 @@
     {
       "name": "ChocolatePopsicle",
       "type": "item",
-      "sortid": 14,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chocolate_popsicle",
@@ -391,7 +377,7 @@
     {
       "name": "CarrotPopsicle",
       "type": "item",
-      "sortid": 22,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carrot_popsicle",
@@ -406,7 +392,7 @@
     {
       "name": "BeetrootPopsicle",
       "type": "item",
-      "sortid": 26,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "beetroot_popsicle",
@@ -421,7 +407,7 @@
     {
       "name": "MelonPopsicle",
       "type": "item",
-      "sortid": 30,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "melon_popsicle",
@@ -436,7 +422,7 @@
     {
       "name": "SweetBerryPopsicle",
       "type": "item",
-      "sortid": 34,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sweet_berry_popsicle",
@@ -451,7 +437,7 @@
     {
       "name": "VanillaPopsicleR",
       "type": "recipe",
-      "sortid": 70,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vanilla_popsicle_r",
@@ -460,12 +446,12 @@
           "src/main/resources/data/ice_cream_mod/recipes/vanilla_popsicle.json"
         ]
       },
-      "path": "~/Recipe"
+      "path": "~/Recipe/Popsicle Recipe"
     },
     {
       "name": "ApplePopsicleR",
       "type": "recipe",
-      "sortid": 71,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apple_popsicle_r",
@@ -474,12 +460,12 @@
           "src/main/resources/data/ice_cream_mod/recipes/apple_popsicle.json"
         ]
       },
-      "path": "~/Recipe"
+      "path": "~/Recipe/Popsicle Recipe"
     },
     {
       "name": "CarrotPopsicleR",
       "type": "recipe",
-      "sortid": 72,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carrot_popsicle_r",
@@ -488,12 +474,12 @@
           "src/main/resources/data/ice_cream_mod/recipes/carrot_popsicle.json"
         ]
       },
-      "path": "~/Recipe"
+      "path": "~/Recipe/Popsicle Recipe"
     },
     {
       "name": "ChocolatePopsicleR",
       "type": "recipe",
-      "sortid": 73,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chocolate_popsicle_r",
@@ -502,12 +488,12 @@
           "src/main/resources/data/ice_cream_mod/recipes/chocolate_popsicle.json"
         ]
       },
-      "path": "~/Recipe"
+      "path": "~/Recipe/Popsicle Recipe"
     },
     {
       "name": "BeetrootPopsicleR",
       "type": "recipe",
-      "sortid": 74,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "registry_name": "beetroot_popsicle_r",
@@ -516,12 +502,12 @@
           "src/main/resources/data/ice_cream_mod/recipes/beetroot_popsicle.json"
         ]
       },
-      "path": "~/Recipe"
+      "path": "~/Recipe/Popsicle Recipe"
     },
     {
       "name": "MelonPopsicleR",
       "type": "recipe",
-      "sortid": 75,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "registry_name": "melon_popsicle_r",
@@ -530,12 +516,12 @@
           "src/main/resources/data/ice_cream_mod/recipes/melon_popsicle_r.json"
         ]
       },
-      "path": "~/Recipe"
+      "path": "~/Recipe/Popsicle Recipe"
     },
     {
       "name": "SweetBerryPopsicleR",
       "type": "recipe",
-      "sortid": 76,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sweet_berry_popsicle_r",
@@ -544,12 +530,12 @@
           "src/main/resources/data/ice_cream_mod/recipes/sweet_berry_popsicle.json"
         ]
       },
-      "path": "~/Recipe"
+      "path": "~/Recipe/Popsicle Recipe"
     },
     {
       "name": "EveryFlavour",
       "type": "achievement",
-      "sortid": 77,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "registry_name": "every_flavour",
@@ -563,7 +549,7 @@
     {
       "name": "EveryFlavourP",
       "type": "procedure",
-      "sortid": 78,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "registry_name": "every_flavour_p",
@@ -583,7 +569,7 @@
     {
       "name": "Freezer",
       "type": "block",
-      "sortid": 1,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "registry_name": "freezer",
@@ -601,7 +587,7 @@
     {
       "name": "FreezerG",
       "type": "gui",
-      "sortid": 79,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "registry_name": "freezer_g",
@@ -616,7 +602,7 @@
     {
       "name": "Expire",
       "type": "procedure",
-      "sortid": 80,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "registry_name": "expire",
@@ -640,7 +626,7 @@
     {
       "name": "GlowBerryIceCream",
       "type": "item",
-      "sortid": 36,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glow_berry_ice_cream",
@@ -655,7 +641,7 @@
     {
       "name": "Glowing",
       "type": "procedure",
-      "sortid": 82,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glowing",
@@ -675,7 +661,7 @@
     {
       "name": "GlowBerryIceCreamCup",
       "type": "item",
-      "sortid": 37,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glow_berry_ice_cream_cup",
@@ -690,7 +676,7 @@
     {
       "name": "GlowBerryPopsicle",
       "type": "item",
-      "sortid": 38,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glow_berry_popsicle",
@@ -705,7 +691,7 @@
     {
       "name": "GlowBerryPopsicleR",
       "type": "recipe",
-      "sortid": 85,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glow_berry_popsicle_r",
@@ -714,12 +700,12 @@
           "src/main/resources/data/ice_cream_mod/recipes/glow_berry_popsicle_r.json"
         ]
       },
-      "path": "~/Recipe"
+      "path": "~/Recipe/Popsicle Recipe"
     },
     {
       "name": "ChorusIceCream",
       "type": "item",
-      "sortid": 40,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chorus_ice_cream",
@@ -734,7 +720,7 @@
     {
       "name": "ChorusIceCreamCup",
       "type": "item",
-      "sortid": 41,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chorus_ice_cream_cup",
@@ -749,7 +735,7 @@
     {
       "name": "ChorusPopsicle",
       "type": "item",
-      "sortid": 42,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chorus_popsicle",
@@ -764,7 +750,7 @@
     {
       "name": "ChorusPopsicleR",
       "type": "recipe",
-      "sortid": 89,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chorus_popsicle_r",
@@ -773,12 +759,12 @@
           "src/main/resources/data/ice_cream_mod/recipes/chorus_popsicle.json"
         ]
       },
-      "path": "~/Recipe"
+      "path": "~/Recipe/Popsicle Recipe"
     },
     {
       "name": "FreezerItem",
       "type": "tag",
-      "sortid": 90,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "registry_name": "freezer_item",
@@ -792,7 +778,7 @@
     {
       "name": "IceCreamP",
       "type": "tag",
-      "sortid": 92,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ice_cream_p",
@@ -806,7 +792,7 @@
     {
       "name": "Cup",
       "type": "tag",
-      "sortid": 93,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cup",
@@ -820,7 +806,7 @@
     {
       "name": "Popsicle",
       "type": "tag",
-      "sortid": 94,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "registry_name": "popsicle",
@@ -834,7 +820,7 @@
     {
       "name": "Broke",
       "type": "procedure",
-      "sortid": 95,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "registry_name": "broke",
@@ -858,7 +844,7 @@
     {
       "name": "RandomTP",
       "type": "procedure",
-      "sortid": 96,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "registry_name": "random_tp",
@@ -894,7 +880,7 @@
     {
       "name": "Drop",
       "type": "procedure",
-      "sortid": 97,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "registry_name": "drop",
@@ -918,7 +904,7 @@
     {
       "name": "ConsumedCone",
       "type": "item",
-      "sortid": 6,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "consumed_cone",
@@ -933,7 +919,7 @@
     {
       "name": "IceCreamBase",
       "type": "tag",
-      "sortid": 98,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ice_cream_base",
@@ -947,7 +933,7 @@
     {
       "name": "Ingredient",
       "type": "tag",
-      "sortid": 99,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ingredient",
@@ -961,7 +947,7 @@
     {
       "name": "IceCreamMachineG",
       "type": "gui",
-      "sortid": 100,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ice_cream_machine_g",
@@ -977,7 +963,7 @@
     {
       "name": "IceCreamMachineP",
       "type": "procedure",
-      "sortid": 101,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ice_cream_machine_p",
@@ -1004,12 +990,12 @@
           }
         ]
       },
-      "path": "~/Recipe"
+      "path": "~/Recipe/Procedure"
     },
     {
       "name": "IceCreamMachine",
       "type": "block",
-      "sortid": 2,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ice_cream_machine",
@@ -1027,7 +1013,7 @@
     {
       "name": "IceCreamMachineT",
       "type": "jeirecipetype",
-      "sortid": 102,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ice_cream_machine_t",
@@ -1042,7 +1028,7 @@
     {
       "name": "ArrowButton",
       "type": "procedure",
-      "sortid": 105,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "registry_name": "arrow_button",
@@ -1070,12 +1056,12 @@
           }
         ]
       },
-      "path": "~/Recipe"
+      "path": "~/Recipe/Procedure"
     },
     {
       "name": "VanillaFlower",
       "type": "plant",
-      "sortid": 106,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vanilla_flower",
@@ -1095,7 +1081,7 @@
     {
       "name": "Gui",
       "type": "procedure",
-      "sortid": 107,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gui",
@@ -1115,7 +1101,7 @@
     {
       "name": "VanillaIceCreamR",
       "type": "jeirecipe",
-      "sortid": 108,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vanilla_ice_cream_r",
@@ -1124,17 +1110,80 @@
           "src/main/resources/data/ice_cream_mod/recipes/vanilla_ice_cream_r.json"
         ]
       },
-      "path": "~/Recipe"
-    }
-  ],
-  "variable_elements": [
+      "path": "~/Recipe/IceCream Recipe"
+    },
     {
-      "name": "time",
-      "type": "number",
-      "scope": "global",
-      "value": "100.0"
+      "name": "VanillaIceCreamCupR",
+      "type": "jeirecipe",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vanilla_ice_cream_cup_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/recipes/vanilla_ice_cream_cup_r.json"
+        ]
+      },
+      "path": "~/Recipe/Cup Recipe"
+    },
+    {
+      "name": "ChocolateIceCreamR",
+      "type": "jeirecipe",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chocolate_ice_cream_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/recipes/chocolate_ice_cream_r.json"
+        ]
+      },
+      "path": "~/Recipe/IceCream Recipe"
+    },
+    {
+      "name": "ChocolateIceCreamCupR",
+      "type": "jeirecipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chocolate_ice_cream_cup_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/recipes/chocolate_ice_cream_cup_r.json"
+        ]
+      },
+      "path": "~/Recipe/Procedure"
+    },
+    {
+      "name": "ConeR",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cone_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/recipes/cone.json"
+        ]
+      },
+      "path": "~/Recipe/Cone Recipe"
+    },
+    {
+      "name": "AppleIceCreamR",
+      "type": "jeirecipe",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "apple_ice_cream_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/recipes/apple_ice_cream_r.json"
+        ]
+      },
+      "path": "~/Recipe/IceCream Recipe"
     }
   ],
+  "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "it_it": {
@@ -1298,7 +1347,28 @@
       },
       {
         "name": "Recipe",
-        "children": []
+        "children": [
+          {
+            "name": "Cone Recipe",
+            "children": []
+          },
+          {
+            "name": "Popsicle Recipe",
+            "children": []
+          },
+          {
+            "name": "Procedure",
+            "children": []
+          },
+          {
+            "name": "IceCream Recipe",
+            "children": []
+          },
+          {
+            "name": "Cup Recipe",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Other",

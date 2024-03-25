@@ -47,8 +47,6 @@ import net.mcreator.icecreammod.IceCreamModMod;
 
 public class IceCreamModModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, IceCreamModMod.MODID);
-	public static final RegistryObject<Item> FREEZER = block(IceCreamModModBlocks.FREEZER);
-	public static final RegistryObject<Item> ICE_CREAM_MACHINE = block(IceCreamModModBlocks.ICE_CREAM_MACHINE);
 	public static final RegistryObject<Item> DOUGH = REGISTRY.register("dough", () -> new DoughItem());
 	public static final RegistryObject<Item> WAFFLE = REGISTRY.register("waffle", () -> new WaffleItem());
 	public static final RegistryObject<Item> CONE = REGISTRY.register("cone", () -> new ConeItem());
@@ -81,6 +79,8 @@ public class IceCreamModModItems {
 	public static final RegistryObject<Item> CHORUS_ICE_CREAM_CUP = REGISTRY.register("chorus_ice_cream_cup", () -> new ChorusIceCreamCupItem());
 	public static final RegistryObject<Item> CHORUS_POPSICLE = REGISTRY.register("chorus_popsicle", () -> new ChorusPopsicleItem());
 	public static final RegistryObject<Item> VANILLA_FLOWER = block(IceCreamModModBlocks.VANILLA_FLOWER);
+	public static final RegistryObject<Item> FREEZER = block(IceCreamModModBlocks.FREEZER);
+	public static final RegistryObject<Item> ICE_CREAM_MACHINE = block(IceCreamModModBlocks.ICE_CREAM_MACHINE);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

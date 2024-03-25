@@ -18,8 +18,6 @@ public class IceCreamModModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, IceCreamModMod.MODID);
 	public static final RegistryObject<CreativeModeTab> ICE_CREAM = REGISTRY.register("ice_cream",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ice_cream_mod.ice_cream")).icon(() -> new ItemStack(IceCreamModModItems.VANILLA_ICE_CREAM.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(IceCreamModModBlocks.FREEZER.get().asItem());
-				tabData.accept(IceCreamModModBlocks.ICE_CREAM_MACHINE.get().asItem());
 				tabData.accept(IceCreamModModItems.DOUGH.get());
 				tabData.accept(IceCreamModModItems.WAFFLE.get());
 				tabData.accept(IceCreamModModItems.CONE.get());
@@ -52,6 +50,8 @@ public class IceCreamModModTabs {
 				tabData.accept(IceCreamModModItems.CHORUS_ICE_CREAM_CUP.get());
 				tabData.accept(IceCreamModModItems.CHORUS_POPSICLE.get());
 				tabData.accept(IceCreamModModBlocks.VANILLA_FLOWER.get().asItem());
+				tabData.accept(IceCreamModModBlocks.FREEZER.get().asItem());
+				tabData.accept(IceCreamModModBlocks.ICE_CREAM_MACHINE.get().asItem());
 			})
 
 					.build());
