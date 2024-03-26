@@ -36,10 +36,7 @@ public class GuiProcedure {
 			return;
 		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == IceCreamModModItems.VANILLA_ICE_CREAM
 				.get()) {
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get(0)).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
+			event.setCanceled(true);
 			if (entity instanceof Player _player) {
 				ItemStack _setstack = new ItemStack(IceCreamModModItems.VANILLA_ICE_CREAM.get());
 				_setstack.setCount(1);
