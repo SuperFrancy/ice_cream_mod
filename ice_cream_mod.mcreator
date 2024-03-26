@@ -1141,20 +1141,6 @@
       "path": "~/Recipe/IceCream Recipe"
     },
     {
-      "name": "ChocolateIceCreamCupR",
-      "type": "jeirecipe",
-      "sortid": 72,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chocolate_ice_cream_cup_r",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/recipes/chocolate_ice_cream_cup_r.json"
-        ]
-      },
-      "path": "~/Recipe/Procedure"
-    },
-    {
       "name": "ConeR",
       "type": "recipe",
       "sortid": 73,
@@ -1181,6 +1167,202 @@
         ]
       },
       "path": "~/Recipe/IceCream Recipe"
+    },
+    {
+      "name": "CarrotIceCreamR",
+      "type": "jeirecipe",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carrot_ice_cream_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/recipes/carrot_ice_cream_r.json"
+        ]
+      },
+      "path": "~/Recipe/IceCream Recipe"
+    },
+    {
+      "name": "MelonIceCreamR",
+      "type": "jeirecipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "melon_ice_cream_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/recipes/melon_ice_cream_r.json"
+        ]
+      },
+      "path": "~/Recipe/IceCream Recipe"
+    },
+    {
+      "name": "BeetrootIceCreamR",
+      "type": "jeirecipe",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beetroot_ice_cream_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/recipes/beetroot_ice_cream_r.json"
+        ]
+      },
+      "path": "~/Recipe/IceCream Recipe"
+    },
+    {
+      "name": "SweetBarryIceCreamR",
+      "type": "jeirecipe",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sweet_barry_ice_cream_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/recipes/sweet_barry_ice_cream_r.json"
+        ]
+      },
+      "path": "~/Recipe/IceCream Recipe"
+    },
+    {
+      "name": "GlowBarryIceCreamR",
+      "type": "jeirecipe",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glow_barry_ice_cream_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/recipes/glow_barry_ice_cream_r.json"
+        ]
+      },
+      "path": "~/Recipe/IceCream Recipe"
+    },
+    {
+      "name": "ChorusIceCreamR",
+      "type": "jeirecipe",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_ice_cream_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/recipes/chorus_ice_cream_r.json"
+        ]
+      },
+      "path": "~/Recipe/IceCream Recipe"
+    },
+    {
+      "name": "ChocolateIceCreamCupR",
+      "type": "jeirecipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chocolate_ice_cream_cup_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/recipes/chocolate_ice_cream_cup_r.json"
+        ]
+      },
+      "path": "~/Recipe/Cup Recipe"
+    },
+    {
+      "name": "AppleIceCreamCupR",
+      "type": "jeirecipe",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "apple_ice_cream_cup_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/recipes/apple_ice_cream_cup_r.json"
+        ]
+      },
+      "path": "~/Recipe/Cup Recipe"
+    },
+    {
+      "name": "CarrotIceCreamCupR",
+      "type": "jeirecipe",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carrot_ice_cream_cup_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/recipes/carrot_ice_cream_cup_r.json"
+        ]
+      },
+      "path": "~/Recipe/Cup Recipe"
+    },
+    {
+      "name": "MelonIceCreamCupR",
+      "type": "jeirecipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "melon_ice_cream_cup_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/recipes/melon_ice_cream_cup_r.json"
+        ]
+      },
+      "path": "~/Recipe/Cup Recipe"
+    },
+    {
+      "name": "BeetrootIceCreamCupR",
+      "type": "jeirecipe",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beetroot_ice_cream_cup_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/recipes/beetroot_ice_cream_cup_r.json"
+        ]
+      },
+      "path": "~/Recipe/Cup Recipe"
+    },
+    {
+      "name": "SweetBerryIceCreamCupR",
+      "type": "jeirecipe",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sweet_berry_ice_cream_cup_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/recipes/sweet_berry_ice_cream_cup_r.json"
+        ]
+      },
+      "path": "~/Recipe/Cup Recipe"
+    },
+    {
+      "name": "GlowBerryIceCreamCupR",
+      "type": "jeirecipe",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glow_berry_ice_cream_cup_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/recipes/glow_berry_ice_cream_cup_r.json"
+        ]
+      },
+      "path": "~/Recipe/Cup Recipe"
+    },
+    {
+      "name": "ChorusIceCreamCupR",
+      "type": "jeirecipe",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorus_ice_cream_cup_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/recipes/chorus_ice_cream_cup_r.json"
+        ]
+      },
+      "path": "~/Recipe/Cup Recipe"
     }
   ],
   "variable_elements": [],

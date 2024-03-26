@@ -4,7 +4,7 @@
   "definition": {
     "category": "ice_cream_machine_t",
     "result": {
-      "value": "CUSTOM:ChocolateIceCreamCup"
+      "value": "CUSTOM:GlowBerryIceCreamCup"
     },
     "count": 1,
     "ingredients": [
@@ -18,7 +18,7 @@
         "value": "Items.SNOWBALL"
       },
       {
-        "value": "Items.DYE#3"
+        "value": "Items.GLOW_BERRIES"
       }
     ]
   }

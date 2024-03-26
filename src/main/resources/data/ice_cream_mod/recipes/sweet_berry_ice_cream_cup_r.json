@@ -11,11 +11,11 @@
       "item": "minecraft:snowball"
     },
     {
-      "item": "minecraft:cocoa_beans"
+      "item": "minecraft:sweet_berries"
     }
   ],
   "output": {
-    "item": "ice_cream_mod:chocolate_ice_cream_cup",
+    "item": "ice_cream_mod:sweet_berry_ice_cream_cup",
     "count": 1
   }
 }
