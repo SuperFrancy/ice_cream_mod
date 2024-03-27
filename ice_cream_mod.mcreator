@@ -107,7 +107,7 @@
           }
         ]
       },
-      "path": "~/Procedure"
+      "path": "~/Procedure/Advancements"
     },
     {
       "name": "AppleIceCream",
@@ -564,7 +564,7 @@
           }
         ]
       },
-      "path": "~/Procedure"
+      "path": "~/Procedure/Advancements"
     },
     {
       "name": "Freezer",
@@ -625,7 +625,7 @@
           }
         ]
       },
-      "path": "~/Procedure"
+      "path": "~/Procedure/Melt"
     },
     {
       "name": "GlowBerryIceCream",
@@ -660,7 +660,7 @@
           }
         ]
       },
-      "path": "~/Procedure"
+      "path": "~/Procedure/Effect"
     },
     {
       "name": "GlowBerryIceCreamCup",
@@ -855,7 +855,7 @@
           }
         ]
       },
-      "path": "~/Procedure"
+      "path": "~/Procedure/Effect"
     },
     {
       "name": "Drop",
@@ -879,7 +879,7 @@
           }
         ]
       },
-      "path": "~/Procedure"
+      "path": "~/Procedure/Melt"
     },
     {
       "name": "ConsumedCone",
@@ -1342,7 +1342,7 @@
           }
         ]
       },
-      "path": "~/Procedure"
+      "path": "~/Procedure/Melt"
     },
     {
       "name": "DaysBed",
@@ -1362,18 +1362,40 @@
           }
         ]
       },
-      "path": "~/Procedure"
+      "path": "~/Procedure/Melt"
+    },
+    {
+      "name": "FreezerR",
+      "type": "recipe",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "freezer_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/recipes/freezer.json"
+        ]
+      },
+      "path": "~/Recipe/Block"
+    },
+    {
+      "name": "IceCreamMachineR",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_cream_machine_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/recipes/ice_cream_machine.json"
+        ]
+      },
+      "path": "~/Recipe/Block"
     }
   ],
   "variable_elements": [
     {
       "name": "time",
-      "type": "number",
-      "scope": "map",
-      "value": "0.0"
-    },
-    {
-      "name": "days",
       "type": "number",
       "scope": "map",
       "value": "0.0"
@@ -1392,7 +1414,6 @@
       "item.ice_cream_mod.sweet_berry_popsicle": "Ghiacciolo alla Bacca Dolce",
       "item.ice_cream_mod.chorus_popsicle": "Ghiacciolo al Chorus",
       "advancements.nice_cream.descr": "Crea un gelato",
-      "gui.ice_cream_mod.ice_cream_machine_g.label_ice_cream_machine": "Macchina per Gelati",
       "item.ice_cream_mod.beetroot_ice_cream": "Cono alla Barbabietola",
       "item.ice_cream_mod.melon_ice_cream": "Cono all\u0027Anguria",
       "item.ice_cream_mod.chocolate_ice_cream_cup": "Coppetta alla Cioccolato",
@@ -1406,7 +1427,7 @@
       "item.ice_cream_mod.beetroot_popsicle": "Ghiacciolo alla Barbabietola",
       "item.ice_cream_mod.carrot_ice_cream_cup": "Coppetta alla Carota",
       "item.ice_cream_mod.sweet_berry_ice_cream_cup": "Coppetta alla Bacca Dolce",
-      "gui.ice_cream_mod.ice_cream_machine_g.label_icecreammachine": "Ice Cream Machine",
+      "gui.ice_cream_mod.ice_cream_machine_g.label_icecreammachine": "Macchina per Gelati",
       "item.ice_cream_mod.apple_popsicle": "Ghiacciolo alla Mela",
       "item.ice_cream_mod.glow_berry_ice_cream": "Cono alla Bacca Luminosa",
       "item.ice_cream_mod.beetroot_ice_cream_cup": "Coppetta alla Barbaietola",
@@ -1437,7 +1458,6 @@
       "item.ice_cream_mod.sweet_berry_popsicle": "Sweet Berry Popsicle",
       "item.ice_cream_mod.chorus_popsicle": "Chorus Popsicle",
       "advancements.nice_cream.descr": "Eat a Ice cream",
-      "gui.ice_cream_mod.ice_cream_machine_g.label_ice_cream_machine": "Ice Cream Machine",
       "item.ice_cream_mod.beetroot_ice_cream": "Beetroot Ice Cream",
       "item.ice_cream_mod.melon_ice_cream": "Melon Ice Cream",
       "item.ice_cream_mod.chocolate_ice_cream_cup": "Chocolate Ice Cream Cup",
@@ -1530,7 +1550,20 @@
       },
       {
         "name": "Procedure",
-        "children": []
+        "children": [
+          {
+            "name": "Advancements",
+            "children": []
+          },
+          {
+            "name": "Effect",
+            "children": []
+          },
+          {
+            "name": "Melt",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Gui",
@@ -1561,6 +1594,10 @@
           },
           {
             "name": "Cup Recipe",
+            "children": []
+          },
+          {
+            "name": "Block",
             "children": []
           }
         ]

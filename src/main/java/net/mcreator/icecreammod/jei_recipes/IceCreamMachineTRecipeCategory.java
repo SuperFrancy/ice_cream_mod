@@ -18,7 +18,7 @@ import mezz.jei.api.constants.VanillaTypes;
 
 public class IceCreamMachineTRecipeCategory implements IRecipeCategory<IceCreamMachineTRecipe> {
 	public final static ResourceLocation UID = new ResourceLocation("ice_cream_mod", "ice_cream_machine_t");
-	public final static ResourceLocation TEXTURE = new ResourceLocation("ice_cream_mod", "textures/screens/x.png");
+	public final static ResourceLocation TEXTURE = new ResourceLocation("ice_cream_mod", "textures/screens/jei.png");
 	private final IDrawable background;
 	private final IDrawable icon;
 
@@ -49,10 +49,10 @@ public class IceCreamMachineTRecipeCategory implements IRecipeCategory<IceCreamM
 
 	@Override
 	public void setRecipe(IRecipeLayoutBuilder builder, IceCreamMachineTRecipe recipe, IFocusGroup focuses) {
-		builder.addSlot(RecipeIngredientRole.INPUT, 44, 67).addIngredients(recipe.getIngredients().get(0));
-		builder.addSlot(RecipeIngredientRole.INPUT, 26, 40).addIngredients(recipe.getIngredients().get(1));
+		builder.addSlot(RecipeIngredientRole.INPUT, 53, 67).addIngredients(recipe.getIngredients().get(0));
+		builder.addSlot(RecipeIngredientRole.INPUT, 35, 40).addIngredients(recipe.getIngredients().get(1));
 		builder.addSlot(RecipeIngredientRole.INPUT, 62, 40).addIngredients(recipe.getIngredients().get(2));
-		builder.addSlot(RecipeIngredientRole.INPUT, 44, 22).addIngredients(recipe.getIngredients().get(3));
-		builder.addSlot(RecipeIngredientRole.OUTPUT, 134, 40).addItemStack(recipe.getResultItem(null));
+		builder.addSlot(RecipeIngredientRole.INPUT, 71, 22).addIngredients(recipe.getIngredients().get(3));
+		builder.addSlot(RecipeIngredientRole.OUTPUT, 152, 40).addItemStack(recipe.getResultItem(null));
 	}
 }

@@ -80,7 +80,7 @@ public class IceCreamMachineGMenu extends AbstractContainerMenu implements Suppl
 					});
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 44, 67) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 53, 67) {
 			private final int slot = 0;
 
 			@Override
@@ -88,7 +88,7 @@ public class IceCreamMachineGMenu extends AbstractContainerMenu implements Suppl
 				return stack.is(ItemTags.create(new ResourceLocation("ice_cream_mod:ice_cream_base")));
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 26, 40) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 35, 40) {
 			private final int slot = 1;
 
 			@Override
@@ -96,7 +96,7 @@ public class IceCreamMachineGMenu extends AbstractContainerMenu implements Suppl
 				return Items.MILK_BUCKET == stack.getItem();
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 62, 40) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 71, 40) {
 			private final int slot = 2;
 
 			@Override
@@ -104,7 +104,7 @@ public class IceCreamMachineGMenu extends AbstractContainerMenu implements Suppl
 				return Items.SNOWBALL == stack.getItem();
 			}
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 44, 22) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 53, 22) {
 			private final int slot = 3;
 
 			@Override
@@ -112,7 +112,7 @@ public class IceCreamMachineGMenu extends AbstractContainerMenu implements Suppl
 				return stack.is(ItemTags.create(new ResourceLocation("ice_cream_mod:ingredient")));
 			}
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 134, 40) {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 152, 40) {
 			private final int slot = 4;
 
 			@Override
@@ -254,10 +254,14 @@ public class IceCreamMachineGMenu extends AbstractContainerMenu implements Suppl
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {
+					if (j == 4)
+						continue;
 					playerIn.drop(internal.extractItem(j, internal.getStackInSlot(j).getCount(), false), false);
 				}
 			} else {
 				for (int i = 0; i < internal.getSlots(); ++i) {
+					if (i == 4)
+						continue;
 					playerIn.getInventory().placeItemBackInInventory(internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 				}
 			}

@@ -88,7 +88,6 @@ public class IceCreamModModVariables {
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "ice_cream_mod_mapvars";
 		public double time = 0.0;
-		public double days = 0.0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -98,13 +97,11 @@ public class IceCreamModModVariables {
 
 		public void read(CompoundTag nbt) {
 			time = nbt.getDouble("time");
-			days = nbt.getDouble("days");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putDouble("time", time);
-			nbt.putDouble("days", days);
 			return nbt;
 		}
 

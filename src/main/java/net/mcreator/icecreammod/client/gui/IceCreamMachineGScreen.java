@@ -24,6 +24,7 @@ public class IceCreamMachineGScreen extends AbstractContainerScreen<IceCreamMach
 	private final int x, y, z;
 	private final Player entity;
 	ImageButton imagebutton_trasferimentoremovebgpreview;
+	ImageButton imagebutton_recipe_book;
 
 	public IceCreamMachineGScreen(IceCreamMachineGMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -81,7 +82,7 @@ public class IceCreamMachineGScreen extends AbstractContainerScreen<IceCreamMach
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_trasferimentoremovebgpreview = new ImageButton(this.leftPos + 88, this.topPos + 36, 38, 23, 0, 0, 23, new ResourceLocation("ice_cream_mod:textures/screens/atlas/imagebutton_trasferimentoremovebgpreview.png"), 38, 46, e -> {
+		imagebutton_trasferimentoremovebgpreview = new ImageButton(this.leftPos + 101, this.topPos + 36, 38, 23, 0, 0, 23, new ResourceLocation("ice_cream_mod:textures/screens/atlas/imagebutton_trasferimentoremovebgpreview.png"), 38, 46, e -> {
 			if (ArrowButtonProcedure.execute(world, x, y, z)) {
 				IceCreamModMod.PACKET_HANDLER.sendToServer(new IceCreamMachineGButtonMessage(0, x, y, z));
 				IceCreamMachineGButtonMessage.handleButtonAction(entity, 0, x, y, z);
@@ -95,5 +96,9 @@ public class IceCreamMachineGScreen extends AbstractContainerScreen<IceCreamMach
 		};
 		guistate.put("button:imagebutton_trasferimentoremovebgpreview", imagebutton_trasferimentoremovebgpreview);
 		this.addRenderableWidget(imagebutton_trasferimentoremovebgpreview);
+		imagebutton_recipe_book = new ImageButton(this.leftPos + 7, this.topPos + 39, 20, 18, 0, 0, 18, new ResourceLocation("ice_cream_mod:textures/screens/atlas/imagebutton_recipe_book.png"), 20, 36, e -> {
+		});
+		guistate.put("button:imagebutton_recipe_book", imagebutton_recipe_book);
+		this.addRenderableWidget(imagebutton_recipe_book);
 	}
 }

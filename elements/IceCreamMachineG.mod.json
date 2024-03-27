@@ -39,7 +39,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 168,
+          "x": 177,
           "y": 98
         }
       },
@@ -57,7 +57,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 150,
+          "x": 159,
           "y": 71
         }
       },
@@ -75,7 +75,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 186,
+          "x": 195,
           "y": 71
         }
       },
@@ -93,7 +93,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 168,
+          "x": 177,
           "y": 53
         }
       },
@@ -104,8 +104,8 @@
           "disablePickup": {
             "fixedValue": false
           },
-          "dropItemsWhenNotBound": true,
-          "x": 258,
+          "dropItemsWhenNotBound": false,
+          "x": 276,
           "y": 71
         }
       },
@@ -121,8 +121,18 @@
           "displayCondition": {
             "name": "ArrowButton"
           },
-          "x": 213,
+          "x": 226,
           "y": 68
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_recipe_book",
+          "image": "recipe_book.png",
+          "hoveredImage": "button_highlighted.png",
+          "x": 132,
+          "y": 71
         }
       }
     ],
