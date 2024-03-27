@@ -1406,7 +1406,6 @@
     "it_it": {
       "advancements.every_flavour.descr": "Crea tutti i Gelati",
       "item.ice_cream_mod.vanilla_ice_cream": "Cono alla Vaniglia",
-      "gui.ice_cream_mod.ice_cream_machine_g.button_make": "Crea",
       "item.ice_cream_mod.dough": "Impasto",
       "gui.ice_cream_mod.freezer_g.label_freezer": "Frigorifero",
       "advancements.nice_cream.title": "Gelieto",
@@ -1450,7 +1449,6 @@
     "en_us": {
       "advancements.every_flavour.descr": "Create all Ice Cream",
       "item.ice_cream_mod.vanilla_ice_cream": "Vanilla Ice Cream",
-      "gui.ice_cream_mod.ice_cream_machine_g.button_make": "Make",
       "item.ice_cream_mod.dough": "Dough",
       "gui.ice_cream_mod.freezer_g.label_freezer": "Freezer",
       "advancements.nice_cream.title": "Nice Cream",
