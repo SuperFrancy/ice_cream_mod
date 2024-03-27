@@ -1059,26 +1059,6 @@
       "path": "~/Block"
     },
     {
-      "name": "Gui",
-      "type": "procedure",
-      "sortid": 68,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/icecreammod/procedures/GuiProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedure"
-    },
-    {
       "name": "VanillaIceCreamR",
       "type": "jeirecipe",
       "sortid": 69,
