@@ -618,6 +618,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -816,30 +820,6 @@
         ]
       },
       "path": "~/Tags"
-    },
-    {
-      "name": "Broke",
-      "type": "procedure",
-      "sortid": 59,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "broke",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/icecreammod/procedures/BrokeProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
-      },
-      "path": "~/Procedure"
     },
     {
       "name": "RandomTP",
@@ -1363,9 +1343,62 @@
         ]
       },
       "path": "~/Recipe/Cup Recipe"
+    },
+    {
+      "name": "DaysTick",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "days_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/icecreammod/procedures/DaysTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure"
+    },
+    {
+      "name": "DaysBed",
+      "type": "procedure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "days_bed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/icecreammod/procedures/DaysBedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "time",
+      "type": "number",
+      "scope": "map",
+      "value": "0.0"
+    },
+    {
+      "name": "days",
+      "type": "number",
+      "scope": "map",
+      "value": "0.0"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "it_it": {

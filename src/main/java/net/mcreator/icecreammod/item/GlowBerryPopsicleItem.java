@@ -59,6 +59,6 @@ public class GlowBerryPopsicleItem extends Item {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		ExpireProcedure.execute(entity, itemstack);
+		ExpireProcedure.execute(world, entity, itemstack);
 	}
 }

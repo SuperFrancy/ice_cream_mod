@@ -20,7 +20,7 @@ import java.util.List;
 
 public class GlowBerryIceCreamCupItem extends Item {
 	public GlowBerryIceCreamCupItem() {
-		super(new Item.Properties().durability(12000).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(6).saturationMod(0.3f).build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(6).saturationMod(0.3f).build()));
 	}
 
 	@Override
@@ -50,6 +50,6 @@ public class GlowBerryIceCreamCupItem extends Item {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		ExpireProcedure.execute(entity, itemstack);
+		ExpireProcedure.execute(world, entity, itemstack);
 	}
 }
