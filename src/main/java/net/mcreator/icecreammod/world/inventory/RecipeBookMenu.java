@@ -45,7 +45,7 @@ public class RecipeBookMenu extends AbstractContainerMenu implements Supplier<Ma
 		super(IceCreamModModMenus.RECIPE_BOOK.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
-		this.internal = new ItemStackHandler(9);
+		this.internal = new ItemStackHandler(10);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -120,7 +120,7 @@ public class RecipeBookMenu extends AbstractContainerMenu implements Supplier<Ma
 				return false;
 			}
 		}));
-		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, -90, 67) {
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, -91, 67) {
 			private final int slot = 5;
 
 			@Override
@@ -133,7 +133,7 @@ public class RecipeBookMenu extends AbstractContainerMenu implements Supplier<Ma
 				return false;
 			}
 		}));
-		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, -108, 40) {
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, -109, 40) {
 			private final int slot = 6;
 
 			@Override
@@ -146,7 +146,7 @@ public class RecipeBookMenu extends AbstractContainerMenu implements Supplier<Ma
 				return false;
 			}
 		}));
-		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, -72, 40) {
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, -73, 40) {
 			private final int slot = 7;
 
 			@Override
@@ -159,7 +159,7 @@ public class RecipeBookMenu extends AbstractContainerMenu implements Supplier<Ma
 				return false;
 			}
 		}));
-		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, -90, 22) {
+		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, -91, 22) {
 			private final int slot = 8;
 
 			@Override
@@ -169,6 +169,19 @@ public class RecipeBookMenu extends AbstractContainerMenu implements Supplier<Ma
 
 			@Override
 			public boolean mayPlace(ItemStack itemstack) {
+				return false;
+			}
+		}));
+		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, -30, 39) {
+			private final int slot = 9;
+
+			@Override
+			public boolean mayPickup(Player entity) {
+				return false;
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
@@ -199,16 +212,16 @@ public class RecipeBookMenu extends AbstractContainerMenu implements Supplier<Ma
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 9) {
-				if (!this.moveItemStackTo(itemstack1, 9, this.slots.size(), true))
+			if (index < 10) {
+				if (!this.moveItemStackTo(itemstack1, 10, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 9, false)) {
-				if (index < 9 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 9 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 10, false)) {
+				if (index < 10 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 10 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 9, 9 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 10, 10 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;

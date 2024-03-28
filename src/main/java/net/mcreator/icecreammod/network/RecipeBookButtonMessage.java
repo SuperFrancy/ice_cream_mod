@@ -62,7 +62,7 @@ public class RecipeBookButtonMessage {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
-		if (buttonID == 0) {
+		if (buttonID == 2) {
 
 			IceCreamMachinePProcedure.execute(world, x, y, z);
 		}

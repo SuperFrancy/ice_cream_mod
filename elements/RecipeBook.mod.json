@@ -131,7 +131,7 @@
           "name": "imagebutton_recipe_book",
           "image": "button_highlighted.png",
           "hoveredImage": "button_highlighted.png",
-          "x": 132,
+          "x": 133,
           "y": 71
         }
       },
@@ -149,7 +149,7 @@
             "fixedValue": true
           },
           "dropItemsWhenNotBound": true,
-          "x": 34,
+          "x": 33,
           "y": 98
         }
       },
@@ -167,7 +167,7 @@
             "fixedValue": true
           },
           "dropItemsWhenNotBound": true,
-          "x": 16,
+          "x": 15,
           "y": 71
         }
       },
@@ -185,7 +185,7 @@
             "fixedValue": true
           },
           "dropItemsWhenNotBound": true,
-          "x": 52,
+          "x": 51,
           "y": 71
         }
       },
@@ -203,8 +203,68 @@
             "fixedValue": true
           },
           "dropItemsWhenNotBound": true,
-          "x": 34,
+          "x": 33,
           "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "trasferimento-removebg-preview.png",
+          "use1Xscale": true,
+          "x": 73,
+          "y": 74
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 9,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 94,
+          "y": 70
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "<",
+          "isUndecorated": false,
+          "width": 30,
+          "height": 20,
+          "x": 33,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty1",
+          "text": ">",
+          "isUndecorated": false,
+          "width": 30,
+          "height": 20,
+          "x": 69,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "sdfa"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 15,
+          "y": 35
         }
       },
       {
@@ -212,26 +272,17 @@
         "data": {
           "image": "icm.png",
           "use1Xscale": false,
-          "x": 9,
+          "x": 8,
           "y": 32
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "button.png",
-          "use1Xscale": true,
-          "x": 73,
-          "y": 74
         }
       }
     ],
     "gridSettings": {
       "sx": 18,
       "sy": 18,
-      "ox": 11,
+      "ox": 15,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }
