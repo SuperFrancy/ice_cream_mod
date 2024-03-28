@@ -1,9 +1,9 @@
 {
   "advancements.every_flavour.descr": "Crea tutti i Gelati",
   "item.ice_cream_mod.vanilla_ice_cream": "Cono alla Vaniglia",
-  "item.ice_cream_mod.dough": "Impasto",
-  "gui.ice_cream_mod.freezer_g.label_freezer": "Frigorifero",
   "advancements.nice_cream.title": "Gelieto",
+  "gui.ice_cream_mod.freezer_g.label_freezer": "Frigorifero",
+  "item.ice_cream_mod.dough": "Impasto",
   "item.ice_cream_mod.chocolate_ice_cream": "Cono alla Cioccolato",
   "item.ice_cream_mod.sweet_berry_popsicle": "Ghiacciolo alla Bacca Dolce",
   "item.ice_cream_mod.chorus_popsicle": "Ghiacciolo al Chorus",
@@ -38,6 +38,7 @@
   "block.ice_cream_mod.ice_cream_machine": "Macchina per Gelati",
   "item.ice_cream_mod.waffle": "Cialda",
   "advancements.every_flavour.title": "Tuttigusti+1",
+  "gui.ice_cream_mod.recipe_book.label_icecreammachine": "Ice Cream Machine",
   "item.ice_cream_mod.consumed_cone": "Cono Mangiato",
   "item.ice_cream_mod.cone": "Cono"
 }

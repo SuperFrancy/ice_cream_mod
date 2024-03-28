@@ -1391,6 +1391,22 @@
         ]
       },
       "path": "~/Recipe/Block"
+    },
+    {
+      "name": "RecipeBook",
+      "type": "gui",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_book",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/icecreammod/world/inventory/RecipeBookMenu.java",
+          "src/main/java/net/mcreator/icecreammod/client/gui/RecipeBookScreen.java",
+          "src/main/java/net/mcreator/icecreammod/network/RecipeBookButtonMessage.java"
+        ]
+      },
+      "path": "~/Gui"
     }
   ],
   "variable_elements": [
@@ -1406,9 +1422,9 @@
     "it_it": {
       "advancements.every_flavour.descr": "Crea tutti i Gelati",
       "item.ice_cream_mod.vanilla_ice_cream": "Cono alla Vaniglia",
-      "item.ice_cream_mod.dough": "Impasto",
-      "gui.ice_cream_mod.freezer_g.label_freezer": "Frigorifero",
       "advancements.nice_cream.title": "Gelieto",
+      "gui.ice_cream_mod.freezer_g.label_freezer": "Frigorifero",
+      "item.ice_cream_mod.dough": "Impasto",
       "item.ice_cream_mod.chocolate_ice_cream": "Cono alla Cioccolato",
       "item.ice_cream_mod.sweet_berry_popsicle": "Ghiacciolo alla Bacca Dolce",
       "item.ice_cream_mod.chorus_popsicle": "Ghiacciolo al Chorus",
@@ -1443,15 +1459,16 @@
       "block.ice_cream_mod.ice_cream_machine": "Macchina per Gelati",
       "item.ice_cream_mod.waffle": "Cialda",
       "advancements.every_flavour.title": "Tuttigusti+1",
+      "gui.ice_cream_mod.recipe_book.label_icecreammachine": "Ice Cream Machine",
       "item.ice_cream_mod.consumed_cone": "Cono Mangiato",
       "item.ice_cream_mod.cone": "Cono"
     },
     "en_us": {
       "advancements.every_flavour.descr": "Create all Ice Cream",
       "item.ice_cream_mod.vanilla_ice_cream": "Vanilla Ice Cream",
-      "item.ice_cream_mod.dough": "Dough",
-      "gui.ice_cream_mod.freezer_g.label_freezer": "Freezer",
       "advancements.nice_cream.title": "Nice Cream",
+      "gui.ice_cream_mod.freezer_g.label_freezer": "Freezer",
+      "item.ice_cream_mod.dough": "Dough",
       "item.ice_cream_mod.chocolate_ice_cream": "Chocolate Ice Cream",
       "item.ice_cream_mod.sweet_berry_popsicle": "Sweet Berry Popsicle",
       "item.ice_cream_mod.chorus_popsicle": "Chorus Popsicle",
@@ -1486,6 +1503,7 @@
       "block.ice_cream_mod.ice_cream_machine": "Ice Cream Machine",
       "item.ice_cream_mod.waffle": "Waffle",
       "advancements.every_flavour.title": "Every Flavour",
+      "gui.ice_cream_mod.recipe_book.label_icecreammachine": "Ice Cream Machine",
       "item.ice_cream_mod.consumed_cone": "Consumed Cone",
       "item.ice_cream_mod.cone": "Cone"
     }

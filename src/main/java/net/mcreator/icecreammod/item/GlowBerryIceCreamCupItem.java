@@ -20,7 +20,7 @@ import java.util.List;
 
 public class GlowBerryIceCreamCupItem extends Item {
 	public GlowBerryIceCreamCupItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(6).saturationMod(0.3f).build()));
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(6).saturationMod(0.3f).build()));
 	}
 
 	@Override
