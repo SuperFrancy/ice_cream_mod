@@ -26,6 +26,7 @@ public class RecipeBookScreen extends AbstractContainerScreen<RecipeBookMenu> {
 	private final Player entity;
 	Button button_empty;
 	Button button_empty1;
+	Button button_make;
 	ImageButton imagebutton_trasferimentoremovebgpreview;
 	ImageButton imagebutton_recipe_book;
 
@@ -107,10 +108,18 @@ public class RecipeBookScreen extends AbstractContainerScreen<RecipeBookMenu> {
 		}).bounds(this.leftPos + -56, this.topPos + 129, 30, 20).build();
 		guistate.put("button:button_empty1", button_empty1);
 		this.addRenderableWidget(button_empty1);
-		imagebutton_trasferimentoremovebgpreview = new ImageButton(this.leftPos + 101, this.topPos + 36, 38, 23, 0, 0, 23, new ResourceLocation("ice_cream_mod:textures/screens/atlas/imagebutton_trasferimentoremovebgpreview.png"), 38, 46, e -> {
-			if (ArrowButtonProcedure.execute(world, x, y, z)) {
+		button_make = Button.builder(Component.translatable("gui.ice_cream_mod.recipe_book.button_make"), e -> {
+			if (true) {
 				IceCreamModMod.PACKET_HANDLER.sendToServer(new RecipeBookButtonMessage(2, x, y, z));
 				RecipeBookButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
+		}).bounds(this.leftPos + -81, this.topPos + 93, 46, 20).build();
+		guistate.put("button:button_make", button_make);
+		this.addRenderableWidget(button_make);
+		imagebutton_trasferimentoremovebgpreview = new ImageButton(this.leftPos + 101, this.topPos + 36, 38, 23, 0, 0, 23, new ResourceLocation("ice_cream_mod:textures/screens/atlas/imagebutton_trasferimentoremovebgpreview.png"), 38, 46, e -> {
+			if (ArrowButtonProcedure.execute(world, x, y, z)) {
+				IceCreamModMod.PACKET_HANDLER.sendToServer(new RecipeBookButtonMessage(3, x, y, z));
+				RecipeBookButtonMessage.handleButtonAction(entity, 3, x, y, z);
 			}
 		}) {
 			@Override
@@ -123,8 +132,8 @@ public class RecipeBookScreen extends AbstractContainerScreen<RecipeBookMenu> {
 		this.addRenderableWidget(imagebutton_trasferimentoremovebgpreview);
 		imagebutton_recipe_book = new ImageButton(this.leftPos + 8, this.topPos + 39, 20, 18, 0, 0, 18, new ResourceLocation("ice_cream_mod:textures/screens/atlas/imagebutton_recipe_book.png"), 20, 36, e -> {
 			if (true) {
-				IceCreamModMod.PACKET_HANDLER.sendToServer(new RecipeBookButtonMessage(3, x, y, z));
-				RecipeBookButtonMessage.handleButtonAction(entity, 3, x, y, z);
+				IceCreamModMod.PACKET_HANDLER.sendToServer(new RecipeBookButtonMessage(4, x, y, z));
+				RecipeBookButtonMessage.handleButtonAction(entity, 4, x, y, z);
 			}
 		});
 		guistate.put("button:imagebutton_recipe_book", imagebutton_recipe_book);

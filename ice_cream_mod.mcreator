@@ -1426,7 +1426,7 @@
           }
         ]
       },
-      "path": "~/Procedure/Page"
+      "path": "~/Procedure/Book"
     },
     {
       "name": "NextPage",
@@ -1446,7 +1446,7 @@
           }
         ]
       },
-      "path": "~/Procedure/Page"
+      "path": "~/Procedure/Book"
     },
     {
       "name": "Open",
@@ -1466,7 +1466,7 @@
           }
         ]
       },
-      "path": "~/Procedure/Page"
+      "path": "~/Procedure/Book"
     },
     {
       "name": "Close",
@@ -1486,7 +1486,7 @@
           }
         ]
       },
-      "path": "~/Procedure/Page"
+      "path": "~/Procedure/Book"
     },
     {
       "name": "AllRecipe",
@@ -1562,7 +1562,27 @@
           }
         ]
       },
-      "path": "~/Procedure/Page"
+      "path": "~/Procedure/Book"
+    },
+    {
+      "name": "Make",
+      "type": "procedure",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "make",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/icecreammod/procedures/MakeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedure/Book"
     }
   ],
   "variable_elements": [
@@ -1599,6 +1619,7 @@
       "item.ice_cream_mod.dough": "Impasto",
       "gui.ice_cream_mod.freezer_g.label_freezer": "Frigorifero",
       "advancements.nice_cream.title": "Gelieto",
+      "gui.ice_cream_mod.recipe_book.button_make": "Make",
       "item.ice_cream_mod.chocolate_ice_cream": "Cono alla Cioccolato",
       "item.ice_cream_mod.sweet_berry_popsicle": "Ghiacciolo alla Bacca Dolce",
       "item.ice_cream_mod.chorus_popsicle": "Ghiacciolo al Chorus",
@@ -1646,6 +1667,7 @@
       "item.ice_cream_mod.dough": "Dough",
       "gui.ice_cream_mod.freezer_g.label_freezer": "Freezer",
       "advancements.nice_cream.title": "Nice Cream",
+      "gui.ice_cream_mod.recipe_book.button_make": "Make",
       "item.ice_cream_mod.chocolate_ice_cream": "Chocolate Ice Cream",
       "item.ice_cream_mod.sweet_berry_popsicle": "Sweet Berry Popsicle",
       "item.ice_cream_mod.chorus_popsicle": "Chorus Popsicle",
@@ -1760,7 +1782,7 @@
             "children": []
           },
           {
-            "name": "Page",
+            "name": "Book",
             "children": []
           },
           {

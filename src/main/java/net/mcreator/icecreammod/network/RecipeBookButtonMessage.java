@@ -14,6 +14,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.icecreammod.world.inventory.RecipeBookMenu;
 import net.mcreator.icecreammod.procedures.PrevPageProcedure;
 import net.mcreator.icecreammod.procedures.NextPageProcedure;
+import net.mcreator.icecreammod.procedures.MakeProcedure;
 import net.mcreator.icecreammod.procedures.IceCreamMachinePProcedure;
 import net.mcreator.icecreammod.procedures.CloseProcedure;
 import net.mcreator.icecreammod.IceCreamModMod;
@@ -75,9 +76,13 @@ public class RecipeBookButtonMessage {
 		}
 		if (buttonID == 2) {
 
-			IceCreamMachinePProcedure.execute(world, x, y, z);
+			MakeProcedure.execute(entity);
 		}
 		if (buttonID == 3) {
+
+			IceCreamMachinePProcedure.execute(world, x, y, z);
+		}
+		if (buttonID == 4) {
 
 			CloseProcedure.execute(entity);
 		}

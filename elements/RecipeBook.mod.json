@@ -284,20 +284,32 @@
           "x": 73,
           "y": 74
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_make",
+          "text": "Make",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Make"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 44,
+          "y": 125
+        }
       }
     ],
     "onTick": {
       "name": "AllRecipe"
-    },
-    "onClosed": {
-      "name": "Close"
     },
     "gridSettings": {
       "sx": 18,
       "sy": 18,
       "ox": 15,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }
