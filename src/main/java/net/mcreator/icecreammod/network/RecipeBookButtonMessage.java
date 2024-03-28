@@ -67,11 +67,11 @@ public class RecipeBookButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			PrevPageProcedure.execute(world);
+			PrevPageProcedure.execute(entity);
 		}
 		if (buttonID == 1) {
 
-			NextPageProcedure.execute(world);
+			NextPageProcedure.execute(entity);
 		}
 		if (buttonID == 2) {
 
@@ -79,7 +79,7 @@ public class RecipeBookButtonMessage {
 		}
 		if (buttonID == 3) {
 
-			CloseProcedure.execute(world, x, y, z, entity);
+			CloseProcedure.execute(entity);
 		}
 	}
 

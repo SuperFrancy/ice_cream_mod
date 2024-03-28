@@ -1,12 +1,11 @@
 package net.mcreator.icecreammod.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
 
 public class AllRecipeProcedure {
-	public static void execute(LevelAccessor world, Entity entity) {
+	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		VanillaIceCreamPProcedure.execute(world, entity);
+		VanillaIceCreamPProcedure.execute(entity);
 	}
 }

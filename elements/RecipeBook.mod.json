@@ -289,6 +289,9 @@
     "onTick": {
       "name": "AllRecipe"
     },
+    "onClosed": {
+      "name": "Close"
+    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,

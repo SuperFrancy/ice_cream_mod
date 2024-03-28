@@ -6,15 +6,29 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
+import net.minecraftforge.event.AttachCapabilitiesEvent;
+import net.minecraftforge.common.util.LazyOptional;
+import net.minecraftforge.common.util.FakePlayer;
+import net.minecraftforge.common.capabilities.RegisterCapabilitiesEvent;
+import net.minecraftforge.common.capabilities.ICapabilitySerializable;
+import net.minecraftforge.common.capabilities.CapabilityToken;
+import net.minecraftforge.common.capabilities.CapabilityManager;
+import net.minecraftforge.common.capabilities.Capability;
 
 import net.minecraft.world.level.saveddata.SavedData;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.nbt.Tag;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.core.Direction;
+import net.minecraft.client.Minecraft;
 
 import net.mcreator.icecreammod.IceCreamModMod;
 
@@ -25,10 +39,46 @@ public class IceCreamModModVariables {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		IceCreamModMod.addNetworkMessage(SavedDataSyncMessage.class, SavedDataSyncMessage::buffer, SavedDataSyncMessage::new, SavedDataSyncMessage::handler);
+		IceCreamModMod.addNetworkMessage(PlayerVariablesSyncMessage.class, PlayerVariablesSyncMessage::buffer, PlayerVariablesSyncMessage::new, PlayerVariablesSyncMessage::handler);
+	}
+
+	@SubscribeEvent
+	public static void init(RegisterCapabilitiesEvent event) {
+		event.register(PlayerVariables.class);
 	}
 
 	@Mod.EventBusSubscriber
 	public static class EventBusVariableHandlers {
+		@SubscribeEvent
+		public static void onPlayerLoggedInSyncPlayerVariables(PlayerEvent.PlayerLoggedInEvent event) {
+			if (!event.getEntity().level().isClientSide())
+				((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getEntity());
+		}
+
+		@SubscribeEvent
+		public static void onPlayerRespawnedSyncPlayerVariables(PlayerEvent.PlayerRespawnEvent event) {
+			if (!event.getEntity().level().isClientSide())
+				((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getEntity());
+		}
+
+		@SubscribeEvent
+		public static void onPlayerChangedDimensionSyncPlayerVariables(PlayerEvent.PlayerChangedDimensionEvent event) {
+			if (!event.getEntity().level().isClientSide())
+				((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getEntity());
+		}
+
+		@SubscribeEvent
+		public static void clonePlayer(PlayerEvent.Clone event) {
+			event.getOriginal().revive();
+			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
+			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
+			if (!event.isWasDeath()) {
+				clone.pagen = original.pagen;
+				clone.recipe = original.recipe;
+				clone.button = original.button;
+			}
+		}
+
 		@SubscribeEvent
 		public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
 			if (!event.getEntity().level().isClientSide()) {
@@ -88,8 +138,6 @@ public class IceCreamModModVariables {
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "ice_cream_mod_mapvars";
 		public double time = 0.0;
-		public double pagen = 1.0;
-		public String recipe = "";
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -99,15 +147,11 @@ public class IceCreamModModVariables {
 
 		public void read(CompoundTag nbt) {
 			time = nbt.getDouble("time");
-			pagen = nbt.getDouble("pagen");
-			recipe = nbt.getString("recipe");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putDouble("time", time);
-			nbt.putDouble("pagen", pagen);
-			nbt.putString("recipe", recipe);
 			return nbt;
 		}
 
@@ -163,6 +207,92 @@ public class IceCreamModModVariables {
 						MapVariables.clientSide = (MapVariables) message.data;
 					else
 						WorldVariables.clientSide = (WorldVariables) message.data;
+				}
+			});
+			context.setPacketHandled(true);
+		}
+	}
+
+	public static final Capability<PlayerVariables> PLAYER_VARIABLES_CAPABILITY = CapabilityManager.get(new CapabilityToken<PlayerVariables>() {
+	});
+
+	@Mod.EventBusSubscriber
+	private static class PlayerVariablesProvider implements ICapabilitySerializable<Tag> {
+		@SubscribeEvent
+		public static void onAttachCapabilities(AttachCapabilitiesEvent<Entity> event) {
+			if (event.getObject() instanceof Player && !(event.getObject() instanceof FakePlayer))
+				event.addCapability(new ResourceLocation("ice_cream_mod", "player_variables"), new PlayerVariablesProvider());
+		}
+
+		private final PlayerVariables playerVariables = new PlayerVariables();
+		private final LazyOptional<PlayerVariables> instance = LazyOptional.of(() -> playerVariables);
+
+		@Override
+		public <T> LazyOptional<T> getCapability(Capability<T> cap, Direction side) {
+			return cap == PLAYER_VARIABLES_CAPABILITY ? instance.cast() : LazyOptional.empty();
+		}
+
+		@Override
+		public Tag serializeNBT() {
+			return playerVariables.writeNBT();
+		}
+
+		@Override
+		public void deserializeNBT(Tag nbt) {
+			playerVariables.readNBT(nbt);
+		}
+	}
+
+	public static class PlayerVariables {
+		public double pagen = 1.0;
+		public String recipe = "";
+		public boolean button = false;
+
+		public void syncPlayerVariables(Entity entity) {
+			if (entity instanceof ServerPlayer serverPlayer)
+				IceCreamModMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> serverPlayer), new PlayerVariablesSyncMessage(this));
+		}
+
+		public Tag writeNBT() {
+			CompoundTag nbt = new CompoundTag();
+			nbt.putDouble("pagen", pagen);
+			nbt.putString("recipe", recipe);
+			nbt.putBoolean("button", button);
+			return nbt;
+		}
+
+		public void readNBT(Tag Tag) {
+			CompoundTag nbt = (CompoundTag) Tag;
+			pagen = nbt.getDouble("pagen");
+			recipe = nbt.getString("recipe");
+			button = nbt.getBoolean("button");
+		}
+	}
+
+	public static class PlayerVariablesSyncMessage {
+		private final PlayerVariables data;
+
+		public PlayerVariablesSyncMessage(FriendlyByteBuf buffer) {
+			this.data = new PlayerVariables();
+			this.data.readNBT(buffer.readNbt());
+		}
+
+		public PlayerVariablesSyncMessage(PlayerVariables data) {
+			this.data = data;
+		}
+
+		public static void buffer(PlayerVariablesSyncMessage message, FriendlyByteBuf buffer) {
+			buffer.writeNbt((CompoundTag) message.data.writeNBT());
+		}
+
+		public static void handler(PlayerVariablesSyncMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
+			NetworkEvent.Context context = contextSupplier.get();
+			context.enqueueWork(() -> {
+				if (!context.getDirection().getReceptionSide().isServer()) {
+					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
+					variables.pagen = message.data.pagen;
+					variables.recipe = message.data.recipe;
+					variables.button = message.data.button;
 				}
 			});
 			context.setPacketHandled(true);

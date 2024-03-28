@@ -1421,8 +1421,8 @@
         ],
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -1441,8 +1441,8 @@
         ],
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -1463,22 +1463,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -1499,22 +1483,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -1535,10 +1503,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -1559,6 +1523,38 @@
           {
             "name": "entity",
             "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedure/Recipe/Ice Cream"
+    },
+    {
+      "name": "Recipe",
+      "type": "procedure",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/icecreammod/procedures/RecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
           },
           {
             "name": "world",
@@ -1566,7 +1562,7 @@
           }
         ]
       },
-      "path": "~/Procedure/Recipe/Ice Cream"
+      "path": "~/Procedure/Page"
     }
   ],
   "variable_elements": [
@@ -1579,14 +1575,20 @@
     {
       "name": "pagen",
       "type": "number",
-      "scope": "map",
+      "scope": "player_lifetime",
       "value": "1.0"
     },
     {
       "name": "recipe",
       "type": "string",
-      "scope": "map",
+      "scope": "player_lifetime",
       "value": ""
+    },
+    {
+      "name": "button",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
     }
   ],
   "sound_elements": [],
