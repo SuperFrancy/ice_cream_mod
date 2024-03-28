@@ -56,9 +56,9 @@ public class RecipeBookScreen extends AbstractContainerScreen<RecipeBookMenu> {
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("ice_cream_mod:textures/screens/trasferimento-removebg-preview.png"), this.leftPos + -52, this.topPos + 42, 0, 0, 19, 11, 19, 11);
+		guiGraphics.blit(new ResourceLocation("ice_cream_mod:textures/screens/icm.png"), this.leftPos + -115, this.topPos + 0, 0, 0, 112, 177, 112, 177);
 
-		guiGraphics.blit(new ResourceLocation("ice_cream_mod:textures/screens/icm.png"), this.leftPos + -117, this.topPos + 0, 0, 0, 112, 177, 112, 177);
+		guiGraphics.blit(new ResourceLocation("ice_cream_mod:textures/screens/trasferimento-removebg-preview.png"), this.leftPos + -52, this.topPos + 42, 0, 0, 19, 11, 19, 11);
 
 		RenderSystem.disableBlend();
 	}
@@ -92,10 +92,18 @@ public class RecipeBookScreen extends AbstractContainerScreen<RecipeBookMenu> {
 	public void init() {
 		super.init();
 		button_empty = Button.builder(Component.translatable("gui.ice_cream_mod.recipe_book.button_empty"), e -> {
+			if (true) {
+				IceCreamModMod.PACKET_HANDLER.sendToServer(new RecipeBookButtonMessage(0, x, y, z));
+				RecipeBookButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}).bounds(this.leftPos + -92, this.topPos + 129, 30, 20).build();
 		guistate.put("button:button_empty", button_empty);
 		this.addRenderableWidget(button_empty);
 		button_empty1 = Button.builder(Component.translatable("gui.ice_cream_mod.recipe_book.button_empty1"), e -> {
+			if (true) {
+				IceCreamModMod.PACKET_HANDLER.sendToServer(new RecipeBookButtonMessage(1, x, y, z));
+				RecipeBookButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
 		}).bounds(this.leftPos + -56, this.topPos + 129, 30, 20).build();
 		guistate.put("button:button_empty1", button_empty1);
 		this.addRenderableWidget(button_empty1);
@@ -114,6 +122,10 @@ public class RecipeBookScreen extends AbstractContainerScreen<RecipeBookMenu> {
 		guistate.put("button:imagebutton_trasferimentoremovebgpreview", imagebutton_trasferimentoremovebgpreview);
 		this.addRenderableWidget(imagebutton_trasferimentoremovebgpreview);
 		imagebutton_recipe_book = new ImageButton(this.leftPos + 8, this.topPos + 39, 20, 18, 0, 0, 18, new ResourceLocation("ice_cream_mod:textures/screens/atlas/imagebutton_recipe_book.png"), 20, 36, e -> {
+			if (true) {
+				IceCreamModMod.PACKET_HANDLER.sendToServer(new RecipeBookButtonMessage(3, x, y, z));
+				RecipeBookButtonMessage.handleButtonAction(entity, 3, x, y, z);
+			}
 		});
 		guistate.put("button:imagebutton_recipe_book", imagebutton_recipe_book);
 		this.addRenderableWidget(imagebutton_recipe_book);

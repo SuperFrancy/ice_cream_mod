@@ -51,8 +51,8 @@ public class IceCreamMachineTRecipeCategory implements IRecipeCategory<IceCreamM
 	public void setRecipe(IRecipeLayoutBuilder builder, IceCreamMachineTRecipe recipe, IFocusGroup focuses) {
 		builder.addSlot(RecipeIngredientRole.INPUT, 53, 67).addIngredients(recipe.getIngredients().get(0));
 		builder.addSlot(RecipeIngredientRole.INPUT, 35, 40).addIngredients(recipe.getIngredients().get(1));
-		builder.addSlot(RecipeIngredientRole.INPUT, 62, 40).addIngredients(recipe.getIngredients().get(2));
-		builder.addSlot(RecipeIngredientRole.INPUT, 71, 22).addIngredients(recipe.getIngredients().get(3));
+		builder.addSlot(RecipeIngredientRole.INPUT, 71, 40).addIngredients(recipe.getIngredients().get(2));
+		builder.addSlot(RecipeIngredientRole.INPUT, 53, 22).addIngredients(recipe.getIngredients().get(3));
 		builder.addSlot(RecipeIngredientRole.OUTPUT, 152, 40).addItemStack(recipe.getResultItem(null));
 	}
 }

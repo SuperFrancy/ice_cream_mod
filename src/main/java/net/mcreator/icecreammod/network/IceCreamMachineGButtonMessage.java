@@ -12,6 +12,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.icecreammod.world.inventory.IceCreamMachineGMenu;
+import net.mcreator.icecreammod.procedures.OpenProcedure;
 import net.mcreator.icecreammod.procedures.IceCreamMachinePProcedure;
 import net.mcreator.icecreammod.IceCreamModMod;
 
@@ -65,6 +66,10 @@ public class IceCreamMachineGButtonMessage {
 		if (buttonID == 0) {
 
 			IceCreamMachinePProcedure.execute(world, x, y, z);
+		}
+		if (buttonID == 1) {
+
+			OpenProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

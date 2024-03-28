@@ -1407,6 +1407,166 @@
         ]
       },
       "path": "~/Gui"
+    },
+    {
+      "name": "PrevPage",
+      "type": "procedure",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "prev_page",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/icecreammod/procedures/PrevPageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/Page"
+    },
+    {
+      "name": "NextPage",
+      "type": "procedure",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "next_page",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/icecreammod/procedures/NextPageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/Page"
+    },
+    {
+      "name": "Open",
+      "type": "procedure",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/icecreammod/procedures/OpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/Page"
+    },
+    {
+      "name": "Close",
+      "type": "procedure",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "close",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/icecreammod/procedures/CloseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/Page"
+    },
+    {
+      "name": "AllRecipe",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "all_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/icecreammod/procedures/AllRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/Recipe"
+    },
+    {
+      "name": "VanillaIceCreamP",
+      "type": "procedure",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vanilla_ice_cream_p",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/icecreammod/procedures/VanillaIceCreamPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/Recipe/Ice Cream"
     }
   ],
   "variable_elements": [
@@ -1415,6 +1575,18 @@
       "type": "number",
       "scope": "map",
       "value": "0.0"
+    },
+    {
+      "name": "pagen",
+      "type": "number",
+      "scope": "map",
+      "value": "1.0"
+    },
+    {
+      "name": "recipe",
+      "type": "string",
+      "scope": "map",
+      "value": ""
     }
   ],
   "sound_elements": [],
@@ -1584,6 +1756,19 @@
           {
             "name": "Melt",
             "children": []
+          },
+          {
+            "name": "Page",
+            "children": []
+          },
+          {
+            "name": "Recipe",
+            "children": [
+              {
+                "name": "Ice Cream",
+                "children": []
+              }
+            ]
           }
         ]
       },

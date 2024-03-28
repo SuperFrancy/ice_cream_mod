@@ -4,6 +4,9 @@ package net.mcreator.icecreammod.world.inventory;
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -22,12 +25,14 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.icecreammod.procedures.AllRecipeProcedure;
 import net.mcreator.icecreammod.init.IceCreamModModMenus;
 
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
+@Mod.EventBusSubscriber
 public class RecipeBookMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
@@ -120,7 +125,7 @@ public class RecipeBookMenu extends AbstractContainerMenu implements Supplier<Ma
 				return false;
 			}
 		}));
-		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, -91, 67) {
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, -89, 67) {
 			private final int slot = 5;
 
 			@Override
@@ -133,7 +138,7 @@ public class RecipeBookMenu extends AbstractContainerMenu implements Supplier<Ma
 				return false;
 			}
 		}));
-		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, -109, 40) {
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, -107, 40) {
 			private final int slot = 6;
 
 			@Override
@@ -146,7 +151,7 @@ public class RecipeBookMenu extends AbstractContainerMenu implements Supplier<Ma
 				return false;
 			}
 		}));
-		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, -73, 40) {
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, -71, 40) {
 			private final int slot = 7;
 
 			@Override
@@ -159,7 +164,7 @@ public class RecipeBookMenu extends AbstractContainerMenu implements Supplier<Ma
 				return false;
 			}
 		}));
-		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, -91, 22) {
+		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, -89, 22) {
 			private final int slot = 8;
 
 			@Override
@@ -172,7 +177,7 @@ public class RecipeBookMenu extends AbstractContainerMenu implements Supplier<Ma
 				return false;
 			}
 		}));
-		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, -30, 39) {
+		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, -29, 40) {
 			private final int slot = 9;
 
 			@Override
@@ -335,5 +340,17 @@ public class RecipeBookMenu extends AbstractContainerMenu implements Supplier<Ma
 
 	public Map<Integer, Slot> get() {
 		return customSlots;
+	}
+
+	@SubscribeEvent
+	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
+		Player entity = event.player;
+		if (event.phase == TickEvent.Phase.END && entity.containerMenu instanceof RecipeBookMenu) {
+			Level world = entity.level();
+			double x = entity.getX();
+			double y = entity.getY();
+			double z = entity.getZ();
+			AllRecipeProcedure.execute(world, entity);
+		}
 	}
 }

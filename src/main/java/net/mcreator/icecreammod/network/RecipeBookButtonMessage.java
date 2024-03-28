@@ -12,7 +12,10 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.icecreammod.world.inventory.RecipeBookMenu;
+import net.mcreator.icecreammod.procedures.PrevPageProcedure;
+import net.mcreator.icecreammod.procedures.NextPageProcedure;
 import net.mcreator.icecreammod.procedures.IceCreamMachinePProcedure;
+import net.mcreator.icecreammod.procedures.CloseProcedure;
 import net.mcreator.icecreammod.IceCreamModMod;
 
 import java.util.function.Supplier;
@@ -62,9 +65,21 @@ public class RecipeBookButtonMessage {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
+		if (buttonID == 0) {
+
+			PrevPageProcedure.execute(world);
+		}
+		if (buttonID == 1) {
+
+			NextPageProcedure.execute(world);
+		}
 		if (buttonID == 2) {
 
 			IceCreamMachinePProcedure.execute(world, x, y, z);
+		}
+		if (buttonID == 3) {
+
+			CloseProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

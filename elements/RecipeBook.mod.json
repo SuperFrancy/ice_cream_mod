@@ -11,18 +11,12 @@
     "doesPauseGame": false,
     "components": [
       {
-        "type": "label",
+        "type": "image",
         "data": {
-          "name": "label_icecreammachine",
-          "text": {
-            "fixedValue": "Ice Cream Machine"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 132,
-          "y": 35
+          "image": "icm.png",
+          "use1Xscale": false,
+          "x": 10,
+          "y": 32
         }
       },
       {
@@ -110,6 +104,105 @@
         }
       },
       {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "id": 5,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 35,
+          "y": 98
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "id": 6,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 17,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "id": 7,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 53,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "id": 8,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 35,
+          "y": 53
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 9,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 95,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_icecreammachine",
+          "text": {
+            "fixedValue": "Ice Cream Machine"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 35
+        }
+      },
+      {
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_trasferimentoremovebgpreview",
@@ -131,101 +224,11 @@
           "name": "imagebutton_recipe_book",
           "image": "button_highlighted.png",
           "hoveredImage": "button_highlighted.png",
+          "onClick": {
+            "name": "Close"
+          },
           "x": 133,
           "y": 71
-        }
-      },
-      {
-        "type": "inputslot",
-        "data": {
-          "inputLimit": {
-            "value": ""
-          },
-          "disablePlacement": {
-            "fixedValue": true
-          },
-          "id": 5,
-          "disablePickup": {
-            "fixedValue": true
-          },
-          "dropItemsWhenNotBound": true,
-          "x": 33,
-          "y": 98
-        }
-      },
-      {
-        "type": "inputslot",
-        "data": {
-          "inputLimit": {
-            "value": ""
-          },
-          "disablePlacement": {
-            "fixedValue": true
-          },
-          "id": 6,
-          "disablePickup": {
-            "fixedValue": true
-          },
-          "dropItemsWhenNotBound": true,
-          "x": 15,
-          "y": 71
-        }
-      },
-      {
-        "type": "inputslot",
-        "data": {
-          "inputLimit": {
-            "value": ""
-          },
-          "disablePlacement": {
-            "fixedValue": true
-          },
-          "id": 7,
-          "disablePickup": {
-            "fixedValue": true
-          },
-          "dropItemsWhenNotBound": true,
-          "x": 51,
-          "y": 71
-        }
-      },
-      {
-        "type": "inputslot",
-        "data": {
-          "inputLimit": {
-            "value": ""
-          },
-          "disablePlacement": {
-            "fixedValue": true
-          },
-          "id": 8,
-          "disablePickup": {
-            "fixedValue": true
-          },
-          "dropItemsWhenNotBound": true,
-          "x": 33,
-          "y": 53
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "trasferimento-removebg-preview.png",
-          "use1Xscale": true,
-          "x": 73,
-          "y": 74
-        }
-      },
-      {
-        "type": "outputslot",
-        "data": {
-          "id": 9,
-          "disablePickup": {
-            "fixedValue": true
-          },
-          "dropItemsWhenNotBound": true,
-          "x": 94,
-          "y": 70
         }
       },
       {
@@ -234,6 +237,9 @@
           "name": "button_empty",
           "text": "<",
           "isUndecorated": false,
+          "onClick": {
+            "name": "PrevPage"
+          },
           "width": 30,
           "height": 20,
           "x": 33,
@@ -246,6 +252,9 @@
           "name": "button_empty1",
           "text": ">",
           "isUndecorated": false,
+          "onClick": {
+            "name": "NextPage"
+          },
           "width": 30,
           "height": 20,
           "x": 69,
@@ -270,19 +279,22 @@
       {
         "type": "image",
         "data": {
-          "image": "icm.png",
-          "use1Xscale": false,
-          "x": 8,
-          "y": 32
+          "image": "trasferimento-removebg-preview.png",
+          "use1Xscale": true,
+          "x": 73,
+          "y": 74
         }
       }
     ],
+    "onTick": {
+      "name": "AllRecipe"
+    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,
       "ox": 15,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }
