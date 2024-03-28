@@ -5,7 +5,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.Component;
 
 import net.mcreator.icecreammod.network.IceCreamModModVariables;
 import net.mcreator.icecreammod.init.IceCreamModModItems;
@@ -19,13 +18,6 @@ public class VanillaIceCreamPProcedure {
 		if (entity == null)
 			return;
 		if ((entity.getCapability(IceCreamModModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IceCreamModModVariables.PlayerVariables())).pagen == 1) {
-			{
-				String _setval = Component.translatable("item.ice_cream_mod.vanilla_ice_cream").getString();
-				entity.getCapability(IceCreamModModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.recipe = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(IceCreamModModItems.CONE.get());
 				_setstack.setCount(1);

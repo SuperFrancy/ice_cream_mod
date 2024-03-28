@@ -11,6 +11,7 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.icecreammod.world.inventory.RecipeBookMenu;
+import net.mcreator.icecreammod.procedures.TestoProcedure;
 import net.mcreator.icecreammod.procedures.ArrowButtonProcedure;
 import net.mcreator.icecreammod.network.RecipeBookButtonMessage;
 import net.mcreator.icecreammod.IceCreamModMod;
@@ -81,7 +82,9 @@ public class RecipeBookScreen extends AbstractContainerScreen<RecipeBookMenu> {
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.ice_cream_mod.recipe_book.label_icecreammachine"), 7, 3, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.ice_cream_mod.recipe_book.label_empty"), -110, 3, -12829636, false);
+		guiGraphics.drawString(this.font,
+
+				TestoProcedure.execute(entity), -108, 3, -12829636, false);
 	}
 
 	@Override

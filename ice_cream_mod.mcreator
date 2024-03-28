@@ -1529,42 +1529,6 @@
       "path": "~/Procedure/Recipe/Ice Cream"
     },
     {
-      "name": "Recipe",
-      "type": "procedure",
-      "sortid": 100,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "recipe",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/icecreammod/procedures/RecipeProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedure/Book"
-    },
-    {
       "name": "Make",
       "type": "procedure",
       "sortid": 101,
@@ -1574,6 +1538,27 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/icecreammod/procedures/MakeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedure/Book"
+    },
+    {
+      "name": "Testo",
+      "type": "procedure",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testo",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/icecreammod/procedures/TestoProcedure.java"
         ],
         "dependencies": [
           {
@@ -1619,7 +1604,7 @@
       "item.ice_cream_mod.dough": "Impasto",
       "gui.ice_cream_mod.freezer_g.label_freezer": "Frigorifero",
       "advancements.nice_cream.title": "Gelieto",
-      "gui.ice_cream_mod.recipe_book.button_make": "Make",
+      "gui.ice_cream_mod.recipe_book.button_make": "Crea",
       "item.ice_cream_mod.chocolate_ice_cream": "Cono alla Cioccolato",
       "item.ice_cream_mod.sweet_berry_popsicle": "Ghiacciolo alla Bacca Dolce",
       "item.ice_cream_mod.chorus_popsicle": "Ghiacciolo al Chorus",
@@ -1657,7 +1642,7 @@
       "block.ice_cream_mod.ice_cream_machine": "Macchina per Gelati",
       "item.ice_cream_mod.waffle": "Cialda",
       "advancements.every_flavour.title": "Tuttigusti+1",
-      "gui.ice_cream_mod.recipe_book.label_icecreammachine": "Ice Cream Machine",
+      "gui.ice_cream_mod.recipe_book.label_icecreammachine": "Macchina per Gelati",
       "item.ice_cream_mod.consumed_cone": "Cono Mangiato",
       "item.ice_cream_mod.cone": "Cono"
     },

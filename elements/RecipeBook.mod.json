@@ -266,13 +266,14 @@
         "data": {
           "name": "label_empty",
           "text": {
-            "fixedValue": "sdfa"
+            "fixedValue": "",
+            "name": "Testo"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 15,
+          "x": 17,
           "y": 35
         }
       },
