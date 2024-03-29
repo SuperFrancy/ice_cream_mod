@@ -1568,6 +1568,26 @@
         ]
       },
       "path": "~/Procedure/Book"
+    },
+    {
+      "name": "Chest",
+      "type": "procedure",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/icecreammod/procedures/ChestProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedure/Melt"
     }
   ],
   "variable_elements": [
