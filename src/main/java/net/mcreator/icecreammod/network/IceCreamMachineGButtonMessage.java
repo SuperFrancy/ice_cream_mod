@@ -69,7 +69,7 @@ public class IceCreamMachineGButtonMessage {
 		}
 		if (buttonID == 1) {
 
-			OpenProcedure.execute(entity);
+			OpenProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

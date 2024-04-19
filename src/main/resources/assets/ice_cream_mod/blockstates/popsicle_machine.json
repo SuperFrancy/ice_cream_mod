@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ice_cream_mod:block/popsicle_machine"
+    },
+    "facing=east": {
+      "model": "ice_cream_mod:block/popsicle_machine",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ice_cream_mod:block/popsicle_machine",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ice_cream_mod:block/popsicle_machine",
+      "y": 270
+    }
+  }
+}

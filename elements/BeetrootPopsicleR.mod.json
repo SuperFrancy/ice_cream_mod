@@ -1,48 +1,22 @@
 {
   "_fv": 57,
-  "_type": "recipe",
+  "_type": "jeirecipe",
   "definition": {
-    "recipeType": "Crafting",
-    "recipeRetstackSize": 1,
-    "group": "",
-    "cookingBookCategory": "MISC",
-    "xpReward": 0.0,
-    "cookingTime": 200,
-    "craftingBookCategory": "MISC",
-    "recipeShapeless": false,
-    "recipeSlots": [
+    "category": "popsicle_machine_t",
+    "result": {
+      "value": "CUSTOM:BeetrootPopsicle"
+    },
+    "count": 1,
+    "ingredients": [
       {
-        "value": ""
-      },
-      {
-        "value": "Items.BEETROOT"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
+        "value": "Items.STICK"
       },
       {
         "value": "Blocks.ICE"
       },
       {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": ""
+        "value": "Items.BEETROOT"
       }
-    ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:BeetrootPopsicle"
-    },
-    "name": "beetroot_popsicle",
-    "namespace": "mod"
+    ]
   }
 }

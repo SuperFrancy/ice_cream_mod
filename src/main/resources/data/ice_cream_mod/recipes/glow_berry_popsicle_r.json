@@ -1,23 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-    "a",
-    "b",
-    "c"
-  ],
-  "key": {
-    "a": {
-      "item": "minecraft:glow_berries"
+  "type": "ice_cream_mod:popsicle_machine_t",
+  "ingredients": [
+    {
+      "item": "minecraft:stick"
     },
-    "b": {
+    {
       "item": "minecraft:ice"
     },
-    "c": {
-      "item": "minecraft:stick"
+    {
+      "item": "minecraft:glow_berries"
     }
-  },
-  "result": {
+  ],
+  "output": {
     "item": "ice_cream_mod:glow_berry_popsicle",
     "count": 1
   }

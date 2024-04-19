@@ -1,0 +1,43 @@
+{
+  "_fv": 57,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "jei2.png",
+    "width": 178,
+    "height": 104,
+    "icon": {
+      "value": "CUSTOM:PopsicleMachine"
+    },
+    "craftingtable": {
+      "value": "CUSTOM:PopsicleMachine"
+    },
+    "enableCraftingtable": true,
+    "title": "Popsicle Machine",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 53,
+        "y": 67,
+        "slotid": 0
+      },
+      {
+        "type": "INPUT",
+        "x": 53,
+        "y": 40,
+        "slotid": 1
+      },
+      {
+        "type": "INPUT",
+        "x": 53,
+        "y": 22,
+        "slotid": 2
+      },
+      {
+        "type": "OUTPUT",
+        "x": 152,
+        "y": 40,
+        "slotid": 0
+      }
+    ]
+  }
+}

@@ -10,6 +10,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 
 import net.minecraft.world.item.crafting.RecipeSerializer;
 
+import net.mcreator.icecreammod.jei_recipes.PopsicleMachineTRecipe;
 import net.mcreator.icecreammod.jei_recipes.IceCreamMachineTRecipe;
 import net.mcreator.icecreammod.IceCreamModMod;
 
@@ -23,6 +24,7 @@ public class IceCreamModModRecipeTypes {
 		event.enqueueWork(() -> {
 			SERIALIZERS.register(bus);
 			SERIALIZERS.register("ice_cream_machine_t", () -> IceCreamMachineTRecipe.Serializer.INSTANCE);
+			SERIALIZERS.register("popsicle_machine_t", () -> PopsicleMachineTRecipe.Serializer.INSTANCE);
 		});
 	}
 }

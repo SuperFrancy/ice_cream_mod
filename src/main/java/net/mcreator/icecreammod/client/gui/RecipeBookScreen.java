@@ -29,7 +29,7 @@ public class RecipeBookScreen extends AbstractContainerScreen<RecipeBookMenu> {
 	Button button_empty1;
 	Button button_make;
 	ImageButton imagebutton_trasferimentoremovebgpreview;
-	ImageButton imagebutton_recipe_book;
+	ImageButton imagebutton_button_highlighted;
 
 	public RecipeBookScreen(RecipeBookMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -84,7 +84,7 @@ public class RecipeBookScreen extends AbstractContainerScreen<RecipeBookMenu> {
 		guiGraphics.drawString(this.font, Component.translatable("gui.ice_cream_mod.recipe_book.label_icecreammachine"), 7, 3, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				TestoProcedure.execute(entity), -108, 3, -12829636, false);
+				TestoProcedure.execute(entity), -111, 4, -12829636, false);
 	}
 
 	@Override
@@ -133,13 +133,13 @@ public class RecipeBookScreen extends AbstractContainerScreen<RecipeBookMenu> {
 		};
 		guistate.put("button:imagebutton_trasferimentoremovebgpreview", imagebutton_trasferimentoremovebgpreview);
 		this.addRenderableWidget(imagebutton_trasferimentoremovebgpreview);
-		imagebutton_recipe_book = new ImageButton(this.leftPos + 8, this.topPos + 39, 20, 18, 0, 0, 18, new ResourceLocation("ice_cream_mod:textures/screens/atlas/imagebutton_recipe_book.png"), 20, 36, e -> {
+		imagebutton_button_highlighted = new ImageButton(this.leftPos + 9, this.topPos + 39, 20, 18, 0, 0, 18, new ResourceLocation("ice_cream_mod:textures/screens/atlas/imagebutton_button_highlighted.png"), 20, 36, e -> {
 			if (true) {
 				IceCreamModMod.PACKET_HANDLER.sendToServer(new RecipeBookButtonMessage(4, x, y, z));
 				RecipeBookButtonMessage.handleButtonAction(entity, 4, x, y, z);
 			}
 		});
-		guistate.put("button:imagebutton_recipe_book", imagebutton_recipe_book);
-		this.addRenderableWidget(imagebutton_recipe_book);
+		guistate.put("button:imagebutton_button_highlighted", imagebutton_button_highlighted);
+		this.addRenderableWidget(imagebutton_button_highlighted);
 	}
 }

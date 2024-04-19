@@ -84,7 +84,7 @@ public class RecipeBookButtonMessage {
 		}
 		if (buttonID == 4) {
 
-			CloseProcedure.execute(entity);
+			CloseProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

@@ -1,48 +1,22 @@
 {
   "_fv": 57,
-  "_type": "recipe",
+  "_type": "jeirecipe",
   "definition": {
-    "recipeType": "Crafting",
-    "recipeRetstackSize": 1,
-    "group": "",
-    "cookingBookCategory": "MISC",
-    "xpReward": 0.0,
-    "cookingTime": 200,
-    "craftingBookCategory": "MISC",
-    "recipeShapeless": false,
-    "recipeSlots": [
+    "category": "popsicle_machine_t",
+    "result": {
+      "value": "CUSTOM:GlowBerryPopsicle"
+    },
+    "count": 1,
+    "ingredients": [
       {
-        "value": ""
-      },
-      {
-        "value": "Items.GLOW_BERRIES"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
+        "value": "Items.STICK"
       },
       {
         "value": "Blocks.ICE"
       },
       {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": ""
+        "value": "Items.GLOW_BERRIES"
       }
-    ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:GlowBerryPopsicle"
-    },
-    "name": "glow_berry_popsicle_r",
-    "namespace": "mod"
+    ]
   }
 }

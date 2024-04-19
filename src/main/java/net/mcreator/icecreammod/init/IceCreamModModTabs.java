@@ -50,8 +50,8 @@ public class IceCreamModModTabs {
 				tabData.accept(IceCreamModModItems.CHORUS_ICE_CREAM_CUP.get());
 				tabData.accept(IceCreamModModItems.CHORUS_POPSICLE.get());
 				tabData.accept(IceCreamModModBlocks.VANILLA_FLOWER.get().asItem());
-				tabData.accept(IceCreamModModBlocks.FREEZER.get().asItem());
 				tabData.accept(IceCreamModModBlocks.ICE_CREAM_MACHINE.get().asItem());
+				tabData.accept(IceCreamModModBlocks.POPSICLE_MACHINE.get().asItem());
 			})
 
 					.build());

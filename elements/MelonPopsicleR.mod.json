@@ -1,48 +1,22 @@
 {
   "_fv": 57,
-  "_type": "recipe",
+  "_type": "jeirecipe",
   "definition": {
-    "recipeType": "Crafting",
-    "recipeRetstackSize": 1,
-    "group": "",
-    "cookingBookCategory": "MISC",
-    "xpReward": 0.0,
-    "cookingTime": 200,
-    "craftingBookCategory": "MISC",
-    "recipeShapeless": false,
-    "recipeSlots": [
+    "category": "popsicle_machine_t",
+    "result": {
+      "value": "CUSTOM:MelonPopsicle"
+    },
+    "count": 1,
+    "ingredients": [
       {
-        "value": ""
-      },
-      {
-        "value": "Items.MELON"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
+        "value": "Items.STICK"
       },
       {
         "value": "Blocks.ICE"
       },
       {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": ""
+        "value": "Items.MELON"
       }
-    ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:MelonPopsicle"
-    },
-    "name": "melon_popsicle_r",
-    "namespace": "mod"
+    ]
   }
 }

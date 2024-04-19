@@ -98,7 +98,7 @@
           "disablePickup": {
             "fixedValue": false
           },
-          "dropItemsWhenNotBound": false,
+          "dropItemsWhenNotBound": true,
           "x": 276,
           "y": 71
         }
@@ -116,7 +116,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 35,
           "y": 98
         }
@@ -134,7 +134,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 17,
           "y": 71
         }
@@ -152,7 +152,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 53,
           "y": 71
         }
@@ -170,7 +170,7 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 35,
           "y": 53
         }
@@ -182,8 +182,8 @@
           "disablePickup": {
             "fixedValue": true
           },
-          "dropItemsWhenNotBound": true,
-          "x": 95,
+          "dropItemsWhenNotBound": false,
+          "x": 96,
           "y": 71
         }
       },
@@ -216,19 +216,6 @@
           },
           "x": 226,
           "y": 68
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_recipe_book",
-          "image": "button_highlighted.png",
-          "hoveredImage": "button_highlighted.png",
-          "onClick": {
-            "name": "Close"
-          },
-          "x": 133,
-          "y": 71
         }
       },
       {
@@ -273,8 +260,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 17,
-          "y": 35
+          "x": 14,
+          "y": 36
         }
       },
       {
@@ -299,6 +286,19 @@
           "height": 20,
           "x": 44,
           "y": 125
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_button_highlighted",
+          "image": "button_highlighted.png",
+          "hoveredImage": "button_highlighted.png",
+          "onClick": {
+            "name": "Close"
+          },
+          "x": 134,
+          "y": 71
         }
       }
     ],
