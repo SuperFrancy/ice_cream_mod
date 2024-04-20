@@ -435,40 +435,6 @@
       "path": "~/Ice Cream/SweetBerry"
     },
     {
-      "name": "EveryFlavour",
-      "type": "achievement",
-      "sortid": 48,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "every_flavour",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/advancements/every_flavour.json"
-        ]
-      },
-      "path": "~/Advancments"
-    },
-    {
-      "name": "EveryFlavourP",
-      "type": "procedure",
-      "sortid": 49,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "every_flavour_p",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/icecreammod/procedures/EveryFlavourPProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedure/Advancements"
-    },
-    {
       "name": "GlowBerryIceCream",
       "type": "item",
       "sortid": 26,
@@ -2203,6 +2169,62 @@
         ]
       },
       "path": "~/Procedure/Book"
+    },
+    {
+      "name": "EveryFlavour",
+      "type": "achievement",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "every_flavour",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/advancements/every_flavour.json"
+        ]
+      },
+      "path": "~/Advancments"
+    },
+    {
+      "name": "AllIceCream",
+      "type": "achievement",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "all_ice_cream",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/advancements/all_ice_cream.json"
+        ]
+      },
+      "path": "~/Advancments"
+    },
+    {
+      "name": "AllIceCreamCup",
+      "type": "achievement",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "all_ice_cream_cup",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/advancements/all_ice_cream_cup.json"
+        ]
+      },
+      "path": "~/Advancments"
+    },
+    {
+      "name": "AllPopsicle",
+      "type": "achievement",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "all_popsicle",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/advancements/all_popsicle.json"
+        ]
+      },
+      "path": "~/Advancments"
     }
   ],
   "variable_elements": [
@@ -2283,11 +2305,13 @@
   },
   "language_map": {
     "it_it": {
-      "advancements.every_flavour.descr": "Crea tutti i Gelati",
+      "advancements.every_flavour.descr": "Mangia tutti i gusti di Coni, Coppette e Ghiacccioli",
       "item.ice_cream_mod.dough": "Impasto",
       "gui.ice_cream_mod.recipe_book.button_make": "Crea",
+      "advancements.all_popsicle.title": "Ghiacciato",
       "gui.ice_cream_mod.recipe_book.button_empty": "\u003c",
       "item.ice_cream_mod.chocolate_ice_cream": "Cono alla Cioccolato",
+      "advancements.all_ice_cream.title": "Fa Freddo",
       "item.ice_cream_mod.melon_ice_cream": "Cono all\u0027Anguria",
       "item.ice_cream_mod.glow_berry_ice_cream_cup": "Coppetta alla Bacca Luminosa",
       "item.ice_cream_mod.chorus_ice_cream": "Cono al Chorus",
@@ -2300,11 +2324,13 @@
       "item.ice_cream_mod.beetroot_ice_cream_cup": "Coppetta alla Barbaietola",
       "gui.ice_cream_mod.popsicle_machine_g.label_icecreammachine": "Macchina per Ghiaccioli",
       "item.ice_cream_mod.apple_ice_cream_cup": "Coppetta alla Mela",
+      "advancements.all_ice_cream_cup.title": "Coppa del Nonno",
       "block.ice_cream_mod.vanilla_flower": "Fiore di Vaniglia",
-      "item.ice_cream_mod.chocolate_popsicle": "Ghiacciolo al Cioccolato",
       "item.ice_cream_mod.glow_berry_popsicle": "Ghiacciolo alla Bacca Luminosa",
+      "item.ice_cream_mod.chocolate_popsicle": "Ghiacciolo al Cioccolato",
       "item.ice_cream_mod.apple_ice_cream": "Cono alla Mela",
       "item.ice_cream_mod.sweet_berry_ice_cream": "Cono alla Bacca Dolce",
+      "advancements.all_ice_cream.descr": "Mangia tutti i gusti di Coni",
       "advancements.every_flavour.title": "Tuttigusti+1",
       "item.ice_cream_mod.consumed_cone": "Cono Mangiato",
       "item.ice_cream_mod.vanilla_ice_cream": "Cono alla Vaniglia",
@@ -2319,6 +2345,7 @@
       "item.ice_cream_mod.chocolate_ice_cream_cup": "Coppetta alla Cioccolato",
       "item.ice_cream_mod.melon_ice_cream_cup": "Coppetta all\u0027Anguria",
       "gui.ice_cream_mod.recipe_book.button_empty1": "\u003e",
+      "advancements.all_ice_cream_cup.descr": "Mangia tutti i gusti di Coppette",
       "item.ice_cream_mod.carrot_ice_cream": "Cono alla Carota",
       "item.ice_cream_mod.beetroot_popsicle": "Ghiacciolo alla Barbabietola",
       "item.ice_cream_mod.sweet_berry_ice_cream_cup": "Coppetta alla Bacca Dolce",
@@ -2330,15 +2357,18 @@
       "item.ice_cream_mod.chorus_ice_cream_cup": "Coppetta al Chorus",
       "block.ice_cream_mod.ice_cream_machine": "Macchina per Gelati",
       "item.ice_cream_mod.waffle": "Cialda",
+      "advancements.all_popsicle.descr": "Mangia tutti i gusti di Ghiacccioli",
       "gui.ice_cream_mod.recipe_book.label_icecreammachine": "Macchina per Gelati",
       "item.ice_cream_mod.cone": "Cono"
     },
     "en_us": {
-      "advancements.every_flavour.descr": "Create all Ice Cream",
+      "advancements.every_flavour.descr": "Eat all flavours of Ice Creams, Ice Cream Cups and Popsicles",
       "item.ice_cream_mod.dough": "Dough",
       "gui.ice_cream_mod.recipe_book.button_make": "Make",
-      "item.ice_cream_mod.chocolate_ice_cream": "Chocolate Ice Cream",
+      "advancements.all_popsicle.title": "All Popsicles",
       "gui.ice_cream_mod.recipe_book.button_empty": "\u003c",
+      "item.ice_cream_mod.chocolate_ice_cream": "Chocolate Ice Cream",
+      "advancements.all_ice_cream.title": "All Ice Creams",
       "item.ice_cream_mod.melon_ice_cream": "Melon Ice Cream",
       "item.ice_cream_mod.glow_berry_ice_cream_cup": "Glow Berry Ice Cream Cup",
       "item.ice_cream_mod.chorus_ice_cream": "Chorus Ice Cream",
@@ -2351,11 +2381,13 @@
       "item.ice_cream_mod.beetroot_ice_cream_cup": "Beetroot Ice Cream Cup",
       "gui.ice_cream_mod.popsicle_machine_g.label_icecreammachine": "Popsicle Machine",
       "item.ice_cream_mod.apple_ice_cream_cup": "Apple Ice Cream Cup",
+      "advancements.all_ice_cream_cup.title": "All Ice Cream Cups",
       "block.ice_cream_mod.vanilla_flower": "Vanilla Flower",
       "item.ice_cream_mod.chocolate_popsicle": "Chocolate Popsicle",
       "item.ice_cream_mod.glow_berry_popsicle": "Glow Berry Popsicle",
       "item.ice_cream_mod.apple_ice_cream": "Apple Ice Cream",
       "item.ice_cream_mod.sweet_berry_ice_cream": "Sweet Berry Ice Cream",
+      "advancements.all_ice_cream.descr": "Eat all flavours of Ice Creams",
       "advancements.every_flavour.title": "Every Flavour",
       "item.ice_cream_mod.consumed_cone": "Consumed Cone",
       "item.ice_cream_mod.vanilla_ice_cream": "Vanilla Ice Cream",
@@ -2370,6 +2402,7 @@
       "item.ice_cream_mod.chocolate_ice_cream_cup": "Chocolate Ice Cream Cup",
       "item.ice_cream_mod.melon_ice_cream_cup": "Melon Ice Cream Cup",
       "gui.ice_cream_mod.recipe_book.button_empty1": "\u003e",
+      "advancements.all_ice_cream_cup.descr": "Eat all flavours of Ice Cream Cups",
       "item.ice_cream_mod.carrot_ice_cream": "Carrot Ice Cream",
       "item.ice_cream_mod.beetroot_popsicle": "Beetroot Popsicle",
       "item.ice_cream_mod.sweet_berry_ice_cream_cup": "Sweet Berry Ice Cream Cup",
@@ -2381,6 +2414,7 @@
       "item.ice_cream_mod.chorus_ice_cream_cup": "Chorus Ice Cream Cup",
       "block.ice_cream_mod.ice_cream_machine": "Ice Cream Machine",
       "item.ice_cream_mod.waffle": "Waffle",
+      "advancements.all_popsicle.descr": "Eat all flavours of Popsicles",
       "gui.ice_cream_mod.recipe_book.label_icecreammachine": "Ice Cream Machine",
       "item.ice_cream_mod.cone": "Cone"
     }

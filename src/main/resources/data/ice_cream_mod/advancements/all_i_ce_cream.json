@@ -1,0 +1,110 @@
+{
+  "display": {
+    "icon": {
+      "item": "ice_cream_mod:glow_berry_ice_cream"
+    },
+    "title": {
+      "translate": "advancements.all_i_ce_cream.title"
+    },
+    "description": {
+      "translate": "advancements.all_i_ce_cream.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "all_i_ce_cream_0": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:vanilla_ice_cream"
+          ]
+        }
+      }
+    },
+    "all_i_ce_cream_1": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:chocolate_ice_cream"
+          ]
+        }
+      }
+    },
+    "all_i_ce_cream_2": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:apple_ice_cream"
+          ]
+        }
+      }
+    },
+    "all_i_ce_cream_3": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:carrot_ice_cream"
+          ]
+        }
+      }
+    },
+    "all_i_ce_cream_4": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:beetroot_ice_cream"
+          ]
+        }
+      }
+    },
+    "all_i_ce_cream_5": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:melon_ice_cream"
+          ]
+        }
+      }
+    },
+    "all_i_ce_cream_6": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:sweet_berry_ice_cream_cup"
+          ]
+        }
+      }
+    },
+    "all_i_ce_cream_7": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:glow_berry_ice_cream"
+          ]
+        }
+      }
+    },
+    "all_i_ce_cream_8": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:chorus_ice_cream"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "ice_cream_mod:nice_cream"
+}

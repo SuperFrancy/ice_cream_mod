@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "ice_cream_mod:chocolate_ice_cream"
+      "item": "ice_cream_mod:chorus_popsicle"
     },
     "title": {
       "translate": "advancements.every_flavour.title"
@@ -9,15 +9,282 @@
     "description": {
       "translate": "advancements.every_flavour.descr"
     },
-    "frame": "goal",
+    "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": true
+    "hidden": false
   },
   "criteria": {
     "every_flavour_0": {
-      "trigger": "minecraft:impossible"
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:vanilla_ice_cream"
+          ]
+        }
+      }
+    },
+    "every_flavour_1": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:vanilla_ice_cream_cup"
+          ]
+        }
+      }
+    },
+    "every_flavour_2": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:vanilla_popsicle"
+          ]
+        }
+      }
+    },
+    "every_flavour_3": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:chocolate_ice_cream"
+          ]
+        }
+      }
+    },
+    "every_flavour_4": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:chocolate_ice_cream_cup"
+          ]
+        }
+      }
+    },
+    "every_flavour_5": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:chocolate_popsicle"
+          ]
+        }
+      }
+    },
+    "every_flavour_6": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:apple_ice_cream"
+          ]
+        }
+      }
+    },
+    "every_flavour_7": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:apple_ice_cream_cup"
+          ]
+        }
+      }
+    },
+    "every_flavour_8": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:apple_popsicle"
+          ]
+        }
+      }
+    },
+    "every_flavour_9": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:carrot_ice_cream"
+          ]
+        }
+      }
+    },
+    "every_flavour_10": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:carrot_ice_cream_cup"
+          ]
+        }
+      }
+    },
+    "every_flavour_11": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:carrot_popsicle"
+          ]
+        }
+      }
+    },
+    "every_flavour_12": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:beetroot_ice_cream"
+          ]
+        }
+      }
+    },
+    "every_flavour_13": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:beetroot_ice_cream_cup"
+          ]
+        }
+      }
+    },
+    "every_flavour_14": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:beetroot_popsicle"
+          ]
+        }
+      }
+    },
+    "every_flavour_15": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:melon_ice_cream"
+          ]
+        }
+      }
+    },
+    "every_flavour_16": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:melon_ice_cream_cup"
+          ]
+        }
+      }
+    },
+    "every_flavour_17": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:melon_popsicle"
+          ]
+        }
+      }
+    },
+    "every_flavour_18": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:sweet_berry_ice_cream"
+          ]
+        }
+      }
+    },
+    "every_flavour_19": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:sweet_berry_ice_cream_cup"
+          ]
+        }
+      }
+    },
+    "every_flavour_20": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:sweet_berry_popsicle"
+          ]
+        }
+      }
+    },
+    "every_flavour_21": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:glow_berry_ice_cream"
+          ]
+        }
+      }
+    },
+    "every_flavour_22": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:glow_berry_ice_cream_cup"
+          ]
+        }
+      }
+    },
+    "every_flavour_23": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:glow_berry_popsicle"
+          ]
+        }
+      }
+    },
+    "every_flavour_24": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:chorus_ice_cream"
+          ]
+        }
+      }
+    },
+    "every_flavour_25": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:chorus_ice_cream_cup"
+          ]
+        }
+      }
+    },
+    "every_flavour_26": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "ice_cream_mod:chorus_popsicle"
+          ]
+        }
+      }
     }
   },
-  "parent": "ice_cream_mod:nice_cream"
+  "parent": "ice_cream_mod:all_ice_cream"
 }
