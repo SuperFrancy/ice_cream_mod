@@ -90,26 +90,6 @@
       "path": "~/Ice Cream/Chocolate"
     },
     {
-      "name": "NiceCreamP",
-      "type": "procedure",
-      "sortid": 37,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nice_cream_p",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/icecreammod/procedures/NiceCreamPProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedure/Advancements"
-    },
-    {
       "name": "AppleIceCream",
       "type": "item",
       "sortid": 11,
