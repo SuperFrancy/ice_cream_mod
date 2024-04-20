@@ -1,1 +1,5 @@
 /advancement revoke Dev everything
+/advancement grant Dev
+/advancement grant Dev everything
+/advancement revoke Dev only ice_cream_mod:all_ice_cream_cup
+/advancement revoke Dev from ice_cream_mod:nice_cream
