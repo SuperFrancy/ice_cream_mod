@@ -450,26 +450,6 @@
       "path": "~/Ice Cream/GlowBerry"
     },
     {
-      "name": "Glowing",
-      "type": "procedure",
-      "sortid": 52,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "glowing",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/icecreammod/procedures/GlowingProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedure/Effect"
-    },
-    {
       "name": "GlowBerryIceCreamCup",
       "type": "item",
       "sortid": 27,
@@ -543,42 +523,6 @@
         ]
       },
       "path": "~/Ice Cream/Chorus"
-    },
-    {
-      "name": "RandomTP",
-      "type": "procedure",
-      "sortid": 60,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "random_tp",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/icecreammod/procedures/RandomTPProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedure/Effect"
     },
     {
       "name": "ConsumedCone",
@@ -2225,6 +2169,46 @@
         ]
       },
       "path": "~/Advancments"
+    },
+    {
+      "name": "Consume",
+      "type": "procedure",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "consume",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/icecreammod/procedures/ConsumeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure"
     }
   ],
   "variable_elements": [
@@ -2309,8 +2293,8 @@
       "item.ice_cream_mod.dough": "Impasto",
       "gui.ice_cream_mod.recipe_book.button_make": "Crea",
       "advancements.all_popsicle.title": "Ghiacciato",
-      "gui.ice_cream_mod.recipe_book.button_empty": "\u003c",
       "item.ice_cream_mod.chocolate_ice_cream": "Cono alla Cioccolato",
+      "gui.ice_cream_mod.recipe_book.button_empty": "\u003c",
       "advancements.all_ice_cream.title": "Fa Freddo",
       "item.ice_cream_mod.melon_ice_cream": "Cono all\u0027Anguria",
       "item.ice_cream_mod.glow_berry_ice_cream_cup": "Coppetta alla Bacca Luminosa",
@@ -2366,8 +2350,8 @@
       "item.ice_cream_mod.dough": "Dough",
       "gui.ice_cream_mod.recipe_book.button_make": "Make",
       "advancements.all_popsicle.title": "Frozen",
-      "gui.ice_cream_mod.recipe_book.button_empty": "\u003c",
       "item.ice_cream_mod.chocolate_ice_cream": "Chocolate Ice Cream",
+      "gui.ice_cream_mod.recipe_book.button_empty": "\u003c",
       "advancements.all_ice_cream.title": "I Scream",
       "item.ice_cream_mod.melon_ice_cream": "Melon Ice Cream",
       "item.ice_cream_mod.glow_berry_ice_cream_cup": "Glow Berry Ice Cream Cup",

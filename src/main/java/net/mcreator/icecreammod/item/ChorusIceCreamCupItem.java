@@ -9,7 +9,7 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 
-import net.mcreator.icecreammod.procedures.RandomTPProcedure;
+import net.mcreator.icecreammod.procedures.ConsumeProcedure;
 import net.mcreator.icecreammod.init.IceCreamModModItems;
 
 public class ChorusIceCreamCupItem extends Item {
@@ -24,7 +24,7 @@ public class ChorusIceCreamCupItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		RandomTPProcedure.execute(world, x, y, z, entity);
+		ConsumeProcedure.execute(world, x, y, z, entity, itemstack);
 		if (itemstack.isEmpty()) {
 			return retval;
 		} else {

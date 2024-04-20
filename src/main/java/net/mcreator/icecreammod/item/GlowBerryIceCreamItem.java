@@ -9,7 +9,7 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 
-import net.mcreator.icecreammod.procedures.GlowingProcedure;
+import net.mcreator.icecreammod.procedures.ConsumeProcedure;
 import net.mcreator.icecreammod.init.IceCreamModModItems;
 
 public class GlowBerryIceCreamItem extends Item {
@@ -24,7 +24,7 @@ public class GlowBerryIceCreamItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		GlowingProcedure.execute(entity);
+		ConsumeProcedure.execute(world, x, y, z, entity, itemstack);
 		if (itemstack.isEmpty()) {
 			return retval;
 		} else {

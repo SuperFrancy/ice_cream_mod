@@ -36,7 +36,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onFinishUsingItem": {
-      "name": "RandomTP"
+      "name": "Consume"
     },
     "enableRanged": false,
     "shootConstantly": false,

@@ -10,6 +10,8 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 
+import net.mcreator.icecreammod.procedures.ConsumeProcedure;
+
 public class MelonPopsicleItem extends Item {
 	public MelonPopsicleItem() {
 		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.3f).build()));
@@ -19,6 +21,10 @@ public class MelonPopsicleItem extends Item {
 	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
 		ItemStack retval = new ItemStack(Items.STICK);
 		super.finishUsingItem(itemstack, world, entity);
+		double x = entity.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
+		ConsumeProcedure.execute(world, x, y, z, entity, itemstack);
 		if (itemstack.isEmpty()) {
 			return retval;
 		} else {
