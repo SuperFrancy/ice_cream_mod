@@ -25,16 +25,16 @@ public class ConsumeProcedure {
 		double ix = 0;
 		double iy = 0;
 		double iz = 0;
-		r = 10;
-		ix = (-1) * r;
-		iy = (-1) * r;
-		iz = (-1) * r;
-		succ = true;
 		if (itemstack.getItem().isEdible()) {
 			if (itemstack.getItem() == IceCreamModModItems.GLOW_BERRY_ICE_CREAM.get() || itemstack.getItem() == IceCreamModModItems.GLOW_BERRY_ICE_CREAM_CUP.get() || itemstack.getItem() == IceCreamModModItems.GLOW_BERRY_POPSICLE.get()) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 120, 1));
 			}
+			r = 10;
+			ix = (-1) * r;
+			iy = (-1) * r;
+			iz = (-1) * r;
+			succ = true;
 			if (itemstack.getItem() == IceCreamModModItems.CHORUS_ICE_CREAM.get() || itemstack.getItem() == IceCreamModModItems.CHORUS_ICE_CREAM_CUP.get() || itemstack.getItem() == IceCreamModModItems.CHORUS_POPSICLE.get()) {
 				while (main <= Math.pow(r + 1, 3)) {
 					for (int index1 = 0; index1 < (int) (1 * r + 1); index1++) {
