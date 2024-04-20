@@ -11,7 +11,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.icecreammod.world.inventory.IceCreamMachineGMenu;
+import net.mcreator.icecreammod.world.inventory.RecipeBook2Menu;
 
 import io.netty.buffer.Unpooled;
 
@@ -24,12 +24,12 @@ public class Open2Procedure {
 			_ent.openMenu(new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("IceCreamMachineG");
+					return Component.literal("RecipeBook2");
 				}
 
 				@Override
 				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-					return new IceCreamMachineGMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+					return new RecipeBook2Menu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 				}
 			}, _bpos);
 		}
