@@ -15,7 +15,7 @@
     "hidden": true
   },
   "criteria": {
-    "every_flavour": {
+    "every_flavour_0": {
       "trigger": "minecraft:impossible"
     }
   },

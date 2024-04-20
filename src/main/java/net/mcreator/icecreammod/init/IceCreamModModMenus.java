@@ -4,12 +4,12 @@
  */
 package net.mcreator.icecreammod.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.common.extensions.IForgeMenuType;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.common.extensions.IMenuTypeExtension;
 
 import net.minecraft.world.inventory.MenuType;
+import net.minecraft.core.registries.Registries;
 
 import net.mcreator.icecreammod.world.inventory.RecipeBookMenu;
 import net.mcreator.icecreammod.world.inventory.RecipeBook2Menu;
@@ -18,9 +18,9 @@ import net.mcreator.icecreammod.world.inventory.IceCreamMachineGMenu;
 import net.mcreator.icecreammod.IceCreamModMod;
 
 public class IceCreamModModMenus {
-	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.MENU_TYPES, IceCreamModMod.MODID);
-	public static final RegistryObject<MenuType<IceCreamMachineGMenu>> ICE_CREAM_MACHINE_G = REGISTRY.register("ice_cream_machine_g", () -> IForgeMenuType.create(IceCreamMachineGMenu::new));
-	public static final RegistryObject<MenuType<RecipeBookMenu>> RECIPE_BOOK = REGISTRY.register("recipe_book", () -> IForgeMenuType.create(RecipeBookMenu::new));
-	public static final RegistryObject<MenuType<PopsicleMachineGMenu>> POPSICLE_MACHINE_G = REGISTRY.register("popsicle_machine_g", () -> IForgeMenuType.create(PopsicleMachineGMenu::new));
-	public static final RegistryObject<MenuType<RecipeBook2Menu>> RECIPE_BOOK_2 = REGISTRY.register("recipe_book_2", () -> IForgeMenuType.create(RecipeBook2Menu::new));
+	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(Registries.MENU, IceCreamModMod.MODID);
+	public static final DeferredHolder<MenuType<?>, MenuType<IceCreamMachineGMenu>> ICE_CREAM_MACHINE_G = REGISTRY.register("ice_cream_machine_g", () -> IMenuTypeExtension.create(IceCreamMachineGMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<RecipeBookMenu>> RECIPE_BOOK = REGISTRY.register("recipe_book", () -> IMenuTypeExtension.create(RecipeBookMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<PopsicleMachineGMenu>> POPSICLE_MACHINE_G = REGISTRY.register("popsicle_machine_g", () -> IMenuTypeExtension.create(PopsicleMachineGMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<RecipeBook2Menu>> RECIPE_BOOK_2 = REGISTRY.register("recipe_book_2", () -> IMenuTypeExtension.create(RecipeBook2Menu::new));
 }

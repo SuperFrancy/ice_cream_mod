@@ -16,7 +16,7 @@
     "hidden": false
   },
   "criteria": {
-    "nice_cream": {
+    "nice_cream_0": {
       "trigger": "minecraft:impossible"
     }
   }

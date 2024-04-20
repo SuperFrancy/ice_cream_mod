@@ -2,6 +2,7 @@
 package net.mcreator.icecreammod.init;
 
 import net.minecraft.world.item.crafting.RecipeManager;
+import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.Minecraft;
@@ -17,6 +18,7 @@ import mezz.jei.api.registration.IRecipeCatalystRegistration;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.IModPlugin;
 
+import java.util.stream.Collectors;
 import java.util.Objects;
 import java.util.List;
 
@@ -39,9 +41,9 @@ public class IceCreamModModJeiPlugin implements IModPlugin {
 	@Override
 	public void registerRecipes(IRecipeRegistration registration) {
 		RecipeManager recipeManager = Objects.requireNonNull(Minecraft.getInstance().level).getRecipeManager();
-		List<IceCreamMachineTRecipe> IceCreamMachineTRecipes = recipeManager.getAllRecipesFor(IceCreamMachineTRecipe.Type.INSTANCE);
+		List<IceCreamMachineTRecipe> IceCreamMachineTRecipes = recipeManager.getAllRecipesFor(IceCreamMachineTRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
 		registration.addRecipes(IceCreamMachineT_Type, IceCreamMachineTRecipes);
-		List<PopsicleMachineTRecipe> PopsicleMachineTRecipes = recipeManager.getAllRecipesFor(PopsicleMachineTRecipe.Type.INSTANCE);
+		List<PopsicleMachineTRecipe> PopsicleMachineTRecipes = recipeManager.getAllRecipesFor(PopsicleMachineTRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
 		registration.addRecipes(PopsicleMachineT_Type, PopsicleMachineTRecipes);
 	}
 

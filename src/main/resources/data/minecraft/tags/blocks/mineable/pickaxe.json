@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "ice_cream_mod:ice_cream_machine",
-    "ice_cream_mod:popsicle_machine"
+    "ice_cream_mod:popsicle_machine",
+    "ice_cream_mod:ice_cream_machine"
   ]
 }

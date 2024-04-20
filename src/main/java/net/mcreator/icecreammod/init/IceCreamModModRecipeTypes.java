@@ -1,14 +1,14 @@
 package net.mcreator.icecreammod.init;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.event.lifecycle.FMLConstructModEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.neoforged.fml.event.lifecycle.FMLConstructModEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.IEventBus;
 
 import net.minecraft.world.item.crafting.RecipeSerializer;
+import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.icecreammod.jei_recipes.PopsicleMachineTRecipe;
 import net.mcreator.icecreammod.jei_recipes.IceCreamMachineTRecipe;
@@ -16,7 +16,7 @@ import net.mcreator.icecreammod.IceCreamModMod;
 
 @Mod.EventBusSubscriber(modid = IceCreamModMod.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class IceCreamModModRecipeTypes {
-	public static final DeferredRegister<RecipeSerializer<?>> SERIALIZERS = DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS, "ice_cream_mod");
+	public static final DeferredRegister<RecipeSerializer<?>> SERIALIZERS = DeferredRegister.create(BuiltInRegistries.RECIPE_SERIALIZER, "ice_cream_mod");
 
 	@SubscribeEvent
 	public static void register(FMLConstructModEvent event) {

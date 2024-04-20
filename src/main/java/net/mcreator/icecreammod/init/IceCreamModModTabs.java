@@ -4,8 +4,8 @@
  */
 package net.mcreator.icecreammod.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTab;
@@ -16,7 +16,7 @@ import net.mcreator.icecreammod.IceCreamModMod;
 
 public class IceCreamModModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, IceCreamModMod.MODID);
-	public static final RegistryObject<CreativeModeTab> ICE_CREAM = REGISTRY.register("ice_cream",
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ICE_CREAM = REGISTRY.register("ice_cream",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ice_cream_mod.ice_cream")).icon(() -> new ItemStack(IceCreamModModItems.VANILLA_ICE_CREAM.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(IceCreamModModItems.DOUGH.get());
 				tabData.accept(IceCreamModModItems.WAFFLE.get());

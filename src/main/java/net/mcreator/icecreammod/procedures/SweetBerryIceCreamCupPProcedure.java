@@ -16,33 +16,33 @@ public class SweetBerryIceCreamCupPProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getCapability(IceCreamModModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IceCreamModModVariables.PlayerVariables())).pagen == 14) {
+		if (entity.getData(IceCreamModModVariables.PLAYER_VARIABLES).pagen == 14) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(Items.BOWL);
+				ItemStack _setstack = new ItemStack(Items.BOWL).copy();
 				_setstack.setCount(1);
 				((Slot) _slots.get(5)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(Items.MILK_BUCKET);
+				ItemStack _setstack = new ItemStack(Items.MILK_BUCKET).copy();
 				_setstack.setCount(1);
 				((Slot) _slots.get(6)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(Items.SNOWBALL);
+				ItemStack _setstack = new ItemStack(Items.SNOWBALL).copy();
 				_setstack.setCount(1);
 				((Slot) _slots.get(7)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(Items.SWEET_BERRIES);
+				ItemStack _setstack = new ItemStack(Items.SWEET_BERRIES).copy();
 				_setstack.setCount(1);
 				((Slot) _slots.get(8)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(IceCreamModModItems.SWEET_BERRY_ICE_CREAM_CUP.get());
+				ItemStack _setstack = new ItemStack(IceCreamModModItems.SWEET_BERRY_ICE_CREAM_CUP.get()).copy();
 				_setstack.setCount(1);
 				((Slot) _slots.get(9)).set(_setstack);
 				_player.containerMenu.broadcastChanges();

@@ -17,27 +17,27 @@ public class GlowBerryPopsiclePProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getCapability(IceCreamModModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new IceCreamModModVariables.PlayerVariables())).pagen2 == 8) {
+		if (entity.getData(IceCreamModModVariables.PLAYER_VARIABLES).pagen2 == 8) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(Items.STICK);
+				ItemStack _setstack = new ItemStack(Items.STICK).copy();
 				_setstack.setCount(1);
 				((Slot) _slots.get(4)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(Blocks.ICE);
+				ItemStack _setstack = new ItemStack(Blocks.ICE).copy();
 				_setstack.setCount(1);
 				((Slot) _slots.get(5)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(Items.GLOW_BERRIES);
+				ItemStack _setstack = new ItemStack(Items.GLOW_BERRIES).copy();
 				_setstack.setCount(1);
 				((Slot) _slots.get(6)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(IceCreamModModItems.GLOW_BERRY_POPSICLE.get());
+				ItemStack _setstack = new ItemStack(IceCreamModModItems.GLOW_BERRY_POPSICLE.get()).copy();
 				_setstack.setCount(1);
 				((Slot) _slots.get(7)).set(_setstack);
 				_player.containerMenu.broadcastChanges();

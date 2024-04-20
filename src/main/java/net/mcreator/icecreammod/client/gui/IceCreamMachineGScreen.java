@@ -1,18 +1,20 @@
 package net.mcreator.icecreammod.client.gui;
 
+import net.neoforged.neoforge.network.PacketDistributor;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.WidgetSprites;
 import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.icecreammod.world.inventory.IceCreamMachineGMenu;
 import net.mcreator.icecreammod.procedures.ArrowButtonProcedure;
 import net.mcreator.icecreammod.network.IceCreamMachineGButtonMessage;
-import net.mcreator.icecreammod.IceCreamModMod;
 
 import java.util.HashMap;
 
@@ -41,7 +43,7 @@ public class IceCreamMachineGScreen extends AbstractContainerScreen<IceCreamMach
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics);
+		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
@@ -65,43 +67,40 @@ public class IceCreamMachineGScreen extends AbstractContainerScreen<IceCreamMach
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-	}
-
-	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.ice_cream_mod.ice_cream_machine_g.label_icecreammachine"), 7, 3, -12829636, false);
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
-		imagebutton_trasferimentoremovebgpreview = new ImageButton(this.leftPos + 101, this.topPos + 35, 38, 23, 0, 0, 23, new ResourceLocation("ice_cream_mod:textures/screens/atlas/imagebutton_trasferimentoremovebgpreview.png"), 38, 46, e -> {
-			if (ArrowButtonProcedure.execute(world, x, y, z)) {
-				IceCreamModMod.PACKET_HANDLER.sendToServer(new IceCreamMachineGButtonMessage(0, x, y, z));
-				IceCreamMachineGButtonMessage.handleButtonAction(entity, 0, x, y, z);
-			}
-		}) {
+		imagebutton_trasferimentoremovebgpreview = new ImageButton(this.leftPos + 101, this.topPos + 35, 38, 23,
+				new WidgetSprites(new ResourceLocation("ice_cream_mod:textures/screens/trasferimento-removebg-preview.png"), new ResourceLocation("ice_cream_mod:textures/screens/button.png")), e -> {
+					if (ArrowButtonProcedure.execute(world, x, y, z)) {
+						PacketDistributor.SERVER.noArg().send(new IceCreamMachineGButtonMessage(0, x, y, z));
+						IceCreamMachineGButtonMessage.handleButtonAction(entity, 0, x, y, z);
+					}
+				}) {
 			@Override
-			public void render(GuiGraphics guiGraphics, int gx, int gy, float ticks) {
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
 				if (ArrowButtonProcedure.execute(world, x, y, z))
-					super.render(guiGraphics, gx, gy, ticks);
+					guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
 		guistate.put("button:imagebutton_trasferimentoremovebgpreview", imagebutton_trasferimentoremovebgpreview);
 		this.addRenderableWidget(imagebutton_trasferimentoremovebgpreview);
-		imagebutton_book = new ImageButton(this.leftPos + 7, this.topPos + 39, 20, 18, 0, 0, 18, new ResourceLocation("ice_cream_mod:textures/screens/atlas/imagebutton_book.png"), 20, 36, e -> {
-			if (true) {
-				IceCreamModMod.PACKET_HANDLER.sendToServer(new IceCreamMachineGButtonMessage(1, x, y, z));
-				IceCreamMachineGButtonMessage.handleButtonAction(entity, 1, x, y, z);
+		imagebutton_book = new ImageButton(this.leftPos + 7, this.topPos + 39, 20, 18, new WidgetSprites(new ResourceLocation("ice_cream_mod:textures/screens/book.png"), new ResourceLocation("ice_cream_mod:textures/screens/button_highlighted.png")),
+				e -> {
+					if (true) {
+						PacketDistributor.SERVER.noArg().send(new IceCreamMachineGButtonMessage(1, x, y, z));
+						IceCreamMachineGButtonMessage.handleButtonAction(entity, 1, x, y, z);
+					}
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
-		});
+		};
 		guistate.put("button:imagebutton_book", imagebutton_book);
 		this.addRenderableWidget(imagebutton_book);
 	}

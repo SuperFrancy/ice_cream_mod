@@ -579,48 +579,6 @@
       "path": "~/Ice Cream/Chorus"
     },
     {
-      "name": "IceCreamP",
-      "type": "tag",
-      "sortid": 56,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ice_cream_p",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/tags/items/ice_cream.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "Cup",
-      "type": "tag",
-      "sortid": 57,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cup",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/tags/items/cup.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "Popsicle",
-      "type": "tag",
-      "sortid": 58,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "popsicle",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/tags/items/popsicle.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
       "name": "RandomTP",
       "type": "procedure",
       "sortid": 60,
@@ -670,34 +628,6 @@
         ]
       },
       "path": "~/Item"
-    },
-    {
-      "name": "IceCreamBase",
-      "type": "tag",
-      "sortid": 62,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ice_cream_base",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/tags/items/ice_cream_base.json"
-        ]
-      },
-      "path": "~/Tags"
-    },
-    {
-      "name": "Ingredient",
-      "type": "tag",
-      "sortid": 63,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ingredient",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ice_cream_mod/tags/items/ingredient.json"
-        ]
-      },
-      "path": "~/Tags"
     },
     {
       "name": "IceCreamMachineG",
@@ -760,6 +690,7 @@
           "src/main/java/net/mcreator/icecreammod/block/entity/IceCreamMachineBlockEntity.java",
           "src/main/resources/assets/ice_cream_mod/blockstates/ice_cream_machine.json",
           "src/main/resources/assets/ice_cream_mod/models/item/ice_cream_machine.json",
+          "src/main/resources/data/ice_cream_mod/loot_tables/blocks/ice_cream_machine.json",
           "src/main/resources/assets/ice_cream_mod/models/block/ice_cream_machine.json"
         ]
       },
@@ -827,8 +758,9 @@
           "src/main/resources/data/ice_cream_mod/worldgen/placed_feature/vanilla_flower.json",
           "src/main/resources/assets/ice_cream_mod/blockstates/vanilla_flower.json",
           "src/main/resources/assets/ice_cream_mod/models/block/vanilla_flower.json",
-          "src/main/resources/data/ice_cream_mod/forge/biome_modifier/vanilla_flower_biome_modifier.json",
-          "src/main/java/net/mcreator/icecreammod/block/VanillaFlowerBlock.java"
+          "src/main/java/net/mcreator/icecreammod/block/VanillaFlowerBlock.java",
+          "src/main/resources/data/ice_cream_mod/neoforge/biome_modifier/vanilla_flower_biome_modifier.json",
+          "src/main/resources/data/ice_cream_mod/loot_tables/blocks/vanilla_flower.json"
         ]
       },
       "path": "~/Block"
@@ -1723,6 +1655,7 @@
           "src/main/java/net/mcreator/icecreammod/block/entity/PopsicleMachineBlockEntity.java",
           "src/main/resources/assets/ice_cream_mod/models/block/popsicle_machine.json",
           "src/main/java/net/mcreator/icecreammod/block/PopsicleMachineBlock.java",
+          "src/main/resources/data/ice_cream_mod/loot_tables/blocks/popsicle_machine.json",
           "src/main/resources/assets/ice_cream_mod/models/item/popsicle_machine.json"
         ]
       },
@@ -2293,6 +2226,61 @@
     }
   ],
   "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:mod:cup": [
+      "CUSTOM:VanillaIceCreamCup",
+      "CUSTOM:ChocolateIceCreamCup",
+      "CUSTOM:AppleIceCreamCup",
+      "CUSTOM:CarrotIceCreamCup",
+      "CUSTOM:BeetrootIceCreamCup",
+      "CUSTOM:MelonIceCreamCup",
+      "CUSTOM:SweetBerryIceCreamCup",
+      "CUSTOM:GlowBerryIceCreamCup",
+      "CUSTOM:ChorusIceCreamCup"
+    ],
+    "ITEMS:mod:ingredient": [
+      "Items.DYE#3",
+      "Items.MELON",
+      "Items.BEETROOT",
+      "Items.CARROT",
+      "Items.SWEET_BERRIES",
+      "Items.APPLE",
+      "Items.CHORUS_FRUIT",
+      "CUSTOM:VanillaFlower",
+      "Items.GLOW_BERRIES"
+    ],
+    "ITEMS:mod:ice_cream": [
+      "CUSTOM:VanillaIceCream",
+      "CUSTOM:ChocolateIceCream",
+      "CUSTOM:AppleIceCream",
+      "CUSTOM:CarrotIceCream",
+      "CUSTOM:BeetrootIceCream",
+      "CUSTOM:MelonIceCream",
+      "CUSTOM:SweetBerryIceCream",
+      "CUSTOM:GlowBerryIceCream",
+      "CUSTOM:ChorusIceCream"
+    ],
+    "ITEMS:mod:ice_cream_base": [
+      "Items.STICK",
+      "CUSTOM:Cone",
+      "Items.BOWL"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:PopsicleMachine",
+      "~CUSTOM:IceCreamMachine"
+    ],
+    "ITEMS:mod:popsicle": [
+      "CUSTOM:VanillaPopsicle",
+      "CUSTOM:ApplePopsicle",
+      "CUSTOM:ChocolatePopsicle",
+      "CUSTOM:CarrotPopsicle",
+      "CUSTOM:BeetrootPopsicle",
+      "CUSTOM:MelonPopsicle",
+      "CUSTOM:SweetBerryPopsicle",
+      "CUSTOM:GlowBerryPopsicle",
+      "CUSTOM:ChorusPopsicle"
+    ]
+  },
   "language_map": {
     "it_it": {
       "advancements.every_flavour.descr": "Crea tutti i Gelati",
@@ -2537,7 +2525,6 @@
     "author": "Francesco, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",
-    "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "requiredMods": [],
     "dependencies": [],
@@ -2546,10 +2533,9 @@
       "mcreator_link",
       "jei"
     ],
-    "currentGenerator": "forge-1.20.1",
+    "currentGenerator": "neoforge-1.20.4",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
-    "modElementsPackage": "net.mcreator.icecreammod",
-    "lockBaseModFiles": false
+    "modElementsPackage": "net.mcreator.icecreammod"
   },
-  "mcreatorVersion": 202300452316
+  "mcreatorVersion": 202400115821
 }
