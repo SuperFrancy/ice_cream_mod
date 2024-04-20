@@ -1109,9 +1109,6 @@
       "locked_code": false,
       "registry_name": "open",
       "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/icecreammod/procedures/OpenProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "entity",
@@ -2435,10 +2432,6 @@
       },
       {
         "name": "Advancments",
-        "children": []
-      },
-      {
-        "name": "Tags",
         "children": []
       },
       {
