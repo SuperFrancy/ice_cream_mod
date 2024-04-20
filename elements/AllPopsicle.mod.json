@@ -2,7 +2,7 @@
   "_fv": 60,
   "_type": "achievement",
   "definition": {
-    "achievementName": "All Popsicles",
+    "achievementName": "Frozen",
     "achievementDescription": "Eat all flavours of Popsicles",
     "achievementIcon": {
       "value": "CUSTOM:GlowBerryPopsicle"
