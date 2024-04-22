@@ -5,7 +5,7 @@
     "achievementName": "Granfather's Cup",
     "achievementDescription": "Eat all flavours of Ice Cream Cups",
     "achievementIcon": {
-      "value": "CUSTOM:GlowBerryIceCreamCup"
+      "value": "Items.BOWL"
     },
     "background": "Default",
     "disableDisplay": false,

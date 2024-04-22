@@ -65,7 +65,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "TAG:ice_cream_mod:ingredient"
+            "value": "TAG:mod:ingredient"
           },
           "disablePlacement": {
             "fixedValue": false
@@ -103,7 +103,7 @@
           "displayCondition": {
             "name": "ArrowButton2"
           },
-          "x": 216,
+          "x": 226,
           "y": 68
         }
       },
@@ -116,13 +116,16 @@
           "onClick": {
             "name": "Open2"
           },
-          "x": 132,
+          "x": 134,
           "y": 71
         }
       }
     ],
+    "onClosed": {
+      "name": "GuiPClosed"
+    },
     "gridSettings": {
-      "sx": 18,
+      "sx": 19,
       "sy": 18,
       "ox": 11,
       "oy": 15,

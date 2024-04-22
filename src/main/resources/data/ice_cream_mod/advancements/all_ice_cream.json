@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "ice_cream_mod:glow_berry_ice_cream"
+      "item": "ice_cream_mod:cone"
     },
     "title": {
       "translate": "advancements.all_ice_cream.title"

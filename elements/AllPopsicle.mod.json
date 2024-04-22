@@ -5,7 +5,7 @@
     "achievementName": "Frozen",
     "achievementDescription": "Eat all flavours of Popsicles",
     "achievementIcon": {
-      "value": "CUSTOM:GlowBerryPopsicle"
+      "value": "Items.STICK"
     },
     "background": "Default",
     "disableDisplay": false,

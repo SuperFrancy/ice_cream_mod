@@ -5,7 +5,7 @@
     "achievementName": "Nice Cream",
     "achievementDescription": "Eat a Ice cream",
     "achievementIcon": {
-      "value": "CUSTOM:VanillaIceCream"
+      "value": "CUSTOM:ConsumedCone"
     },
     "background": "cone.png",
     "disableDisplay": false,

@@ -23,7 +23,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "TAG:ice_cream_mod:ice_cream_base"
+            "value": "Items.STICK"
           },
           "disablePlacement": {
             "fixedValue": false
@@ -41,7 +41,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "Items.MILK_BUCKET"
+            "value": "Blocks.ICE"
           },
           "disablePlacement": {
             "fixedValue": false
@@ -59,7 +59,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "TAG:ice_cream_mod:ingredient"
+            "value": "TAG:mod:ingredient"
           },
           "disablePlacement": {
             "fixedValue": false
@@ -178,7 +178,7 @@
           "displayCondition": {
             "name": "ArrowButton2"
           },
-          "x": 216,
+          "x": 226,
           "y": 68
         }
       },
@@ -269,12 +269,15 @@
     "onTick": {
       "name": "AllRecipe2"
     },
+    "onClosed": {
+      "name": "GuiPClosed"
+    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,
       "ox": 15,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }

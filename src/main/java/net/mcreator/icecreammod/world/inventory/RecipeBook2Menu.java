@@ -10,6 +10,7 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
@@ -25,6 +26,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.icecreammod.procedures.GuiPClosedProcedure;
 import net.mcreator.icecreammod.procedures.AllRecipe2Procedure;
 import net.mcreator.icecreammod.init.IceCreamModModMenus;
 
@@ -95,7 +97,7 @@ public class RecipeBook2Menu extends AbstractContainerMenu implements Supplier<M
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return stack.is(ItemTags.create(new ResourceLocation("ice_cream_ice_cream_mod:ice_cream_base")));
+				return Items.STICK == stack.getItem();
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 53, 40) {
@@ -103,7 +105,7 @@ public class RecipeBook2Menu extends AbstractContainerMenu implements Supplier<M
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return Items.MILK_BUCKET == stack.getItem();
+				return Blocks.ICE.asItem() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 53, 22) {
@@ -111,7 +113,7 @@ public class RecipeBook2Menu extends AbstractContainerMenu implements Supplier<M
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return stack.is(ItemTags.create(new ResourceLocation("ice_cream_ice_cream_mod:ingredient")));
+				return stack.is(ItemTags.create(new ResourceLocation("ice_cream_mod:ingredient")));
 			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 152, 40) {
@@ -291,6 +293,7 @@ public class RecipeBook2Menu extends AbstractContainerMenu implements Supplier<M
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
+		GuiPClosedProcedure.execute();
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {

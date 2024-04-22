@@ -111,7 +111,7 @@ public class RecipeBook2Screen extends AbstractContainerScreen<RecipeBook2Menu> 
 		}).bounds(this.leftPos + -81, this.topPos + 93, 46, 20).build();
 		guistate.put("button:button_make", button_make);
 		this.addRenderableWidget(button_make);
-		imagebutton_trasferimentoremovebgpreview = new ImageButton(this.leftPos + 91, this.topPos + 36, 38, 23,
+		imagebutton_trasferimentoremovebgpreview = new ImageButton(this.leftPos + 101, this.topPos + 36, 38, 23,
 				new WidgetSprites(new ResourceLocation("ice_cream_mod:textures/screens/trasferimento-removebg-preview.png"), new ResourceLocation("ice_cream_mod:textures/screens/button.png")), e -> {
 					if (ArrowButton2Procedure.execute(world, x, y, z)) {
 						PacketDistributor.SERVER.noArg().send(new RecipeBook2ButtonMessage(3, x, y, z));

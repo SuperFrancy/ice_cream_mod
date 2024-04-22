@@ -2,7 +2,7 @@
   "display": {
     "background": "ice_cream_mod:textures/screens/cone.png",
     "icon": {
-      "item": "ice_cream_mod:vanilla_ice_cream"
+      "item": "ice_cream_mod:consumed_cone"
     },
     "title": {
       "translate": "advancements.nice_cream.title"

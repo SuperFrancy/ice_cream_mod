@@ -22,6 +22,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.icecreammod.procedures.GuiICClosedProcedure;
 import net.mcreator.icecreammod.init.IceCreamModModMenus;
 
 import java.util.function.Supplier;
@@ -90,7 +91,7 @@ public class IceCreamMachineGMenu extends AbstractContainerMenu implements Suppl
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return stack.is(ItemTags.create(new ResourceLocation("ice_cream_ice_cream_mod:ice_cream_base")));
+				return stack.is(ItemTags.create(new ResourceLocation("ice_cream_mod:ice_cream_base")));
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 35, 40) {
@@ -114,7 +115,7 @@ public class IceCreamMachineGMenu extends AbstractContainerMenu implements Suppl
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return stack.is(ItemTags.create(new ResourceLocation("ice_cream_ice_cream_mod:ingredient")));
+				return stack.is(ItemTags.create(new ResourceLocation("ice_cream_mod:ingredient")));
 			}
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 152, 40) {
@@ -242,15 +243,32 @@ public class IceCreamMachineGMenu extends AbstractContainerMenu implements Suppl
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
+		GuiICClosedProcedure.execute();
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {
+					if (j == 0)
+						continue;
+					if (j == 1)
+						continue;
+					if (j == 2)
+						continue;
+					if (j == 3)
+						continue;
 					if (j == 4)
 						continue;
 					playerIn.drop(internal.extractItem(j, internal.getStackInSlot(j).getCount(), false), false);
 				}
 			} else {
 				for (int i = 0; i < internal.getSlots(); ++i) {
+					if (i == 0)
+						continue;
+					if (i == 1)
+						continue;
+					if (i == 2)
+						continue;
+					if (i == 3)
+						continue;
 					if (i == 4)
 						continue;
 					playerIn.getInventory().placeItemBackInInventory(internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));

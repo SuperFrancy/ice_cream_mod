@@ -29,7 +29,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "TAG:ice_cream_mod:ice_cream_base"
+            "value": "TAG:mod:ice_cream_base"
           },
           "disablePlacement": {
             "fixedValue": false
@@ -38,7 +38,7 @@
           "disablePickup": {
             "fixedValue": false
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 177,
           "y": 98
         }
@@ -56,7 +56,7 @@
           "disablePickup": {
             "fixedValue": false
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 159,
           "y": 71
         }
@@ -74,7 +74,7 @@
           "disablePickup": {
             "fixedValue": false
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 195,
           "y": 71
         }
@@ -83,7 +83,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "TAG:ice_cream_mod:ingredient"
+            "value": "TAG:mod:ingredient"
           },
           "disablePlacement": {
             "fixedValue": false
@@ -92,7 +92,7 @@
           "disablePickup": {
             "fixedValue": false
           },
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "x": 177,
           "y": 53
         }
@@ -122,7 +122,7 @@
             "name": "ArrowButton"
           },
           "x": 226,
-          "y": 67
+          "y": 68
         }
       },
       {
@@ -134,17 +134,20 @@
           "onClick": {
             "name": "Open"
           },
-          "x": 132,
+          "x": 134,
           "y": 71
         }
       }
     ],
+    "onClosed": {
+      "name": "GuiICClosed"
+    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }

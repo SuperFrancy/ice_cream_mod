@@ -3,3 +3,11 @@
 /advancement grant Dev everything
 /advancement revoke Dev only ice_cream_mod:all_ice_cream_cup
 /advancement revoke Dev from ice_cream_mod:nice_cream
+/advancement revoke Dev only ice_cream_mod:im_glowing
+/advancement revoke Dev only ice_cream_mod:where_i_am
+/gamerule keepInventory true
+/kill
+/effect give Dev minecraft:hunger infinite 10
+/effect give Dev minecraft:hunger infinite 100
+/effect give Dev minecraft:hunger infinite 200
+/effect give Dev minecraft:hunger infinite 255

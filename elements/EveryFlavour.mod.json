@@ -5,7 +5,7 @@
     "achievementName": "Every Flavour",
     "achievementDescription": "Eat all flavours of Ice Creams, Ice Cream Cups and Popsicles",
     "achievementIcon": {
-      "value": "CUSTOM:ChorusPopsicle"
+      "value": "CUSTOM:VanillaFlower"
     },
     "background": "Default",
     "disableDisplay": false,

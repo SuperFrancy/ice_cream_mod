@@ -9208,6 +9208,20 @@
     },
     "done": true
   },
+  "ice_cream_mod:all_ice_cream_cup": {
+    "criteria": {
+      "all_ice_cream_cup_8": "2024-04-20 16:23:22 +0200",
+      "all_ice_cream_cup_3": "2024-04-20 16:23:11 +0200",
+      "all_ice_cream_cup_2": "2024-04-20 16:23:10 +0200",
+      "all_ice_cream_cup_1": "2024-04-20 16:23:08 +0200",
+      "all_ice_cream_cup_0": "2024-04-20 16:23:06 +0200",
+      "all_ice_cream_cup_7": "2024-04-20 16:23:20 +0200",
+      "all_ice_cream_cup_6": "2024-04-20 16:23:18 +0200",
+      "all_ice_cream_cup_5": "2024-04-20 16:23:16 +0200",
+      "all_ice_cream_cup_4": "2024-04-20 16:23:14 +0200"
+    },
+    "done": true
+  },
   "ice_cream_mod:all_popsicle": {
     "criteria": {
       "all_popsicle_0": "2024-04-20 16:23:39 +0200",
@@ -9222,17 +9236,15 @@
     },
     "done": true
   },
-  "ice_cream_mod:all_ice_cream_cup": {
+  "ice_cream_mod:im_glowing": {
     "criteria": {
-      "all_ice_cream_cup_8": "2024-04-20 16:23:22 +0200",
-      "all_ice_cream_cup_3": "2024-04-20 16:23:11 +0200",
-      "all_ice_cream_cup_2": "2024-04-20 16:23:10 +0200",
-      "all_ice_cream_cup_1": "2024-04-20 16:23:08 +0200",
-      "all_ice_cream_cup_0": "2024-04-20 16:23:06 +0200",
-      "all_ice_cream_cup_7": "2024-04-20 16:23:20 +0200",
-      "all_ice_cream_cup_6": "2024-04-20 16:23:18 +0200",
-      "all_ice_cream_cup_5": "2024-04-20 16:23:16 +0200",
-      "all_ice_cream_cup_4": "2024-04-20 16:23:14 +0200"
+      "im_glowing_0": "2024-04-22 12:29:26 +0200"
+    },
+    "done": true
+  },
+  "ice_cream_mod:where_i_am": {
+    "criteria": {
+      "where_i_am_0": "2024-04-22 12:29:44 +0200"
     },
     "done": true
   },

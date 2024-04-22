@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "ice_cream_mod:glow_berry_ice_cream_cup"
+      "item": "minecraft:bowl"
     },
     "title": {
       "translate": "advancements.all_ice_cream_cup.title"

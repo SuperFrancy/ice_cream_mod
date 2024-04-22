@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:chorus_fruit"
+    },
+    "title": {
+      "translate": "advancements.where_i_am.title"
+    },
+    "description": {
+      "translate": "advancements.where_i_am.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "where_i_am_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "ice_cream_mod:im_glowing"
+}

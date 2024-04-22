@@ -74,7 +74,7 @@ public class PopsicleMachineGScreen extends AbstractContainerScreen<PopsicleMach
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_trasferimentoremovebgpreview = new ImageButton(this.leftPos + 91, this.topPos + 36, 38, 23,
+		imagebutton_trasferimentoremovebgpreview = new ImageButton(this.leftPos + 101, this.topPos + 36, 38, 23,
 				new WidgetSprites(new ResourceLocation("ice_cream_mod:textures/screens/trasferimento-removebg-preview.png"), new ResourceLocation("ice_cream_mod:textures/screens/button.png")), e -> {
 					if (ArrowButton2Procedure.execute(world, x, y, z)) {
 						PacketDistributor.SERVER.noArg().send(new PopsicleMachineGButtonMessage(0, x, y, z));
@@ -89,7 +89,7 @@ public class PopsicleMachineGScreen extends AbstractContainerScreen<PopsicleMach
 		};
 		guistate.put("button:imagebutton_trasferimentoremovebgpreview", imagebutton_trasferimentoremovebgpreview);
 		this.addRenderableWidget(imagebutton_trasferimentoremovebgpreview);
-		imagebutton_book = new ImageButton(this.leftPos + 7, this.topPos + 39, 20, 18, new WidgetSprites(new ResourceLocation("ice_cream_mod:textures/screens/book.png"), new ResourceLocation("ice_cream_mod:textures/screens/button_highlighted.png")),
+		imagebutton_book = new ImageButton(this.leftPos + 9, this.topPos + 39, 20, 18, new WidgetSprites(new ResourceLocation("ice_cream_mod:textures/screens/book.png"), new ResourceLocation("ice_cream_mod:textures/screens/button_highlighted.png")),
 				e -> {
 					if (true) {
 						PacketDistributor.SERVER.noArg().send(new PopsicleMachineGButtonMessage(1, x, y, z));

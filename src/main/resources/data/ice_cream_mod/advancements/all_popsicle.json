@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "ice_cream_mod:glow_berry_popsicle"
+      "item": "minecraft:stick"
     },
     "title": {
       "translate": "advancements.all_popsicle.title"

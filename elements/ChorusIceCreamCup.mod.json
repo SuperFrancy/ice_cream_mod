@@ -47,7 +47,7 @@
     "nutritionalValue": 6,
     "saturation": 0.3,
     "eatResultItem": {
-      "value": "CUSTOM:ChorusIceCreamCup"
+      "value": "Items.BOWL"
     },
     "isMeat": false,
     "isAlwaysEdible": false,

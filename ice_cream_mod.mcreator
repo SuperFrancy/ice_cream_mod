@@ -2189,6 +2189,64 @@
         ]
       },
       "path": "~/Procedure"
+    },
+    {
+      "name": "GuiICClosed",
+      "type": "procedure",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_ic_closed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/icecreammod/procedures/GuiICClosedProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Procedure/Gui Closed"
+    },
+    {
+      "name": "GuiPClosed",
+      "type": "procedure",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_p_closed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/icecreammod/procedures/GuiPClosedProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Procedure/Gui Closed"
+    },
+    {
+      "name": "WhereIAm",
+      "type": "achievement",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "where_i_am",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/advancements/where_i_am.json"
+        ]
+      },
+      "path": "~/Advancments"
+    },
+    {
+      "name": "ImGlowing",
+      "type": "achievement",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "im_glowing",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/advancements/im_glowing.json"
+        ]
+      },
+      "path": "~/Advancments"
     }
   ],
   "variable_elements": [
@@ -2247,7 +2305,6 @@
       "CUSTOM:ChorusIceCream"
     ],
     "ITEMS:mod:ice_cream_base": [
-      "Items.STICK",
       "CUSTOM:Cone",
       "Items.BOWL"
     ],
@@ -2273,8 +2330,8 @@
       "item.ice_cream_mod.dough": "Impasto",
       "gui.ice_cream_mod.recipe_book.button_make": "Crea",
       "advancements.all_popsicle.title": "Ghiacciato",
-      "item.ice_cream_mod.chocolate_ice_cream": "Cono alla Cioccolato",
       "gui.ice_cream_mod.recipe_book.button_empty": "\u003c",
+      "item.ice_cream_mod.chocolate_ice_cream": "Cono alla Cioccolato",
       "advancements.all_ice_cream.title": "Fa Freddo",
       "item.ice_cream_mod.melon_ice_cream": "Cono all\u0027Anguria",
       "item.ice_cream_mod.glow_berry_ice_cream_cup": "Coppetta alla Bacca Luminosa",
@@ -2286,6 +2343,7 @@
       "gui.ice_cream_mod.ice_cream_machine_g.label_icecreammachine": "Macchina per Gelati",
       "item.ice_cream_mod.glow_berry_ice_cream": "Cono alla Bacca Luminosa",
       "item.ice_cream_mod.beetroot_ice_cream_cup": "Coppetta alla Barbaietola",
+      "advancements.where_i_am.title": "Dove Sono?",
       "gui.ice_cream_mod.popsicle_machine_g.label_icecreammachine": "Macchina per Ghiaccioli",
       "item.ice_cream_mod.apple_ice_cream_cup": "Coppetta alla Mela",
       "advancements.all_ice_cream_cup.title": "Coppa del Nonno",
@@ -2305,15 +2363,18 @@
       "item.ice_cream_mod.sweet_berry_popsicle": "Ghiacciolo alla Bacca Dolce",
       "gui.ice_cream_mod.recipe_book_2.label_icecreammachine": "Macchina per Ghiaccioli",
       "advancements.nice_cream.descr": "Crea un gelato",
+      "advancements.im_glowing.title": "Sto Brillando",
       "item.ice_cream_mod.beetroot_ice_cream": "Cono alla Barbabietola",
       "item.ice_cream_mod.chocolate_ice_cream_cup": "Coppetta alla Cioccolato",
       "item.ice_cream_mod.melon_ice_cream_cup": "Coppetta all\u0027Anguria",
       "gui.ice_cream_mod.recipe_book.button_empty1": "\u003e",
       "advancements.all_ice_cream_cup.descr": "Mangia tutti i gusti di Coppette",
       "item.ice_cream_mod.carrot_ice_cream": "Cono alla Carota",
+      "advancements.where_i_am.descr": "Teletrasportato mangiando qualsiasi Gelato al Chorus",
       "item.ice_cream_mod.beetroot_popsicle": "Ghiacciolo alla Barbabietola",
       "item.ice_cream_mod.sweet_berry_ice_cream_cup": "Coppetta alla Bacca Dolce",
       "item.ice_cream_mod.apple_popsicle": "Ghiacciolo alla Mela",
+      "advancements.im_glowing.descr": "Diventa luminescente mangiando qualsiasi Gelato alla Bacca Luminosa",
       "gui.ice_cream_mod.recipe_book_2.button_make": "Crea",
       "block.ice_cream_mod.popsicle_machine": "Macchina per Ghiaccioli",
       "item.ice_cream_mod.vanilla_ice_cream_cup": "Coppetta alla Vaniglia",
@@ -2330,8 +2391,8 @@
       "item.ice_cream_mod.dough": "Dough",
       "gui.ice_cream_mod.recipe_book.button_make": "Make",
       "advancements.all_popsicle.title": "Frozen",
-      "item.ice_cream_mod.chocolate_ice_cream": "Chocolate Ice Cream",
       "gui.ice_cream_mod.recipe_book.button_empty": "\u003c",
+      "item.ice_cream_mod.chocolate_ice_cream": "Chocolate Ice Cream",
       "advancements.all_ice_cream.title": "I Scream",
       "item.ice_cream_mod.melon_ice_cream": "Melon Ice Cream",
       "item.ice_cream_mod.glow_berry_ice_cream_cup": "Glow Berry Ice Cream Cup",
@@ -2343,6 +2404,7 @@
       "gui.ice_cream_mod.ice_cream_machine_g.label_icecreammachine": "Ice Cream Machine",
       "item.ice_cream_mod.glow_berry_ice_cream": "Glow Berry Ice Cream",
       "item.ice_cream_mod.beetroot_ice_cream_cup": "Beetroot Ice Cream Cup",
+      "advancements.where_i_am.title": "Where I Am?",
       "gui.ice_cream_mod.popsicle_machine_g.label_icecreammachine": "Popsicle Machine",
       "item.ice_cream_mod.apple_ice_cream_cup": "Apple Ice Cream Cup",
       "advancements.all_ice_cream_cup.title": "Granfather\u0027s Cup",
@@ -2362,15 +2424,18 @@
       "item.ice_cream_mod.sweet_berry_popsicle": "Sweet Berry Popsicle",
       "gui.ice_cream_mod.recipe_book_2.label_icecreammachine": "Popsicle Machine",
       "advancements.nice_cream.descr": "Eat a Ice cream",
+      "advancements.im_glowing.title": "I\u0027m Glowing",
       "item.ice_cream_mod.beetroot_ice_cream": "Beetroot Ice Cream",
       "item.ice_cream_mod.chocolate_ice_cream_cup": "Chocolate Ice Cream Cup",
       "item.ice_cream_mod.melon_ice_cream_cup": "Melon Ice Cream Cup",
       "gui.ice_cream_mod.recipe_book.button_empty1": "\u003e",
       "advancements.all_ice_cream_cup.descr": "Eat all flavours of Ice Cream Cups",
       "item.ice_cream_mod.carrot_ice_cream": "Carrot Ice Cream",
+      "advancements.where_i_am.descr": "Teleport yourself eating any Chorus Ice Cream",
       "item.ice_cream_mod.beetroot_popsicle": "Beetroot Popsicle",
       "item.ice_cream_mod.sweet_berry_ice_cream_cup": "Sweet Berry Ice Cream Cup",
       "item.ice_cream_mod.apple_popsicle": "Apple Popsicle",
+      "advancements.im_glowing.descr": "Become glowing eating any Glow Berry Ice Cream",
       "gui.ice_cream_mod.recipe_book_2.button_make": "Make",
       "block.ice_cream_mod.popsicle_machine": "Popsicle Machine",
       "item.ice_cream_mod.vanilla_ice_cream_cup": "Vanilla Ice Cream Cup",
@@ -2466,6 +2531,10 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "Gui Closed",
+            "children": []
           }
         ]
       },
