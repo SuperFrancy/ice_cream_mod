@@ -61,7 +61,6 @@ public class IceCreamModModVariables {
 			PlayerVariables clone = new PlayerVariables();
 			if (!event.isWasDeath()) {
 				clone.pagen = original.pagen;
-				clone.book = original.book;
 				clone.pagen2 = original.pagen2;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
@@ -70,14 +69,12 @@ public class IceCreamModModVariables {
 
 	public static class PlayerVariables implements INBTSerializable<CompoundTag> {
 		public double pagen = 1.0;
-		public boolean book = false;
 		public double pagen2 = 1.0;
 
 		@Override
 		public CompoundTag serializeNBT() {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putDouble("pagen", pagen);
-			nbt.putBoolean("book", book);
 			nbt.putDouble("pagen2", pagen2);
 			return nbt;
 		}
@@ -85,7 +82,6 @@ public class IceCreamModModVariables {
 		@Override
 		public void deserializeNBT(CompoundTag nbt) {
 			pagen = nbt.getDouble("pagen");
-			book = nbt.getBoolean("book");
 			pagen2 = nbt.getDouble("pagen2");
 		}
 

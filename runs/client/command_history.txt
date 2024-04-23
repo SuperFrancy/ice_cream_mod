@@ -11,3 +11,4 @@
 /effect give Dev minecraft:hunger infinite 100
 /effect give Dev minecraft:hunger infinite 200
 /effect give Dev minecraft:hunger infinite 255
+/effect give Dev minecraft:hunger infinite 155

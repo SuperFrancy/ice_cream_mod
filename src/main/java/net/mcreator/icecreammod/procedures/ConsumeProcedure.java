@@ -20,7 +20,6 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.AdvancementHolder;
 
-import net.mcreator.icecreammod.network.IceCreamModModVariables;
 import net.mcreator.icecreammod.init.IceCreamModModItems;
 
 public class ConsumeProcedure {
@@ -45,21 +44,10 @@ public class ConsumeProcedure {
 					}
 				}
 			}
-			{
-				IceCreamModModVariables.PlayerVariables _vars = entity.getData(IceCreamModModVariables.PLAYER_VARIABLES);
-				_vars.book = true;
-				_vars.syncPlayerVariables(entity);
-			}
 			if (itemstack.getItem() == IceCreamModModItems.CHORUS_ICE_CREAM.get() || itemstack.getItem() == IceCreamModModItems.CHORUS_ICE_CREAM_CUP.get() || itemstack.getItem() == IceCreamModModItems.CHORUS_POPSICLE.get()) {
-				if (entity.isShiftKeyDown()) {
-					ix = Mth.nextInt(RandomSource.create(), -8, 8);
-					iy = Mth.nextInt(RandomSource.create(), -1, 1);
-					iz = Mth.nextInt(RandomSource.create(), -8, 8);
-				} else {
-					ix = Mth.nextInt(RandomSource.create(), -8, 8);
-					iy = Mth.nextInt(RandomSource.create(), -2, 2);
-					iz = Mth.nextInt(RandomSource.create(), -8, 8);
-				}
+				ix = Mth.nextInt(RandomSource.create(), -8, 8);
+				iy = Mth.nextInt(RandomSource.create(), -2, 2);
+				iz = Mth.nextInt(RandomSource.create(), -8, 8);
 				while (true) {
 					if (world.getBlockState(BlockPos.containing(x + ix, y + iy, z + iz)).canOcclude() && world.getBlockState(BlockPos.containing(x + ix, y + iy + 1, z + iz)).canOcclude()) {
 						ix = Mth.nextInt(RandomSource.create(), 5, -5);

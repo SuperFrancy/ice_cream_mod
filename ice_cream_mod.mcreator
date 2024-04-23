@@ -2257,12 +2257,6 @@
       "value": "1.0"
     },
     {
-      "name": "book",
-      "type": "logic",
-      "scope": "player_lifetime",
-      "value": "false"
-    },
-    {
       "name": "pagen2",
       "type": "number",
       "scope": "player_lifetime",
