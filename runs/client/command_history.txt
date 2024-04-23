@@ -28,3 +28,5 @@
 /give Dev ice_cream_mod:chorus_ice_cream 64
 /effect give Dev minecraft:hunger infinite 255
 /give Dev minecraft:chorus_fruit 64
+/effect clear
+/advancement grant Dev everything

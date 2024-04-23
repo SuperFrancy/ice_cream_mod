@@ -24,7 +24,7 @@
         "value": "Items.REDSTONE"
       },
       {
-        "value": "Items.SNOWBALL"
+        "value": "Blocks.ICE"
       },
       {
         "value": "Items.REDSTONE"
@@ -40,9 +40,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:IceCreamMachine"
+      "value": "CUSTOM:PopsicleMachine"
     },
-    "name": "ice_cream_machine",
+    "name": "popsicle_machine",
     "namespace": "mod"
   }
 }

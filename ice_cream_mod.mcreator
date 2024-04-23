@@ -2247,6 +2247,20 @@
         ]
       },
       "path": "~/Advancments"
+    },
+    {
+      "name": "PopsicleMachineR",
+      "type": "recipe",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "popsicle_machine_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ice_cream_mod/recipes/popsicle_machine.json"
+        ]
+      },
+      "path": "~/Recipe/Block"
     }
   ],
   "variable_elements": [
@@ -2324,8 +2338,8 @@
       "item.ice_cream_mod.dough": "Impasto",
       "gui.ice_cream_mod.recipe_book.button_make": "Crea",
       "advancements.all_popsicle.title": "Ghiacciato",
-      "item.ice_cream_mod.chocolate_ice_cream": "Cono alla Cioccolato",
       "gui.ice_cream_mod.recipe_book.button_empty": "\u003c",
+      "item.ice_cream_mod.chocolate_ice_cream": "Cono alla Cioccolato",
       "advancements.all_ice_cream.title": "Fa Freddo",
       "item.ice_cream_mod.melon_ice_cream": "Cono all\u0027Anguria",
       "item.ice_cream_mod.glow_berry_ice_cream_cup": "Coppetta alla Bacca Luminosa",
@@ -2385,8 +2399,8 @@
       "item.ice_cream_mod.dough": "Dough",
       "gui.ice_cream_mod.recipe_book.button_make": "Make",
       "advancements.all_popsicle.title": "Frozen",
-      "item.ice_cream_mod.chocolate_ice_cream": "Chocolate Ice Cream",
       "gui.ice_cream_mod.recipe_book.button_empty": "\u003c",
+      "item.ice_cream_mod.chocolate_ice_cream": "Chocolate Ice Cream",
       "advancements.all_ice_cream.title": "I Scream",
       "item.ice_cream_mod.melon_ice_cream": "Melon Ice Cream",
       "item.ice_cream_mod.glow_berry_ice_cream_cup": "Glow Berry Ice Cream Cup",
@@ -2497,14 +2511,6 @@
       {
         "name": "Procedure",
         "children": [
-          {
-            "name": "Advancements",
-            "children": []
-          },
-          {
-            "name": "Effect",
-            "children": []
-          },
           {
             "name": "Book",
             "children": []
