@@ -29,70 +29,68 @@ public class ConsumeProcedure {
 		double ix = 0;
 		double iy = 0;
 		double iz = 0;
-		if (itemstack.getItem().isEdible()) {
-			if (itemstack.getItem() == IceCreamModModItems.GLOW_BERRY_ICE_CREAM.get() || itemstack.getItem() == IceCreamModModItems.GLOW_BERRY_ICE_CREAM_CUP.get() || itemstack.getItem() == IceCreamModModItems.GLOW_BERRY_POPSICLE.get()) {
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 120, 1));
-				if (entity instanceof ServerPlayer _player) {
-					AdvancementHolder _adv = _player.server.getAdvancements().get(new ResourceLocation("ice_cream_mod:im_glowing"));
-					if (_adv != null) {
-						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-						if (!_ap.isDone()) {
-							for (String criteria : _ap.getRemainingCriteria())
-								_player.getAdvancements().award(_adv, criteria);
-						}
-					}
-				}
-			}
-			if (itemstack.getItem() == IceCreamModModItems.CHORUS_ICE_CREAM.get() || itemstack.getItem() == IceCreamModModItems.CHORUS_ICE_CREAM_CUP.get() || itemstack.getItem() == IceCreamModModItems.CHORUS_POPSICLE.get()) {
-				ix = Mth.nextInt(RandomSource.create(), -8, 8);
-				iy = Mth.nextInt(RandomSource.create(), -2, 2);
-				iz = Mth.nextInt(RandomSource.create(), -8, 8);
-				while (true) {
-					if (world.getBlockState(BlockPos.containing(x + ix, y + iy, z + iz)).canOcclude() && world.getBlockState(BlockPos.containing(x + ix, y + iy + 1, z + iz)).canOcclude()) {
-						ix = Mth.nextInt(RandomSource.create(), 5, -5);
-						iy = Mth.nextInt(RandomSource.create(), 5, -5);
-						iz = Mth.nextInt(RandomSource.create(), 5, -5);
-					} else {
-						{
-							Entity _ent = entity;
-							_ent.teleportTo((x + ix), (y + iy), (z + iz));
-							if (_ent instanceof ServerPlayer _serverPlayer)
-								_serverPlayer.connection.teleport((x + ix), (y + iy), (z + iz), _ent.getYRot(), _ent.getXRot());
-						}
-						if (world instanceof Level _level) {
-							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("item.chorus_fruit.teleport")), SoundSource.PLAYERS, 1, 1);
-							} else {
-								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("item.chorus_fruit.teleport")), SoundSource.PLAYERS, 1, 1, false);
-							}
-						}
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.PORTAL, x, y, z, 5, 3, 3, 3, 1);
-						if (entity instanceof Player _player)
-							_player.getCooldowns().addCooldown(itemstack.getItem(), 100);
-						break;
-					}
-				}
-				if (entity instanceof ServerPlayer _player) {
-					AdvancementHolder _adv = _player.server.getAdvancements().get(new ResourceLocation("ice_cream_mod:where_i_am"));
-					if (_adv != null) {
-						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-						if (!_ap.isDone()) {
-							for (String criteria : _ap.getRemainingCriteria())
-								_player.getAdvancements().award(_adv, criteria);
-						}
-					}
-				}
-			}
+		if (itemstack.getItem() == IceCreamModModItems.GLOW_BERRY_ICE_CREAM.get() || itemstack.getItem() == IceCreamModModItems.GLOW_BERRY_ICE_CREAM_CUP.get() || itemstack.getItem() == IceCreamModModItems.GLOW_BERRY_POPSICLE.get()) {
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 120, 1));
 			if (entity instanceof ServerPlayer _player) {
-				AdvancementHolder _adv = _player.server.getAdvancements().get(new ResourceLocation("ice_cream_mod:nice_cream"));
+				AdvancementHolder _adv = _player.server.getAdvancements().get(new ResourceLocation("ice_cream_mod:im_glowing"));
 				if (_adv != null) {
 					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 					if (!_ap.isDone()) {
 						for (String criteria : _ap.getRemainingCriteria())
 							_player.getAdvancements().award(_adv, criteria);
 					}
+				}
+			}
+		}
+		if (itemstack.getItem() == IceCreamModModItems.CHORUS_ICE_CREAM.get() || itemstack.getItem() == IceCreamModModItems.CHORUS_ICE_CREAM_CUP.get() || itemstack.getItem() == IceCreamModModItems.CHORUS_POPSICLE.get()) {
+			ix = Mth.nextInt(RandomSource.create(), -8, 8);
+			iy = Mth.nextInt(RandomSource.create(), -2, 2);
+			iz = Mth.nextInt(RandomSource.create(), -8, 8);
+			while (true) {
+				if (world.getBlockState(BlockPos.containing(x + ix, y + iy, z + iz)).canOcclude() && world.getBlockState(BlockPos.containing(x + ix, y + iy + 1, z + iz)).canOcclude()) {
+					ix = Mth.nextInt(RandomSource.create(), -8, 8);
+					iy = Mth.nextInt(RandomSource.create(), -2, 2);
+					iz = Mth.nextInt(RandomSource.create(), -8, 8);
+				} else {
+					{
+						Entity _ent = entity;
+						_ent.teleportTo((x + ix), (y + iy), (z + iz));
+						if (_ent instanceof ServerPlayer _serverPlayer)
+							_serverPlayer.connection.teleport((x + ix), (y + iy), (z + iz), _ent.getYRot(), _ent.getXRot());
+					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("item.chorus_fruit.teleport")), SoundSource.PLAYERS, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("item.chorus_fruit.teleport")), SoundSource.PLAYERS, 1, 1, false);
+						}
+					}
+					if (world instanceof ServerLevel _level)
+						_level.sendParticles(ParticleTypes.PORTAL, x, y, z, 5, 3, 3, 3, 1);
+					if (entity instanceof Player _player)
+						_player.getCooldowns().addCooldown(itemstack.getItem(), 20);
+					break;
+				}
+			}
+			if (entity instanceof ServerPlayer _player) {
+				AdvancementHolder _adv = _player.server.getAdvancements().get(new ResourceLocation("ice_cream_mod:where_i_am"));
+				if (_adv != null) {
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
+				}
+			}
+		}
+		if (entity instanceof ServerPlayer _player) {
+			AdvancementHolder _adv = _player.server.getAdvancements().get(new ResourceLocation("ice_cream_mod:nice_cream"));
+			if (_adv != null) {
+				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+				if (!_ap.isDone()) {
+					for (String criteria : _ap.getRemainingCriteria())
+						_player.getAdvancements().award(_adv, criteria);
 				}
 			}
 		}
