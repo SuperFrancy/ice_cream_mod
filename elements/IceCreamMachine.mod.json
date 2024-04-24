@@ -102,7 +102,7 @@
     "unbreakable": false,
     "breakHarvestLevel": 1,
     "isBonemealable": false,
-    "hasInventory": true,
+    "hasInventory": false,
     "guiBoundTo": "IceCreamMachineG",
     "openGUIOnRightClick": true,
     "inventorySize": 6,
@@ -126,6 +126,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "Gui"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

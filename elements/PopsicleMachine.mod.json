@@ -102,7 +102,7 @@
     "unbreakable": false,
     "breakHarvestLevel": 1,
     "isBonemealable": false,
-    "hasInventory": true,
+    "hasInventory": false,
     "guiBoundTo": "PopsicleMachineG",
     "openGUIOnRightClick": true,
     "inventorySize": 5,
@@ -125,6 +125,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "Gui2"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

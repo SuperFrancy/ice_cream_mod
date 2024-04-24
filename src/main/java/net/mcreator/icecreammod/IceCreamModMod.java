@@ -23,7 +23,6 @@ import net.mcreator.icecreammod.init.IceCreamModModTabs;
 import net.mcreator.icecreammod.init.IceCreamModModMenus;
 import net.mcreator.icecreammod.init.IceCreamModModItems;
 import net.mcreator.icecreammod.init.IceCreamModModBlocks;
-import net.mcreator.icecreammod.init.IceCreamModModBlockEntities;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
@@ -42,7 +41,7 @@ public class IceCreamModMod {
 		modEventBus.addListener(this::registerNetworking);
 
 		IceCreamModModBlocks.REGISTRY.register(modEventBus);
-		IceCreamModModBlockEntities.REGISTRY.register(modEventBus);
+
 		IceCreamModModItems.register(modEventBus);
 
 		IceCreamModModTabs.REGISTRY.register(modEventBus);

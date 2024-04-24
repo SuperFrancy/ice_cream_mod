@@ -12,6 +12,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.icecreammod.world.inventory.RecipeBook2Menu;
+import net.mcreator.icecreammod.network.IceCreamModModVariables;
 
 import io.netty.buffer.Unpooled;
 
@@ -32,6 +33,11 @@ public class Open2Procedure {
 					return new RecipeBook2Menu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 				}
 			}, _bpos);
+		}
+		{
+			IceCreamModModVariables.PlayerVariables _vars = entity.getData(IceCreamModModVariables.PLAYER_VARIABLES);
+			_vars.open2 = true;
+			_vars.syncPlayerVariables(entity);
 		}
 	}
 }

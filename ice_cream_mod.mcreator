@@ -577,7 +577,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/icecreammod/block/IceCreamMachineBlock.java",
-          "src/main/java/net/mcreator/icecreammod/block/entity/IceCreamMachineBlockEntity.java",
           "src/main/resources/assets/ice_cream_mod/blockstates/ice_cream_machine.json",
           "src/main/resources/assets/ice_cream_mod/models/item/ice_cream_machine.json",
           "src/main/resources/data/ice_cream_mod/loot_tables/blocks/ice_cream_machine.json",
@@ -1542,7 +1541,6 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/ice_cream_mod/blockstates/popsicle_machine.json",
-          "src/main/java/net/mcreator/icecreammod/block/entity/PopsicleMachineBlockEntity.java",
           "src/main/resources/assets/ice_cream_mod/models/block/popsicle_machine.json",
           "src/main/java/net/mcreator/icecreammod/block/PopsicleMachineBlock.java",
           "src/main/resources/data/ice_cream_mod/loot_tables/blocks/popsicle_machine.json",
@@ -2261,6 +2259,78 @@
         ]
       },
       "path": "~/Recipe/Block"
+    },
+    {
+      "name": "Gui",
+      "type": "procedure",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/icecreammod/procedures/GuiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure"
+    },
+    {
+      "name": "Gui2",
+      "type": "procedure",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/icecreammod/procedures/Gui2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure"
     }
   ],
   "variable_elements": [
@@ -2275,6 +2345,18 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "1.0"
+    },
+    {
+      "name": "open",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "open2",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
     }
   ],
   "sound_elements": [],
