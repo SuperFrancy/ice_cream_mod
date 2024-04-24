@@ -1,176 +1,176 @@
-[24apr2024 13:08:15.615] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, 20.4.223, --assetIndex, asset-index, --assetsDir, C:\Users\Francesco\.mcreator\gradle\caches\minecraft\assets\1.20.4, --gameDir, ., --fml.neoForgeVersion, 20.4.223, --fml.fmlVersion, 2.0.17, --fml.mcVersion, 1.20.4, --fml.neoFormVersion, 20231207.154220]
-[24apr2024 13:08:15.620] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.10 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
-[24apr2024 13:08:15.758] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[24apr2024 13:08:15.872] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
-[24apr2024 13:08:16.000] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
-[24apr2024 13:08:16.110] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Francesco/.mcreator/gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.13.1+mixin.0.8.5/618f4dff860cf2d6b5196073b1a5f5e0a8591acb/sponge-mixin-0.13.1+mixin.0.8.5.jar%23173!/ Service=ModLauncher Env=CLIENT
-[24apr2024 13:08:16.134] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: Intel(R) UHD Graphics 630 GL version 4.6.0 - Build 27.20.100.9415, Intel
-[24apr2024 13:08:16.484] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "neoforge-20.4.223.jar" of type MOD with provider net.neoforged.fml.loading.moddiscovery.MinecraftLocator@23c650a3
-[24apr2024 13:08:16.484] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "main" of type MOD with provider net.neoforged.fml.loading.moddiscovery.MinecraftLocator@23c650a3
-[24apr2024 13:08:16.484] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "" of type MOD with provider net.neoforged.fml.loading.moddiscovery.MinecraftLocator@23c650a3
-[24apr2024 13:08:16.543] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "mcreator_link.jar" of type MOD with provider net.neoforged.fml.loading.moddiscovery.ClasspathLocator@64e92d61
-[24apr2024 13:08:16.543] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "jei-1.20.4-neoforge-17.3.0.49.jar" of type MOD with provider net.neoforged.fml.loading.moddiscovery.ClasspathLocator@64e92d61
-[24apr2024 13:08:16.544] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "mcreator_link.jar" of type MOD with provider net.neoforged.fml.loading.moddiscovery.ClasspathLocator@64e92d61
-[24apr2024 13:08:16.544] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "jei-1.20.4-neoforge-17.3.0.49.jar" of type MOD with provider net.neoforged.fml.loading.moddiscovery.ClasspathLocator@64e92d61
-[24apr2024 13:08:16.715] [main/INFO] [net.neoforged.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
-[24apr2024 13:08:16.715] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "jSerialComm-2.7.0.jar" of type GAMELIBRARY with provider net.neoforged.fml.loading.moddiscovery.JarInJarDependencyLocator@4dd94a58
-[24apr2024 13:08:16.716] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "mixinextras-neoforge-0.3.5.jar" of type GAMELIBRARY with provider net.neoforged.fml.loading.moddiscovery.JarInJarDependencyLocator@4dd94a58
-[24apr2024 13:08:17.994] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, 20.4.223, --gameDir, ., --assetsDir, C:\Users\Francesco\.mcreator\gradle\caches\minecraft\assets\1.20.4, --assetIndex, asset-index]
-[24apr2024 13:08:23.195] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 198 Datafixer optimizations took 221 milliseconds
-[24apr2024 13:08:27.523] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[24apr2024 13:08:27.526] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[24apr2024 13:08:27.533] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[24apr2024 13:08:27.535] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[24apr2024 13:08:27.538] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[24apr2024 13:08:27.790] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Francesco/MCreatorWorkspaces/ice_cream_mod/.gradle/repositories/ng_dummy_ng/net/neoforged/neoforge/20.4.223/neoforge-20.4.223.jar%23193!/assets/.mcassetsroot' uses unexpected schema
-[24apr2024 13:08:27.791] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Francesco/MCreatorWorkspaces/ice_cream_mod/.gradle/repositories/ng_dummy_ng/net/neoforged/neoforge/20.4.223/neoforge-20.4.223.jar%23193!/data/.mcassetsroot' uses unexpected schema
-[24apr2024 13:08:27.840] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[24apr2024 13:08:27.856] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[24apr2024 13:08:28.047] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.2+13
-[24apr2024 13:08:28.452] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 20.4.223, for MC 1.20.4 with MCP 20231207.154220
-[24apr2024 13:08:28.714] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
-[24apr2024 13:08:28.724] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 5.940 ms
-[24apr2024 13:08:29.929] [Render thread/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: []
-[24apr2024 13:08:30.215] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: mod_resources, mod:ice_cream_mod, mod:mcreator_link, mod:neoforge, mod:jei, vanilla
-[24apr2024 13:08:30.358] [Worker-Main-2/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.04.hex, loading
-[24apr2024 13:08:32.968] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
-[24apr2024 13:08:32.969] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[24apr2024 13:08:32.969] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.generic.wind_burst
-[24apr2024 13:08:33.021] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Cuffie (2- High Definition Audio Device)
-[24apr2024 13:08:33.022] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[24apr2024 13:08:33.182] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[24apr2024 13:08:33.321] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[24apr2024 13:08:33.325] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[24apr2024 13:08:33.332] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[24apr2024 13:08:33.341] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[24apr2024 13:08:33.393] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[24apr2024 13:08:33.397] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[24apr2024 13:08:33.400] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[24apr2024 13:08:33.403] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[24apr2024 13:08:34.136] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[24apr2024 13:08:34.636] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[24apr2024 13:08:34.655] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[24apr2024 13:08:34.659] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[24apr2024 13:08:34.662] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
-[24apr2024 13:08:34.698] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 jei:textures/atlas/gui.png-atlas
-[24apr2024 13:08:36.733] [Render thread/ERROR] [net.neoforged.neoforge.common.I18nExtension/CORE]: Illegal format found `{0,choice,0#No mods<unk> 1#1 mod<unk> 1<{0} mods} caricata/e`
-[24apr2024 13:08:47.249] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 9 recipes
-[24apr2024 13:08:47.441] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1278 advancements
-[24apr2024 13:08:47.844] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.event.TagsUpdatedEvent too early, ignoring
-[24apr2024 13:08:47.900] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.4
-[24apr2024 13:08:47.900] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[24apr2024 13:08:49.642] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[24apr2024 13:08:53.052] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparazione dell'area di generazione: 0%
-[24apr2024 13:08:53.052] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparazione dell'area di generazione: 0%
-[24apr2024 13:08:53.053] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparazione dell'area di generazione: 0%
-[24apr2024 13:08:53.053] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparazione dell'area di generazione: 0%
-[24apr2024 13:08:53.053] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparazione dell'area di generazione: 0%
-[24apr2024 13:08:53.053] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparazione dell'area di generazione: 0%
-[24apr2024 13:08:53.053] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparazione dell'area di generazione: 0%
-[24apr2024 13:08:53.167] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparazione dell'area di generazione: 0%
-[24apr2024 13:08:53.673] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparazione dell'area di generazione: 17%
-[24apr2024 13:08:54.177] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparazione dell'area di generazione: 68%
-[24apr2024 13:08:54.520] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
-[24apr2024 13:08:54.527] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 4869 ms
-[24apr2024 13:08:54.659] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
-[24apr2024 13:08:54.659] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
-[24apr2024 13:08:55.266] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:42112808] logged in with entity id 150 at (82.5, 64.0, -60.5)
-[24apr2024 13:08:55.297] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.event.TagsUpdatedEvent
-[24apr2024 13:08:55.326] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev si è unito/a alla partita
-[24apr2024 13:08:55.439] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@240844b6=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:chocolate_ice_cream_r
-[24apr2024 13:08:55.440] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@5bb7e5d7=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:carrot_ice_cream_cup_r
-[24apr2024 13:08:55.442] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@1306e335=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:vanilla_ice_cream_cup_r
-[24apr2024 13:08:55.444] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@22395d00=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:vanilla_ice_cream_r
-[24apr2024 13:08:55.444] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@16a151ba=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:apple_popsicle_r
-[24apr2024 13:08:55.445] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@11ce721f=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:chorus_ice_cream_r
-[24apr2024 13:08:55.446] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@28062c6a=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:chorus_ice_cream_cup_r
-[24apr2024 13:08:55.447] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@21b8e988=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:sweet_berry_popsicle_r
-[24apr2024 13:08:55.447] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@1b71156f=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:melon_ice_cream_r
-[24apr2024 13:08:55.448] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@77b60b6f=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:melon_ice_cream_cup_r
-[24apr2024 13:08:55.449] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@cdeb5f5=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:sweet_berry_ice_cream_cup_r
-[24apr2024 13:08:55.450] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@6d363cf8=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:beetroot_ice_cream_r
-[24apr2024 13:08:55.451] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@2482b6f0=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:carrot_popsicle_r
-[24apr2024 13:08:55.452] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@2eace5bc=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:apple_ice_cream_r
-[24apr2024 13:08:55.452] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@44a99029=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:chorus_popsicle_r
-[24apr2024 13:08:55.453] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@323f7bf=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:apple_ice_cream_cup_r
-[24apr2024 13:08:55.454] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@7f9c9fce=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:beetroot_popsicle_r
-[24apr2024 13:08:55.455] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@f345f12=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:carrot_ice_cream_r
-[24apr2024 13:08:55.455] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@506c68ee=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:vanilla_popsicle_r
-[24apr2024 13:08:55.456] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@13ff179a=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:glow_berry_ice_cream_cup_r
-[24apr2024 13:08:55.457] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@68562ad5=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:sweet_barry_ice_cream_r
-[24apr2024 13:08:55.458] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@6a4b4d5=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:glow_berry_popsicle_r
-[24apr2024 13:08:55.459] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@6b873080=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:glow_barry_ice_cream_r
-[24apr2024 13:08:55.460] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@4d087555=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:beetroot_ice_cream_cup_r
-[24apr2024 13:08:55.460] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@5facf061=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:melon_popsicle_r
-[24apr2024 13:08:55.462] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@295f8421=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:chocolate_popsicle_r
-[24apr2024 13:08:55.462] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@bd0f846=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:chocolate_ice_cream_cup_r
-[24apr2024 13:08:55.618] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.client.event.RecipesUpdatedEvent
-[24apr2024 13:08:55.619] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from LISTENING to JEI_STARTED
-[24apr2024 13:08:55.620] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI...
-[24apr2024 13:08:55.629] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes...
-[24apr2024 13:08:55.633] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes took 3.865 ms
-[24apr2024 13:08:55.634] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes...
-[24apr2024 13:08:55.637] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes took 2.667 ms
-[24apr2024 13:08:55.639] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients...
-[24apr2024 13:08:55.710] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering ingredients: jei:minecraft took 70.12 milliseconds
-[24apr2024 13:08:55.711] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients took 71.26 ms
-[24apr2024 13:08:55.717] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info...
-[24apr2024 13:08:55.718] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info took 1.179 ms
-[24apr2024 13:08:55.742] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories...
-[24apr2024 13:08:55.769] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: jei:minecraft took 26.43 milliseconds
-[24apr2024 13:08:55.773] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories took 30.04 ms
-[24apr2024 13:08:55.774] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions...
-[24apr2024 13:08:55.777] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions took 2.848 ms
-[24apr2024 13:08:55.779] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts...
-[24apr2024 13:08:55.782] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts took 1.982 ms
-[24apr2024 13:08:55.784] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins...
-[24apr2024 13:08:55.785] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins took 962.7 μs
-[24apr2024 13:08:55.785] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry...
-[24apr2024 13:08:55.794] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry took 8.177 ms
-[24apr2024 13:08:55.796] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes...
-[24apr2024 13:08:56.034] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:minecraft took 237.2 milliseconds
-[24apr2024 13:08:56.036] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes took 240.0 ms
-[24apr2024 13:08:56.039] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers...
-[24apr2024 13:08:56.044] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers took 4.165 ms
-[24apr2024 13:08:56.052] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime...
-[24apr2024 13:08:56.058] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers...
-[24apr2024 13:08:56.066] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers took 8.089 ms
-[24apr2024 13:08:56.070] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime...
-[24apr2024 13:08:56.073] [Render thread/INFO] [mezz.jei.gui.startup.JeiGuiStarter/]: Starting JEI GUI
-[24apr2024 13:08:56.073] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list...
-[24apr2024 13:08:56.078] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list took 4.039 ms
-[24apr2024 13:08:56.078] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter...
-[24apr2024 13:08:56.106] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Adding 1550 ingredients
-[24apr2024 13:08:56.343] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Added 1550 ingredients
-[24apr2024 13:08:56.345] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter took 266.5 ms
-[24apr2024 13:08:56.469] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering Runtime: jei:neoforge_gui took 398.2 milliseconds
-[24apr2024 13:08:56.470] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime took 399.5 ms
-[24apr2024 13:08:56.470] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime took 417.7 ms
-[24apr2024 13:08:56.471] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime...
-[24apr2024 13:08:56.472] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime took 734.4 μs
-[24apr2024 13:08:56.472] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI took 851.8 ms
-[24apr2024 13:08:56.483] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 2 advancements
-[24apr2024 13:09:12.022] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[24apr2024 13:09:12.055] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Nuovo mondo]'/minecraft:overworld
-[24apr2024 13:09:12.099] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Nuovo mondo]'/minecraft:the_end
-[24apr2024 13:09:12.106] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Nuovo mondo]'/minecraft:the_nether
-[24apr2024 13:09:16.210] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
-[24apr2024 13:09:16.218] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.client.event.ClientPlayerNetworkEvent$LoggingOut
-[24apr2024 13:09:16.218] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from JEI_STARTED to LISTENING
-[24apr2024 13:09:16.218] [Render thread/INFO] [mezz.jei.library.startup.JeiStarter/]: Stopping JEI
-[24apr2024 13:09:16.219] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable...
-[24apr2024 13:09:16.219] [Render thread/INFO] [mezz.jei.neoforge.plugins.neoforge.NeoForgeGuiPlugin/]: Stopping JEI GUI
-[24apr2024 13:09:16.222] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable took 2.926 ms
-[24apr2024 13:09:16.307] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnesso/a
-[24apr2024 13:09:16.307] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev ha abbandonato la partita
-[24apr2024 13:09:16.325] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
-[24apr2024 13:09:16.366] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[24apr2024 13:09:16.367] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[24apr2024 13:09:16.367] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[24apr2024 13:09:17.273] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Nuovo mondo]'/minecraft:overworld
-[24apr2024 13:09:17.667] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Nuovo mondo]'/minecraft:the_end
-[24apr2024 13:09:17.672] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Nuovo mondo]'/minecraft:the_nether
-[24apr2024 13:09:17.680] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (Nuovo mondo): All chunks are saved
-[24apr2024 13:09:17.680] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[24apr2024 13:09:17.680] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[24apr2024 13:09:17.680] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[24apr2024 22:29:44.966] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, 20.4.223, --assetIndex, asset-index, --assetsDir, C:\Users\Francesco\.mcreator\gradle\caches\minecraft\assets\1.20.4, --gameDir, ., --fml.neoForgeVersion, 20.4.223, --fml.fmlVersion, 2.0.17, --fml.mcVersion, 1.20.4, --fml.neoFormVersion, 20231207.154220]
+[24apr2024 22:29:44.971] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.10 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[24apr2024 22:29:45.175] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[24apr2024 22:29:45.297] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[24apr2024 22:29:45.446] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[24apr2024 22:29:45.571] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Francesco/.mcreator/gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.13.1+mixin.0.8.5/618f4dff860cf2d6b5196073b1a5f5e0a8591acb/sponge-mixin-0.13.1+mixin.0.8.5.jar%23173!/ Service=ModLauncher Env=CLIENT
+[24apr2024 22:29:45.583] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: Intel(R) UHD Graphics 630 GL version 4.6.0 - Build 27.20.100.9415, Intel
+[24apr2024 22:29:45.995] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "neoforge-20.4.223.jar" of type MOD with provider net.neoforged.fml.loading.moddiscovery.MinecraftLocator@742d4e15
+[24apr2024 22:29:45.995] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "main" of type MOD with provider net.neoforged.fml.loading.moddiscovery.MinecraftLocator@742d4e15
+[24apr2024 22:29:45.995] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "" of type MOD with provider net.neoforged.fml.loading.moddiscovery.MinecraftLocator@742d4e15
+[24apr2024 22:29:46.082] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "mcreator_link.jar" of type MOD with provider net.neoforged.fml.loading.moddiscovery.ClasspathLocator@111610e6
+[24apr2024 22:29:46.082] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "jei-1.20.4-neoforge-17.3.0.49.jar" of type MOD with provider net.neoforged.fml.loading.moddiscovery.ClasspathLocator@111610e6
+[24apr2024 22:29:46.083] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "mcreator_link.jar" of type MOD with provider net.neoforged.fml.loading.moddiscovery.ClasspathLocator@111610e6
+[24apr2024 22:29:46.083] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "jei-1.20.4-neoforge-17.3.0.49.jar" of type MOD with provider net.neoforged.fml.loading.moddiscovery.ClasspathLocator@111610e6
+[24apr2024 22:29:46.329] [main/INFO] [net.neoforged.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[24apr2024 22:29:46.330] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "jSerialComm-2.7.0.jar" of type GAMELIBRARY with provider net.neoforged.fml.loading.moddiscovery.JarInJarDependencyLocator@2f4919b0
+[24apr2024 22:29:46.331] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "mixinextras-neoforge-0.3.5.jar" of type GAMELIBRARY with provider net.neoforged.fml.loading.moddiscovery.JarInJarDependencyLocator@2f4919b0
+[24apr2024 22:29:47.856] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, 20.4.223, --gameDir, ., --assetsDir, C:\Users\Francesco\.mcreator\gradle\caches\minecraft\assets\1.20.4, --assetIndex, asset-index]
+[24apr2024 22:29:53.645] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 198 Datafixer optimizations took 250 milliseconds
+[24apr2024 22:29:57.105] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[24apr2024 22:29:57.108] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[24apr2024 22:29:57.112] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[24apr2024 22:29:57.114] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[24apr2024 22:29:57.116] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[24apr2024 22:29:57.278] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Francesco/MCreatorWorkspaces/ice_cream_mod/.gradle/repositories/ng_dummy_ng/net/neoforged/neoforge/20.4.223/neoforge-20.4.223.jar%23193!/assets/.mcassetsroot' uses unexpected schema
+[24apr2024 22:29:57.278] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Francesco/MCreatorWorkspaces/ice_cream_mod/.gradle/repositories/ng_dummy_ng/net/neoforged/neoforge/20.4.223/neoforge-20.4.223.jar%23193!/data/.mcassetsroot' uses unexpected schema
+[24apr2024 22:29:57.325] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[24apr2024 22:29:57.338] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[24apr2024 22:29:57.483] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.2+13
+[24apr2024 22:29:57.885] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 20.4.223, for MC 1.20.4 with MCP 20231207.154220
+[24apr2024 22:29:58.092] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[24apr2024 22:29:58.099] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 5.722 ms
+[24apr2024 22:29:59.267] [Render thread/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: []
+[24apr2024 22:29:59.571] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: mod_resources, mod:ice_cream_mod, mod:mcreator_link, mod:neoforge, mod:jei, vanilla
+[24apr2024 22:29:59.720] [Worker-Main-2/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.04.hex, loading
+[24apr2024 22:30:03.157] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[24apr2024 22:30:03.157] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[24apr2024 22:30:03.158] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.generic.wind_burst
+[24apr2024 22:30:03.260] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Cuffie (2- High Definition Audio Device)
+[24apr2024 22:30:03.261] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[24apr2024 22:30:03.423] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[24apr2024 22:30:03.585] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[24apr2024 22:30:03.589] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[24apr2024 22:30:03.596] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[24apr2024 22:30:03.603] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[24apr2024 22:30:03.646] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[24apr2024 22:30:03.649] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[24apr2024 22:30:03.651] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[24apr2024 22:30:03.654] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[24apr2024 22:30:04.409] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[24apr2024 22:30:04.944] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[24apr2024 22:30:04.975] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[24apr2024 22:30:04.979] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[24apr2024 22:30:04.982] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[24apr2024 22:30:05.025] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 jei:textures/atlas/gui.png-atlas
+[24apr2024 22:30:07.096] [Render thread/ERROR] [net.neoforged.neoforge.common.I18nExtension/CORE]: Illegal format found `{0,choice,0#No mods<unk> 1#1 mod<unk> 1<{0} mods} caricata/e`
+[24apr2024 22:30:19.985] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 9 recipes
+[24apr2024 22:30:20.235] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1278 advancements
+[24apr2024 22:30:20.647] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.event.TagsUpdatedEvent too early, ignoring
+[24apr2024 22:30:20.711] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.4
+[24apr2024 22:30:20.712] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[24apr2024 22:30:22.767] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[24apr2024 22:30:25.713] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparazione dell'area di generazione: 0%
+[24apr2024 22:30:25.733] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparazione dell'area di generazione: 0%
+[24apr2024 22:30:25.754] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparazione dell'area di generazione: 0%
+[24apr2024 22:30:25.754] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparazione dell'area di generazione: 0%
+[24apr2024 22:30:25.774] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparazione dell'area di generazione: 0%
+[24apr2024 22:30:25.774] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparazione dell'area di generazione: 0%
+[24apr2024 22:30:25.794] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparazione dell'area di generazione: 0%
+[24apr2024 22:30:26.283] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparazione dell'area di generazione: 1%
+[24apr2024 22:30:26.786] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparazione dell'area di generazione: 59%
+[24apr2024 22:30:27.007] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[24apr2024 22:30:27.013] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 4245 ms
+[24apr2024 22:30:27.158] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
+[24apr2024 22:30:27.158] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[24apr2024 22:30:28.045] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:4b2a55bb] logged in with entity id 146 at (75.05936268782602, 64.0, -65.28017553646983)
+[24apr2024 22:30:28.069] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.event.TagsUpdatedEvent
+[24apr2024 22:30:28.134] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev si è unito/a alla partita
+[24apr2024 22:30:28.263] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@45a1f1d0=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:chocolate_ice_cream_r
+[24apr2024 22:30:28.265] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@7d20cd82=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:carrot_ice_cream_cup_r
+[24apr2024 22:30:28.267] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@48684169=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:vanilla_ice_cream_cup_r
+[24apr2024 22:30:28.269] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@2db660c4=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:vanilla_ice_cream_r
+[24apr2024 22:30:28.270] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@6ae5ead4=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:apple_popsicle_r
+[24apr2024 22:30:28.272] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@591f1cc=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:chorus_ice_cream_r
+[24apr2024 22:30:28.273] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@5c15c93a=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:chorus_ice_cream_cup_r
+[24apr2024 22:30:28.274] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@79eaf64=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:sweet_berry_popsicle_r
+[24apr2024 22:30:28.275] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@3a1a736e=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:melon_ice_cream_r
+[24apr2024 22:30:28.276] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@44c164e5=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:melon_ice_cream_cup_r
+[24apr2024 22:30:28.277] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@7248ec5f=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:sweet_berry_ice_cream_cup_r
+[24apr2024 22:30:28.278] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@2659add8=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:beetroot_ice_cream_r
+[24apr2024 22:30:28.279] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@7048095e=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:carrot_popsicle_r
+[24apr2024 22:30:28.280] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@33246f17=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:apple_ice_cream_r
+[24apr2024 22:30:28.281] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@5b3b21d1=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:chorus_popsicle_r
+[24apr2024 22:30:28.281] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@46c0ad2d=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:apple_ice_cream_cup_r
+[24apr2024 22:30:28.283] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@55eb1d69=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:beetroot_popsicle_r
+[24apr2024 22:30:28.284] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@6083be44=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:carrot_ice_cream_r
+[24apr2024 22:30:28.284] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@21b44898=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:vanilla_popsicle_r
+[24apr2024 22:30:28.285] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@3da33a9=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:glow_berry_ice_cream_cup_r
+[24apr2024 22:30:28.286] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@5a6a336c=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:sweet_barry_ice_cream_r
+[24apr2024 22:30:28.287] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@673b5922=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:glow_berry_popsicle_r
+[24apr2024 22:30:28.288] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@10b648c0=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:glow_barry_ice_cream_r
+[24apr2024 22:30:28.289] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@3f33316e=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:beetroot_ice_cream_cup_r
+[24apr2024 22:30:28.290] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@5b480f08=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:melon_popsicle_r
+[24apr2024 22:30:28.291] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@61018d1c=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:chocolate_popsicle_r
+[24apr2024 22:30:28.291] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: [!!!com.mojang.logging.LogUtils$1ToString@45980d=>java.lang.NullPointerException:Cannot invoke "Object.toString()" because the return value of "java.util.function.Supplier.get()" is null!!!]/ice_cream_mod:chocolate_ice_cream_cup_r
+[24apr2024 22:30:28.459] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.client.event.RecipesUpdatedEvent
+[24apr2024 22:30:28.460] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from LISTENING to JEI_STARTED
+[24apr2024 22:30:28.462] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI...
+[24apr2024 22:30:28.475] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes...
+[24apr2024 22:30:28.480] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes took 4.294 ms
+[24apr2024 22:30:28.480] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes...
+[24apr2024 22:30:28.483] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes took 2.564 ms
+[24apr2024 22:30:28.486] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients...
+[24apr2024 22:30:28.575] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering ingredients: jei:minecraft took 88.25 milliseconds
+[24apr2024 22:30:28.576] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients took 89.84 ms
+[24apr2024 22:30:28.585] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info...
+[24apr2024 22:30:28.587] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info took 1.175 ms
+[24apr2024 22:30:28.612] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories...
+[24apr2024 22:30:28.643] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: jei:minecraft took 29.65 milliseconds
+[24apr2024 22:30:28.646] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories took 33.07 ms
+[24apr2024 22:30:28.647] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions...
+[24apr2024 22:30:28.650] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions took 2.863 ms
+[24apr2024 22:30:28.652] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts...
+[24apr2024 22:30:28.654] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts took 1.894 ms
+[24apr2024 22:30:28.657] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins...
+[24apr2024 22:30:28.658] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins took 1.200 ms
+[24apr2024 22:30:28.659] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry...
+[24apr2024 22:30:28.672] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry took 12.99 ms
+[24apr2024 22:30:28.676] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes...
+[24apr2024 22:30:29.056] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:minecraft took 379.3 milliseconds
+[24apr2024 22:30:29.060] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes took 383.9 ms
+[24apr2024 22:30:29.064] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers...
+[24apr2024 22:30:29.069] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers took 5.012 ms
+[24apr2024 22:30:29.083] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime...
+[24apr2024 22:30:29.091] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers...
+[24apr2024 22:30:29.101] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers took 9.111 ms
+[24apr2024 22:30:29.104] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime...
+[24apr2024 22:30:29.108] [Render thread/INFO] [mezz.jei.gui.startup.JeiGuiStarter/]: Starting JEI GUI
+[24apr2024 22:30:29.109] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list...
+[24apr2024 22:30:29.114] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list took 4.647 ms
+[24apr2024 22:30:29.114] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter...
+[24apr2024 22:30:29.144] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Adding 1550 ingredients
+[24apr2024 22:30:29.553] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Added 1550 ingredients
+[24apr2024 22:30:29.554] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter took 439.9 ms
+[24apr2024 22:30:29.665] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering Runtime: jei:neoforge_gui took 559.8 milliseconds
+[24apr2024 22:30:29.666] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime took 560.9 ms
+[24apr2024 22:30:29.666] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime took 582.6 ms
+[24apr2024 22:30:29.667] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime...
+[24apr2024 22:30:29.668] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime took 594.7 μs
+[24apr2024 22:30:29.668] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI took 1.206 s
+[24apr2024 22:30:29.681] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 9 advancements
+[24apr2024 22:30:37.313] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2005ms or 40 ticks behind
+[24apr2024 22:30:52.409] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[24apr2024 22:30:52.462] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Nuovo mondo]'/minecraft:overworld
+[24apr2024 22:30:52.509] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Nuovo mondo]'/minecraft:the_nether
+[24apr2024 22:30:52.518] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Nuovo mondo]'/minecraft:the_end
+[24apr2024 22:30:53.845] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.client.event.ClientPlayerNetworkEvent$LoggingOut
+[24apr2024 22:30:53.845] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from JEI_STARTED to LISTENING
+[24apr2024 22:30:53.845] [Render thread/INFO] [mezz.jei.library.startup.JeiStarter/]: Stopping JEI
+[24apr2024 22:30:53.846] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable...
+[24apr2024 22:30:53.847] [Render thread/INFO] [mezz.jei.neoforge.plugins.neoforge.NeoForgeGuiPlugin/]: Stopping JEI GUI
+[24apr2024 22:30:53.852] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable took 5.360 ms
+[24apr2024 22:30:53.918] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnesso/a
+[24apr2024 22:30:53.919] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev ha abbandonato la partita
+[24apr2024 22:30:53.943] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[24apr2024 22:30:53.986] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[24apr2024 22:30:53.987] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[24apr2024 22:30:53.987] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[24apr2024 22:30:55.278] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Nuovo mondo]'/minecraft:overworld
+[24apr2024 22:30:55.619] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Nuovo mondo]'/minecraft:the_nether
+[24apr2024 22:30:55.622] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Nuovo mondo]'/minecraft:the_end
+[24apr2024 22:30:55.635] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (Nuovo mondo): All chunks are saved
+[24apr2024 22:30:55.635] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[24apr2024 22:30:55.635] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[24apr2024 22:30:55.635] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[24apr2024 22:30:56.931] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!

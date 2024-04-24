@@ -38,7 +38,7 @@
           "disablePickup": {
             "fixedValue": false
           },
-          "dropItemsWhenNotBound": false,
+          "dropItemsWhenNotBound": true,
           "x": 177,
           "y": 98
         }
