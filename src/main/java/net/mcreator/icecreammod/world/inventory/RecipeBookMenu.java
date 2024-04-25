@@ -25,7 +25,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.icecreammod.procedures.GuiICClosedProcedure;
 import net.mcreator.icecreammod.procedures.AllRecipeProcedure;
 import net.mcreator.icecreammod.init.IceCreamModModMenus;
 
@@ -313,7 +312,6 @@ public class RecipeBookMenu extends AbstractContainerMenu implements Supplier<Ma
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
-		GuiICClosedProcedure.execute();
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {

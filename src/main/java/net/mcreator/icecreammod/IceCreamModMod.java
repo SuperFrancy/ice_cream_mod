@@ -37,6 +37,8 @@ public class IceCreamModMod {
 	public static final String MODID = "ice_cream_mod";
 
 	public IceCreamModMod(IEventBus modEventBus) {
+		// Start of user code block mod constructor
+		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
 

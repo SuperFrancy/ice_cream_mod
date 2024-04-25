@@ -23,7 +23,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.icecreammod.procedures.GuiPClosedProcedure;
 import net.mcreator.icecreammod.init.IceCreamModModMenus;
 
 import java.util.function.Supplier;
@@ -236,18 +235,13 @@ public class PopsicleMachineGMenu extends AbstractContainerMenu implements Suppl
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
-		GuiPClosedProcedure.execute();
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {
-					if (j == 3)
-						continue;
 					playerIn.drop(internal.extractItem(j, internal.getStackInSlot(j).getCount(), false), false);
 				}
 			} else {
 				for (int i = 0; i < internal.getSlots(); ++i) {
-					if (i == 3)
-						continue;
 					playerIn.getInventory().placeItemBackInInventory(internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 				}
 			}

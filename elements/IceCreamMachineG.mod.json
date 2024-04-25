@@ -56,7 +56,7 @@
           "disablePickup": {
             "fixedValue": false
           },
-          "dropItemsWhenNotBound": false,
+          "dropItemsWhenNotBound": true,
           "x": 159,
           "y": 71
         }
@@ -74,7 +74,7 @@
           "disablePickup": {
             "fixedValue": false
           },
-          "dropItemsWhenNotBound": false,
+          "dropItemsWhenNotBound": true,
           "x": 195,
           "y": 71
         }
@@ -92,7 +92,7 @@
           "disablePickup": {
             "fixedValue": false
           },
-          "dropItemsWhenNotBound": false,
+          "dropItemsWhenNotBound": true,
           "x": 177,
           "y": 53
         }
@@ -104,7 +104,7 @@
           "disablePickup": {
             "fixedValue": false
           },
-          "dropItemsWhenNotBound": false,
+          "dropItemsWhenNotBound": true,
           "x": 276,
           "y": 71
         }
@@ -139,9 +139,6 @@
         }
       }
     ],
-    "onClosed": {
-      "name": "GuiICClosed"
-    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,

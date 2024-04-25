@@ -1080,7 +1080,7 @@
           }
         ]
       },
-      "path": "~/Procedure/Recipe"
+      "path": "~/Procedure/Recipe/All Recipe"
     },
     {
       "name": "VanillaIceCreamP",
@@ -1892,7 +1892,7 @@
           }
         ]
       },
-      "path": "~/Procedure/Recipe"
+      "path": "~/Procedure/Recipe/All Recipe"
     },
     {
       "name": "VanillaPopsicleR",
@@ -2189,36 +2189,6 @@
       "path": "~/Procedure"
     },
     {
-      "name": "GuiICClosed",
-      "type": "procedure",
-      "sortid": 124,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gui_ic_closed",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/icecreammod/procedures/GuiICClosedProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Procedure/Gui Closed"
-    },
-    {
-      "name": "GuiPClosed",
-      "type": "procedure",
-      "sortid": 125,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gui_p_closed",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/icecreammod/procedures/GuiPClosedProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Procedure/Gui Closed"
-    },
-    {
       "name": "WhereIAm",
       "type": "achievement",
       "sortid": 126,
@@ -2294,7 +2264,7 @@
           }
         ]
       },
-      "path": "~/Procedure"
+      "path": "~/Procedure/Gui"
     },
     {
       "name": "Gui2",
@@ -2330,7 +2300,7 @@
           }
         ]
       },
-      "path": "~/Procedure"
+      "path": "~/Procedure/Gui"
     }
   ],
   "variable_elements": [
@@ -2371,6 +2341,10 @@
       "CUSTOM:SweetBerryIceCreamCup",
       "CUSTOM:GlowBerryIceCreamCup",
       "CUSTOM:ChorusIceCreamCup"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:PopsicleMachine",
+      "~CUSTOM:IceCreamMachine"
     ],
     "ITEMS:mod:ingredient": [
       "Items.DYE#3",
@@ -2416,7 +2390,6 @@
   },
   "language_map": {
     "it_it": {
-      "advancements.every_flavour.descr": "Mangia tutti i gusti di Coni, Coppette e Ghiacccioli",
       "item.ice_cream_mod.dough": "Impasto",
       "gui.ice_cream_mod.recipe_book.button_make": "Crea",
       "advancements.all_popsicle.title": "Ghiacciato",
@@ -2436,6 +2409,7 @@
       "advancements.where_i_am.title": "Dove Sono?",
       "gui.ice_cream_mod.popsicle_machine_g.label_icecreammachine": "Macchina per Ghiaccioli",
       "item.ice_cream_mod.apple_ice_cream_cup": "Coppetta alla Mela",
+      "advancements.every_ice_cream.title": "Tuttigusti+1",
       "advancements.all_ice_cream_cup.title": "Coppa del Nonno",
       "block.ice_cream_mod.vanilla_flower": "Fiore di Vaniglia",
       "item.ice_cream_mod.glow_berry_popsicle": "Ghiacciolo alla Bacca Luminosa",
@@ -2443,7 +2417,6 @@
       "item.ice_cream_mod.apple_ice_cream": "Cono alla Mela",
       "item.ice_cream_mod.sweet_berry_ice_cream": "Cono alla Bacca Dolce",
       "advancements.all_ice_cream.descr": "Mangia tutti i gusti di Coni",
-      "advancements.every_flavour.title": "Tuttigusti+1",
       "item.ice_cream_mod.consumed_cone": "Cono Mangiato",
       "item.ice_cream_mod.vanilla_ice_cream": "Cono alla Vaniglia",
       "advancements.nice_cream.title": "Gelieto",
@@ -2455,6 +2428,7 @@
       "advancements.nice_cream.descr": "Crea un gelato",
       "advancements.im_glowing.title": "Sto Brillando",
       "item.ice_cream_mod.beetroot_ice_cream": "Cono alla Barbabietola",
+      "advancements.every_ice_cream.descr": "Mangia tutti i gusti di Coni, Coppette e Ghiacccioli",
       "item.ice_cream_mod.chocolate_ice_cream_cup": "Coppetta alla Cioccolato",
       "item.ice_cream_mod.melon_ice_cream_cup": "Coppetta all\u0027Anguria",
       "gui.ice_cream_mod.recipe_book.button_empty1": "\u003e",
@@ -2477,7 +2451,6 @@
       "item.ice_cream_mod.cone": "Cono"
     },
     "en_us": {
-      "advancements.every_flavour.descr": "Eat all flavours of Ice Creams, Ice Cream Cups and Popsicles",
       "item.ice_cream_mod.dough": "Dough",
       "gui.ice_cream_mod.recipe_book.button_make": "Make",
       "advancements.all_popsicle.title": "Frozen",
@@ -2497,6 +2470,7 @@
       "advancements.where_i_am.title": "Where I Am?",
       "gui.ice_cream_mod.popsicle_machine_g.label_icecreammachine": "Popsicle Machine",
       "item.ice_cream_mod.apple_ice_cream_cup": "Apple Ice Cream Cup",
+      "advancements.every_ice_cream.title": "Every Flavour",
       "advancements.all_ice_cream_cup.title": "Granfather\u0027s Cup",
       "block.ice_cream_mod.vanilla_flower": "Vanilla Flower",
       "item.ice_cream_mod.chocolate_popsicle": "Chocolate Popsicle",
@@ -2504,7 +2478,6 @@
       "item.ice_cream_mod.apple_ice_cream": "Apple Ice Cream",
       "item.ice_cream_mod.sweet_berry_ice_cream": "Sweet Berry Ice Cream",
       "advancements.all_ice_cream.descr": "Eat all flavours of Ice Creams",
-      "advancements.every_flavour.title": "Every Flavour",
       "item.ice_cream_mod.consumed_cone": "Consumed Cone",
       "item.ice_cream_mod.vanilla_ice_cream": "Vanilla Ice Cream",
       "advancements.nice_cream.title": "Nice Cream",
@@ -2516,6 +2489,7 @@
       "advancements.nice_cream.descr": "Eat a Ice cream",
       "advancements.im_glowing.title": "I\u0027m Glowing",
       "item.ice_cream_mod.beetroot_ice_cream": "Beetroot Ice Cream",
+      "advancements.every_ice_cream.descr": "Eat all flavours of Ice Creams, Ice Cream Cups and Popsicles",
       "item.ice_cream_mod.chocolate_ice_cream_cup": "Chocolate Ice Cream Cup",
       "item.ice_cream_mod.melon_ice_cream_cup": "Melon Ice Cream Cup",
       "gui.ice_cream_mod.recipe_book.button_empty1": "\u003e",
@@ -2611,11 +2585,15 @@
               {
                 "name": "Popsicle",
                 "children": []
+              },
+              {
+                "name": "All Recipe",
+                "children": []
               }
             ]
           },
           {
-            "name": "Gui Closed",
+            "name": "Gui",
             "children": []
           }
         ]
@@ -2682,5 +2660,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.icecreammod"
   },
-  "mcreatorVersion": 202400115821
+  "mcreatorVersion": 202400117319
 }

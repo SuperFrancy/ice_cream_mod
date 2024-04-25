@@ -86,7 +86,7 @@
           "disablePickup": {
             "fixedValue": false
           },
-          "dropItemsWhenNotBound": false,
+          "dropItemsWhenNotBound": true,
           "x": 276,
           "y": 71
         }
@@ -121,9 +121,6 @@
         }
       }
     ],
-    "onClosed": {
-      "name": "GuiPClosed"
-    },
     "gridSettings": {
       "sx": 19,
       "sy": 18,
