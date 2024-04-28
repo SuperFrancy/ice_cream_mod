@@ -10,6 +10,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
@@ -45,14 +46,12 @@ public class ConsumeProcedure {
 		}
 		if (itemstack.getItem() == IceCreamModModItems.CHORUS_ICE_CREAM.get() || itemstack.getItem() == IceCreamModModItems.CHORUS_ICE_CREAM_CUP.get() || itemstack.getItem() == IceCreamModModItems.CHORUS_POPSICLE.get()) {
 			ix = Mth.nextInt(RandomSource.create(), -8, 8);
-			iy = Mth.nextInt(RandomSource.create(), -2, 2);
+			iy = Mth.nextInt(RandomSource.create(), -8, 8);
 			iz = Mth.nextInt(RandomSource.create(), -8, 8);
 			while (true) {
-				if (world.getBlockState(BlockPos.containing(x + ix, y + iy, z + iz)).canOcclude() && world.getBlockState(BlockPos.containing(x + ix, y + iy + 1, z + iz)).canOcclude()) {
-					ix = Mth.nextInt(RandomSource.create(), -8, 8);
-					iy = Mth.nextInt(RandomSource.create(), -2, 2);
-					iz = Mth.nextInt(RandomSource.create(), -8, 8);
-				} else {
+				if (!world.getBlockState(BlockPos.containing(x + ix, y + iy, z + iz)).canOcclude() && !(world.getBlockState(BlockPos.containing(x + ix, y + iy, z + iz))).is(BlockTags.create(new ResourceLocation("minecraft:leaves")))
+						&& !world.getBlockState(BlockPos.containing(x + ix, y + iy + 1, z + iz)).canOcclude() && (world.getBlockState(BlockPos.containing(x + ix, y + iy + 1, z + iz))).is(BlockTags.create(new ResourceLocation("minecraft:leaves")))
+						&& world.getBlockState(BlockPos.containing(x + ix, y + iy - 1, z + iz)).canOcclude()) {
 					{
 						Entity _ent = entity;
 						_ent.teleportTo((x + ix), (y + iy), (z + iz));
@@ -71,6 +70,10 @@ public class ConsumeProcedure {
 					if (entity instanceof Player _player)
 						_player.getCooldowns().addCooldown(itemstack.getItem(), 20);
 					break;
+				} else {
+					ix = Mth.nextInt(RandomSource.create(), -8, 8);
+					iy = Mth.nextInt(RandomSource.create(), -2, 2);
+					iz = Mth.nextInt(RandomSource.create(), -8, 8);
 				}
 			}
 			if (entity instanceof ServerPlayer _player) {
