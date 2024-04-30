@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "ice_cream_mod:block/ice_cream_machine",
-    "up": "ice_cream_mod:block/ice_cream_machine",
-    "north": "ice_cream_mod:block/ice_cream_machine",
-    "east": "ice_cream_mod:block/ice_cream_machine",
-    "south": "ice_cream_mod:block/ice_cream_machine",
-    "west": "ice_cream_mod:block/ice_cream_machine",
-    "particle": "ice_cream_mod:block/ice_cream_machine"
+    "down": "ice_cream_mod:block/ice_cream_machine_down",
+    "up": "ice_cream_mod:block/ice_cream_machine_up",
+    "north": "ice_cream_mod:block/ice_cream_machine_front",
+    "east": "ice_cream_mod:block/ice_cream_machine_side",
+    "south": "ice_cream_mod:block/ice_cream_machine_side",
+    "west": "ice_cream_mod:block/ice_cream_machine_side",
+    "particle": "ice_cream_mod:block/ice_cream_machine_down"
   },
   "render_type": "solid"
 }

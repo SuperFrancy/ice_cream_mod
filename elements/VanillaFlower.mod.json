@@ -3,7 +3,7 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "ice_cream_machine",
+    "texture": "vanilla_flower",
     "textureBottom": "",
     "customModelName": "Cross model",
     "itemTexture": "",

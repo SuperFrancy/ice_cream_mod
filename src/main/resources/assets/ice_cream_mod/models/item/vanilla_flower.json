@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "ice_cream_mod:block/ice_cream_machine"
+    "layer0": "ice_cream_mod:block/vanilla_flower"
   }
 }
